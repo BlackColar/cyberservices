@@ -1,18 +1,39 @@
 <?php
+$current_page = max(1, (int) get_query_var('paged'), (int) get_query_var('page'));
+$case_studies = new WP_Query([
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'category_name' => 'case-study',
+    'posts_per_page' => max(1, (int) get_option('posts_per_page')),
+    'paged' => $current_page,
+    'ignore_sticky_posts' => true,
+]);
+
+// A custom WP_Query cannot 404 out-of-range pages on its own, so /case-study/page/99/
+// would otherwise render an empty 200 page. Mirror core's main-query behaviour, but
+// keep page 1 renderable when the category is genuinely empty (show the empty state).
+$total_pages = (int) $case_studies->max_num_pages;
+if ($total_pages > 0 && $current_page > $total_pages) {
+    set_404();
+    get_header();
+    ?>
+    <main id="noi-dung" class="container section page-content">
+      <header class="section-heading">
+        <h1><?php esc_html_e('Không tìm thấy trang', 'cyber-services'); ?></h1>
+        <p><?php esc_html_e('Trang bạn yêu cầu không tồn tại hoặc đã vượt quá số trang hiện có.', 'cyber-services'); ?></p>
+      </header>
+      <p><a class="read-link" href="<?php echo esc_url(get_permalink()); ?>"><?php esc_html_e('Về danh sách Case Study →', 'cyber-services'); ?></a></p>
+    </main>
+    <?php
+    get_footer();
+    return;
+}
+
 get_header();
 ?>
 <main id="noi-dung">
 <?php while (have_posts()) : the_post(); ?>
   <?php
-  $current_page = max(1, (int) get_query_var('paged'), (int) get_query_var('page'));
-  $case_studies = new WP_Query([
-      'post_type' => 'post',
-      'post_status' => 'publish',
-      'category_name' => 'case-study',
-      'posts_per_page' => max(1, (int) get_option('posts_per_page')),
-      'paged' => $current_page,
-      'ignore_sticky_posts' => true,
-  ]);
   $page_content = trim((string) get_the_content());
   $article_content = $page_content !== '' ? cyber_services_article_content($page_content) : '';
   ?>
@@ -50,16 +71,19 @@ get_header();
       <p class="empty"><?php esc_html_e('Chưa có Case Study.', 'cyber-services'); ?></p>
     <?php endif; ?>
     <?php
-    $pagination = paginate_links([
-        'total' => (int) $case_studies->max_num_pages,
+    $pagination = $total_pages > 1 ? paginate_links([
+        'base' => user_trailingslashit(trailingslashit(get_permalink()) . 'page/%#%'),
+        'format' => '',
+        'total' => $total_pages,
         'current' => $current_page,
         'prev_text' => __('Trước', 'cyber-services'),
         'next_text' => __('Sau', 'cyber-services'),
-    ]);
+    ]) : '';
     ?>
     <?php if ($pagination) : ?><nav class="pagination" aria-label="<?php esc_attr_e('Phân trang Case Study', 'cyber-services'); ?>"><?php echo wp_kses_post($pagination); ?></nav><?php endif; ?>
   </section>
-  <?php wp_reset_postdata(); ?>
 <?php endwhile; ?>
+<?php wp_reset_postdata(); ?>
 </main>
-<?php get_footer();
+<?php get_footer(); ?>
+
