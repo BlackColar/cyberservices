@@ -1,0 +1,157 @@
+/* Hallmark · component: navigation menu · genre: modern-minimal · existing dark/lime system
+ * states: default · hover · focus · active · current · expanded · reduced-motion
+ * pre-emit critique: P5 H5 E4 S5 R5 V4
+ */
+.root { --menu-ease-out: cubic-bezier(.16, 1, .3, 1); --menu-duration-enter: 180ms; --menu-duration-exit: 140ms; display: flex; align-items: center; margin-left: auto; }
+.desktop > ul { display: flex; align-items: center; gap: clamp(12px, 1.35vw, 26px); margin: 0; padding: 0; list-style: none; }
+.desktopItem { position: relative; }
+.desktopLink { display: flex; align-items: center; gap: 7px; padding-block: 14px; color: #c2c4be; font-size: clamp(10px, .76vw, 12px); font-weight: 700; letter-spacing: .02em; white-space: nowrap; }
+.desktopLink span { color: #d49a6a; font-size: 14px; }
+.dropdown { position: absolute; top: calc(100% + var(--menu-shift-y, 0px)); left: 50%; z-index: 30; width: max-content; min-width: 230px; max-width: min(340px, calc(100vw - 32px)); visibility: hidden; display: grid; gap: 2px; margin: 0; border: 1px solid #ffffff20; border-radius: 16px; padding: 8px; list-style: none; color: #eef0e9; background: #111411f7; box-shadow: 0 24px 70px #0009; opacity: 0; transform: translate(-50%, -8px); transition: opacity var(--menu-duration-enter) var(--menu-ease-out), transform var(--menu-duration-enter) var(--menu-ease-out), visibility 0s linear var(--menu-duration-exit); }
+.dropdown .desktopLink { min-width: 0; justify-content: space-between; border-radius: 10px; padding: 11px 12px; font-size: 11px; line-height: 1.35; white-space: normal; overflow-wrap: anywhere; }
+.dropdown .dropdown { top: calc(-8px + var(--menu-shift-y, 0px)); left: calc(100% + 12px); transform: translate(-8px, 0); }
+.dropdown[data-menu-compact="true"] { padding: 6px; }
+.dropdown[data-menu-compact="true"] > .desktopItem > .desktopLink { padding-block: 8px; font-size: 10px; }
+.dropdown[data-menu-scroll="true"] { overflow-y: auto; scrollbar-width: thin; }
+.dropdown.opensStart { right: calc(100% + 12px); left: auto; transform: translate(8px, 0); }
+.desktop > ul > .desktopItem > .dropdown.opensStart { right: 0; left: auto; transform: translateY(-8px); }
+.desktopItem:focus-within > .dropdown { visibility: visible; opacity: 1; transform: translate(-50%, 0); transition-delay: 0s; }
+.dropdown .desktopItem:focus-within > .dropdown { transform: none; }
+.desktop > ul > .desktopItem:focus-within > .dropdown.opensStart { transform: none; }
+[data-desktop-dismissed="true"] .dropdown { visibility: hidden !important; opacity: 0 !important; }
+.desktopItem > .dropdown[data-menu-open="true"] { visibility: visible; opacity: 1; transform: translate(-50%, 0); }
+.dropdown .desktopItem > .dropdown[data-menu-open="true"] { transform: none; }
+.desktop > ul > .desktopItem > .dropdown.opensStart[data-menu-open="true"] { transform: none; }
+.trigger { display: none; width: 44px; height: 44px; position: relative; border: 1px solid #ffffff32; border-radius: 50%; padding: 0; color: inherit; background: #0b0c0e99; cursor: pointer; }
+.trigger > span:not(.triggerText) { position: absolute; left: 12px; width: 18px; height: 1px; background: currentColor; }
+.trigger > span:first-child { top: 15px; }
+.trigger > span:nth-child(2) { top: 21px; }
+.triggerText { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.overlay { position: fixed; inset: 0; z-index: 998; visibility: hidden; border: 0; padding: 0; background: #0008; opacity: 0; cursor: default; transition: opacity 250ms var(--menu-ease-out), visibility 0s linear 550ms; }
+[data-open="true"] .overlay { visibility: visible; opacity: 1; transition-delay: 0s; }
+.preLayer, .panel { position: fixed; inset: 0 0 0 auto; width: min(480px, 88vw); transform: translateX(100%); transition: transform 500ms var(--menu-ease-out); }
+.preLayer { z-index: 999; pointer-events: none; }
+.preLayerOne { background: var(--lime); }
+.preLayerTwo { background: #f0d7c5; }
+.panel { z-index: 1000; overflow-y: auto; padding: 28px 34px 48px; color: #11130e; background: #f2f0ea; box-shadow: -30px 0 80px #0003; }
+[data-open="true"] .preLayerOne { transform: translateX(0); }
+[data-open="true"] .preLayerTwo { transform: translateX(0); transition-delay: .06s; }
+[data-open="true"] .panel { transform: translateX(0); transition-delay: .12s; }
+.panelTop { min-height: 110px; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; border-bottom: 1px solid #cfd0c9; padding: 6px 0 28px; }
+.menuCta { align-self: center; font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.close { width: 46px; height: 46px; position: relative; flex: 0 0 auto; border: 0; background: transparent; cursor: pointer; }
+.close span::before, .close span::after { content: ""; position: absolute; top: 22px; left: 8px; width: 30px; height: 1px; background: #11130e; transform: rotate(45deg); }
+.close span::after { transform: rotate(-45deg); }
+.drawerList, .drawerChildren ul { margin: 0; padding: 0; list-style: none; }
+.drawerItem { border-bottom: 1px solid #d2d2ca; }
+.drawerRow { min-height: 76px; display: flex; align-items: center; gap: 12px; }
+.itemLabel { min-width: 0; flex: 1; transform-origin: left bottom; }
+[data-open="true"] .drawerItem > .drawerRow .itemLabel { animation: menuItemIn .42s cubic-bezier(.22, 1, .36, 1) both; }
+.drawerItem:nth-child(2) > .drawerRow .itemLabel { animation-delay: .04s; }
+.drawerItem:nth-child(3) > .drawerRow .itemLabel { animation-delay: .08s; }
+.drawerItem:nth-child(4) > .drawerRow .itemLabel { animation-delay: .12s; }
+.drawerItem:nth-child(5) > .drawerRow .itemLabel { animation-delay: .16s; }
+.drawerItem:nth-child(n+6) > .drawerRow .itemLabel { animation-delay: .2s; }
+.itemLabel a { display: block; overflow: hidden; padding-block: 20px; font-size: clamp(18px, 2.8vw, 30px); font-weight: 620; line-height: 1.15; letter-spacing: -.035em; text-overflow: ellipsis; text-transform: uppercase; white-space: nowrap; }
+.drawerRow > button { width: 44px; height: 44px; flex: 0 0 auto; border: 0; border-radius: 50%; color: #55594f; background: transparent; font-size: 25px; cursor: pointer; }
+.drawerRow > button span { display: block; transition: transform 250ms var(--menu-ease-out); }
+.drawerRow > button[aria-expanded="true"] span { transform: rotate(45deg); }
+.drawerChildren { display: grid; grid-template-rows: 0fr; border-top: 0 solid #dadad3; opacity: 0; transition: grid-template-rows 400ms var(--menu-ease-out), opacity 250ms var(--menu-ease-out), border-width 0s linear 400ms; }
+.drawerChildren > ul { min-height: 0; overflow: hidden; padding-inline-start: 22px; }
+.drawerChildren[data-expanded="true"] { grid-template-rows: 1fr; border-top-width: 1px; opacity: 1; transition-delay: 0s; }
+.drawerChildren .drawerItem:last-child { border-bottom: 0; }
+.drawerChildren .drawerRow { min-height: 56px; }
+.drawerChildren .itemLabel a { padding-block: 14px; font-size: clamp(14px, 2vw, 19px); text-transform: none; }
+.drawerChildren .drawerChildren > ul { padding-inline-start: 18px; }
+.drawerDepth2 .itemLabel a, .drawerDepth3 .itemLabel a { font-size: clamp(13px, 1.65vw, 16px); }
+.itemLabel a[aria-current="page"] { color: #a9521b; }
+[data-open="false"] :is(.panel, .preLayer, .overlay) { pointer-events: none; }
+@keyframes menuItemIn { from { opacity: .35; transform: translateY(18px) rotate(2deg); } to { opacity: 1; transform: none; } }
+@media (hover: hover) and (pointer: fine) {
+  .desktopItem:hover > .dropdown { visibility: visible; opacity: 1; transform: translate(-50%, 0); transition-delay: 0s; }
+  .dropdown .desktopItem:hover > .dropdown, .desktop > ul > .desktopItem:hover > .dropdown.opensStart { transform: none; }
+  .desktopLink:hover, .desktopLink:focus-visible { color: var(--lime); }
+  .dropdown .desktopLink:hover, .dropdown .desktopLink:focus-visible { color: #11130e; background: var(--lime); outline: none; }
+  .drawerRow > button:hover, .drawerRow a:hover, .menuCta:hover { color: #a9521b; }
+}
+.desktopLink:active, .drawerRow > button:active, .drawerRow a:active { transform: translateY(1px); }
+@media (max-width: 1180px) {
+  .desktop { display: none; }
+  .trigger { display: block; }
+}
+@media (min-width: 1181px) {
+  .overlay, .preLayer, .panel { display: none; }
+}
+.contactLauncher { position: fixed; right: 24px; bottom: 24px; z-index: 80; display: grid; justify-items: end; gap: 12px; pointer-events: none; }
+.contactLauncherPanel { width: min(360px, calc(100vw - 32px)); overflow: hidden; border: 1px solid #ffffff1c; border-radius: 24px; color: #eef0e9; background: #111410f5; box-shadow: 0 24px 70px #07100652; backdrop-filter: blur(18px); transform: translateY(12px) scale(.97); transform-origin: bottom right; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .2s ease, transform .2s ease, visibility .2s ease; }
+.contactLauncher[data-open="true"] .contactLauncherPanel { transform: translateY(0) scale(1); opacity: 1; visibility: visible; pointer-events: auto; }
+.contactLauncherHeading { display: grid; gap: 6px; padding: 22px 22px 18px; border-bottom: 1px solid #ffffff14; background: linear-gradient(135deg, #ffffcc1f, transparent 72%); }
+.contactLauncherHeading span { color: var(--lime); font-size: 9px; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
+.contactLauncherHeading strong { font-size: 18px; font-weight: 650; letter-spacing: -.025em; }
+.contactLauncherPanel nav { display: grid; padding: 9px; }
+.contactLauncherPanel nav a { display: grid; grid-template-columns: 42px 1fr auto; align-items: center; gap: 12px; border-radius: 15px; padding: 11px 12px; color: #eef0e9; text-decoration: none; transition: color .18s ease, background .18s ease; }
+.contactLauncherPanel nav a > span { width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid #ffffcc35; border-radius: 50%; color: var(--lime); background: #ffffcc0d; }
+.contactLauncherPanel svg { width: 20px; height: 20px; fill: currentColor; }
+.contactLauncherPanel nav a div { display: grid; gap: 3px; }
+.contactLauncherPanel nav a strong { font-size: 12px; font-weight: 750; }
+.contactLauncherPanel nav a small { color: #969d92; font-size: 9px; }
+.contactLauncherPanel nav a b { color: #747c70; font-size: 15px; font-weight: 500; }
+.contactLauncherPromo { display: grid; gap: 14px; margin: 10px 10px 0; border-radius: 18px; padding: 18px; color: #11130e; background: var(--lime); box-shadow: 0 14px 30px #5e2b1238; }
+.contactLauncherPromo p { margin: 0; font-size: 13px; font-weight: 650; line-height: 1.45; }
+.contactLauncherPromo p > span { margin-right: 4px; }
+.contactLauncherPromo p b { font-size: 18px; font-weight: 900; }
+.contactLauncherPromo a { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-radius: 999px; padding: 12px 14px; color: #fff; background: #11130e; font-size: 11px; font-weight: 800; line-height: 1.2; text-decoration: none; }
+.contactLauncherPromo a > span { width: auto; height: auto; display: block; margin: 0; border: 0; border-radius: 0; color: inherit; background: transparent; font-size: 18px; }
+.contactLauncher :is(a, button):focus-visible { outline: 2px solid #f3c39f; outline-offset: 3px; }
+.contactLauncherButton { position: relative; isolation: isolate; width: 62px; height: 62px; display: grid; place-items: center; border: 1px solid #ffffe8; border-radius: 50%; color: #11170e; background: var(--lime); box-shadow: 0 15px 38px #5e2b124f; pointer-events: auto; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
+.contactLauncher[data-open="false"] .contactLauncherButton::before,
+.contactLauncher[data-open="false"] .contactLauncherButton::after { position: absolute; z-index: -1; inset: 0; border-radius: inherit; background: inherit; content: ""; pointer-events: none; opacity: 0; animation: contactLauncherPulse 3.2s cubic-bezier(.16, 1, .3, 1) 1.2s infinite; }
+.contactLauncher[data-open="false"] .contactLauncherButton::after { animation-delay: 1.65s; }
+.contactLauncherButton svg { width: 29px; height: 29px; fill: currentColor; }
+.contactLauncherButton span { display: grid; place-items: center; font-size: 34px; font-weight: 300; line-height: 1; }
+.contactLauncher[data-open="false"] .contactLauncherButton [data-contact-open] { animation: contactLauncherShake 3.2s cubic-bezier(.16, 1, .3, 1) 1.2s infinite; transform-origin: 50% 56%; }
+.contactLauncherButton [data-contact-close] { display: none; }
+.contactLauncher[data-open="true"] .contactLauncherButton [data-contact-open] { display: none; }
+.contactLauncher[data-open="true"] .contactLauncherButton [data-contact-close] { display: grid; }
+@keyframes contactLauncherPulse { 0%,8% { transform:scale(1); opacity:0; } 18% { opacity:.5; } 58%,100% { transform:scale(2.05); opacity:0; } }
+@keyframes contactLauncherShake { 0%,8%,32%,100% { transform:rotate(0); } 12%,20% { transform:rotate(-12deg); } 16%,24% { transform:rotate(12deg); } 28% { transform:rotate(-6deg); } }
+@media (hover:hover) and (pointer:fine) {
+  .contactLauncherPanel nav a:hover { color:var(--lime); background:#ffffff0b; }
+  .contactLauncherPromo a:hover { color:#fff; background:#2a1a10; }
+  .contactLauncherButton:hover { transform:translateY(-3px); box-shadow:0 18px 42px #5e2b1266; }
+}
+/* The host-local AI Sales Chatbox resets every descendant's padding. Restore its intended spacing here. */
+#ai-chat-root .ai-chat-header { padding: 16px 20px; }
+#ai-chat-root .ai-chat-footer-wrap { padding: 12px 16px; }
+#ai-chat-root .ai-input-wrap { padding: 0 16px; }
+#ai-chat-root .ai-chat-copyright { padding-bottom: 4px; }
+/* Keep the host widget clear of the theme-owned phone launcher when its markup is present. */
+#ai-chat-root #ai-chat-box { right: 104px !important; bottom: 24px !important; max-width: calc(100vw - 128px); }
+#ai-chat-root #ai-chat-btn { right: 24px !important; bottom: 104px !important; }
+#ai-chat-root:has(#ai-chat-box[style*="display: flex"]) #ai-chat-btn { opacity: 0; pointer-events: none; }
+#ai-chat-root .cyberAiOffer { display: grid; gap: 0; margin: 0 16px 14px; border: 2px dashed #b8662b; border-radius: 14px; padding: 11px 12px 10px; color: #11130e; background: #fff8ef; font-size: 13px; line-height: 1.18; text-align: center; }
+#ai-chat-root .cyberAiOfferLabel { display: flex; align-items: baseline; justify-content: center; flex-wrap: wrap; gap: 4px; }
+#ai-chat-root .cyberAiOfferLabel strong { color: #11130e; font-size: 13px; letter-spacing: 0; }
+#ai-chat-root .cyberAiOfferLabel span { color: #11130e; }
+#ai-chat-root .cyberAiOfferAmount { margin-top: 2px; color: #b45e26; font-size: 27px; line-height: 1.05; letter-spacing: .02em; }
+#ai-chat-root .cyberAiOfferService { color: #11130e; font-size: 14px; font-weight: 750; }
+#ai-chat-root .cyberAiOfferTiming { color: #11130e; font-size: 12px; }
+#ai-chat-root #ai-lead-btn-submit { color: #fff !important; background: #bd6b2d !important; }
+@media (max-width: 620px) {
+  .preLayer, .panel { width: min(92vw, 480px); }
+  .panel { padding: 18px 22px 36px; }
+  .panelTop { min-height: 92px; }
+  .itemLabel a { font-size: 18px; }
+  .drawerChildren .itemLabel a { font-size: 14px; }
+  .drawerDepth2 .itemLabel a, .drawerDepth3 .itemLabel a { font-size: 13px; }
+  .contactLauncher { right:16px; bottom:16px; }
+  .contactLauncherButton { width:56px; height:56px; }
+  #ai-chat-root #ai-chat-btn { right:16px !important; bottom:104px !important; }
+  #ai-chat-root #ai-chat-box { left:16px; right:16px; width:auto; max-width:none; }
+  #ai-chat-root #ai-chat-box { left:16px !important; right:16px !important; bottom:88px !important; width:auto !important; max-width:none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dropdown, .drawerChildren, .drawerRow > button span, .overlay, .preLayer, .panel { transition: none; }
+  [data-open="true"] .drawerItem > .drawerRow .itemLabel { animation: none; }
+  .contactLauncherButton::before, .contactLauncherButton::after, .contactLauncherButton [data-contact-open] { animation:none!important; }
+}

@@ -1,0 +1,312 @@
+.wp-block-rank-math-related-posts {
+	// CSS Custom Properties for easy theming
+	--rm-related-gap: 1rem;
+	--rm-related-border-radius: 6px;
+	--rm-related-card-padding: 16px;
+	--rm-related-hover-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	--rm-related-transition: 0.2s ease;
+
+	&.rank-math-related-posts {
+		display: block;
+
+		.rank-math-related-wrap {
+			display: grid;
+			gap: var(--rm-related-gap);
+		}
+
+		// Grid · Vertical
+		&.is-style-grid-vertical,
+		&.rank-math-related-grid-vertical {
+			.rank-math-related-wrap {
+				grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+			}
+		}
+
+		// Grid · Horizontal (cards in grid, each card horizontal)
+		&.is-style-grid-horizontal,
+		&.rank-math-related-grid-horizontal {
+			.rank-math-related-wrap {
+				grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+			}
+
+			.rank-math-related-item {
+				display: flex;
+				gap: 16px;
+				align-items: flex-start;
+			}
+
+			.rank-math-related-thumb {
+				flex: 0 0 140px;
+				overflow: hidden;
+
+				img {
+					width: 140px;
+					height: 140px;
+					object-fit: cover;
+				}
+			}
+
+			.rank-math-related-content {
+				flex: 1;
+				min-width: 0; // Allow text truncation
+				display: flex;
+				flex-direction: column;
+			}
+
+			.rank-math-related-title {
+				margin-top: 0;
+			}
+
+			// Responsive behavior
+			@media (max-width: 640px) {
+				.rank-math-related-wrap {
+					grid-template-columns: 1fr;
+				}
+
+				.rank-math-related-thumb {
+					flex: 0 0 100px;
+
+					img {
+						width: 100px;
+						height: 100px;
+					}
+				}
+			}
+		}
+
+		// List · Vertical (single column, vertical cards)
+		&.is-style-list-vertical,
+		&.rank-math-related-list-vertical {
+			.rank-math-related-wrap {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		// List · Horizontal (single column, horizontal cards)
+		&.is-style-list-horizontal,
+		&.rank-math-related-list-horizontal {
+			.rank-math-related-wrap {
+				grid-template-columns: 1fr;
+			}
+
+			.rank-math-related-item {
+				display: flex;
+				gap: 20px;
+				align-items: flex-start;
+			}
+
+			.rank-math-related-thumb {
+				flex: 0 0 180px;
+				overflow: hidden;
+
+				img {
+					width: 180px;
+					height: 180px;
+					object-fit: cover;
+				}
+			}
+
+			.rank-math-related-content {
+				flex: 1;
+				min-width: 0; // Allow text truncation
+				display: flex;
+				flex-direction: column;
+			}
+
+			.rank-math-related-title {
+				margin-top: 0;
+			}
+
+			// Responsive behavior
+			@media (max-width: 640px) {
+				.rank-math-related-item {
+					gap: 16px;
+				}
+
+				.rank-math-related-thumb {
+					flex: 0 0 120px;
+
+					img {
+						width: 120px;
+						height: 120px;
+					}
+				}
+			}
+
+			@media (max-width: 480px) {
+				.rank-math-related-item {
+					flex-direction: column;
+				}
+
+				.rank-math-related-thumb {
+					flex: 0 0 auto;
+					width: 100%;
+
+					img {
+						width: 100%;
+						height: auto;
+						max-height: 200px;
+					}
+				}
+			}
+		}
+
+		// Shared elements
+		.rank-math-related-item {
+			// Remove hardcoded border to allow block border support
+			border-radius: var(--rm-related-border-radius);
+			padding: var(--rm-related-card-padding);
+			// Inherit background from block wrapper
+			background: inherit;
+			transition: transform var(--rm-related-transition), box-shadow var(--rm-related-transition);
+
+			&:hover {
+				transform: translateY(-2px);
+				box-shadow: var(--rm-related-hover-shadow);
+			}
+		}
+
+		.rank-math-related-title {
+			// Remove hardcoded font-size to allow typography support
+			margin: 0.5rem 0;
+
+			// Inherit typography from block wrapper
+			font-size: inherit;
+			line-height: inherit;
+
+			a {
+				color: inherit;
+				text-decoration: none;
+				transition: color 0.2s ease;
+
+				&:hover {
+					color: #2563eb;
+					text-decoration: underline;
+				}
+			}
+
+			// When not a link (in editor), ensure proper styling
+			&:not(:has(a)) {
+				cursor: default;
+			}
+		}
+
+		.rank-math-related-thumb {
+			position: relative;
+			overflow: hidden;
+			border-radius: 4px;
+			display: block;
+
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+				border-radius: 4px;
+				transition: transform 0.3s ease;
+			}
+
+			// Only apply hover effect to links
+			&:hover img {
+				transform: scale(1.05);
+			}
+
+			// No pointer cursor for non-linked spans (in editor)
+			&:not(a) {
+				cursor: default;
+
+				&:hover img {
+					transform: none;
+				}
+			}
+		}
+
+		.rank-math-related-date {
+			margin-top: 0.25rem;
+			font-size: 0.85em;
+			opacity: 0.7;
+		}
+
+		.rank-math-related-terms {
+			margin-top: 0.5rem;
+		}
+
+		.rank-math-related-chip {
+			display: inline-block;
+			background: #f3f4f6;
+			border: 1px solid #e5e7eb;
+			border-radius: 999px;
+			padding: 0.15rem 0.5rem;
+			margin-right: 0.35rem;
+			font-size: 0.8em;
+		}
+
+		.rank-math-related-excerpt {
+			// Remove hardcoded color to allow block color support
+			margin-top: 0.5rem;
+			// Inherit text color from block wrapper
+			color: inherit;
+			opacity: 0.8;
+			font-size: 0.9em;
+			line-height: 1.6;
+
+			// Optional: Limit excerpt to 3 lines with ellipsis
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			line-clamp: 3;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+
+		.rank-math-related-more {
+			margin-top: 1rem;
+		}
+
+		.rank-math-related-button {
+			display: inline-block;
+			background: #111827;
+			color: #fff;
+			border-radius: 6px;
+			padding: 0.625rem 1.25rem;
+			text-decoration: none;
+			font-weight: 500;
+			transition: background 0.2s ease, transform 0.2s ease;
+
+			&:hover {
+				background: #1f2937;
+				transform: translateY(-1px);
+			}
+		}
+	}
+
+	// WordPress border support classes
+	&.has-border-color {
+		.rank-math-related-item {
+			border-color: inherit;
+		}
+	}
+
+	&.has-border-width {
+		.rank-math-related-item {
+			border-width: inherit;
+		}
+	}
+
+	&.has-border-style {
+		.rank-math-related-item {
+			border-style: inherit;
+		}
+	}
+
+	&.has-border-radius {
+		.rank-math-related-item {
+			border-radius: inherit;
+		}
+	}
+
+	// Default border when no border support is used
+	&:not(.has-border-color):not(.has-border-width):not(.has-border-style) {
+		.rank-math-related-item {
+			border: 1px solid #e5e7eb;
+		}
+	}
+}

@@ -1,0 +1,158 @@
+{
+    "packages": [
+        {
+            "name": "groupone/marketplace",
+            "version": "2.0.8",
+            "version_normalized": "2.0.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/One-com/wp-marketplace.git",
+                "reference": "3d2c68eb3714ed12b4ad6eb94543ec862af5df71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/One-com/wp-marketplace/zipball/3d2c68eb3714ed12b4ad6eb94543ec862af5df71",
+                "reference": "3d2c68eb3714ed12b4ad6eb94543ec862af5df71",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "time": "2026-08-25T10:11:34+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Groupone\\Marketplace\\": "backend/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "group.one",
+                    "homepage": "https://www.group.one"
+                }
+            ],
+            "description": "Embeddable React-based marketplace UI for WordPress plugins. Consumed via Composer + Mozart; ships a webpack-built frontend and an MVC PHP backend.",
+            "homepage": "https://github.com/One-com/wp-marketplace",
+            "keywords": [
+                "admin-ui",
+                "embeddable",
+                "marketplace",
+                "mozart",
+                "plugins",
+                "react",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/One-com/wp-marketplace/issues",
+                "source": "https://github.com/One-com/wp-marketplace"
+            },
+            "install-path": "../groupone/marketplace"
+        },
+        {
+            "name": "wp-media/apply-filters-typed",
+            "version": "v1.2",
+            "version_normalized": "1.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-media/apply-filters-typed.git",
+                "reference": "d8f5bca83e85196d1f01d92283b63ef6f886ac4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-media/apply-filters-typed/zipball/d8f5bca83e85196d1f01d92283b63ef6f886ac4d",
+                "reference": "d8f5bca83e85196d1f01d92283b63ef6f886ac4d",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpcompatibility/phpcompatibility-wp": "^2.0",
+                "phpstan/extension-installer": "^1.4",
+                "szepeviktor/phpstan-wordpress": "^1.3",
+                "wp-coding-standards/wpcs": "^3",
+                "wp-media/phpunit": "^3"
+            },
+            "time": "2024-09-16T12:21:47+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WP Media",
+                    "email": "contact@wp-media.me"
+                }
+            ],
+            "description": "Library for usage of WordPress filters in a safe-type way",
+            "support": {
+                "issues": "https://github.com/wp-media/apply-filters-typed/issues",
+                "source": "https://github.com/wp-media/apply-filters-typed/tree/v1.2"
+            },
+            "install-path": "../wp-media/apply-filters-typed"
+        },
+        {
+            "name": "wp-media/plugin-family",
+            "version": "v1.0.9",
+            "version_normalized": "1.0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-media/plugin-family.git",
+                "reference": "ed341931a4baa22cdf95bcd9109c71112fb5a18e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-media/plugin-family/zipball/ed341931a4baa22cdf95bcd9109c71112fb5a18e",
+                "reference": "ed341931a4baa22cdf95bcd9109c71112fb5a18e",
+                "shasum": ""
+            },
+            "require": {
+                "wp-media/apply-filters-typed": "^1.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "phpcompatibility/phpcompatibility-wp": "^2.0",
+                "phpstan/extension-installer": "^1.4",
+                "szepeviktor/phpstan-wordpress": "^1.3",
+                "wp-coding-standards/wpcs": "^3",
+                "wp-media/phpunit": "^3"
+            },
+            "time": "2026-05-12T10:38:00+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "WPMedia\\PluginFamily\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WP Media",
+                    "email": "contact@wp-media.me",
+                    "homepage": "https://wp-media.me"
+                }
+            ],
+            "description": "Organizes and displays WP Media plugin family across other members.",
+            "support": {
+                "issues": "https://github.com/wp-media/plugin-family/issues",
+                "source": "https://github.com/wp-media/plugin-family/tree/v1.0.9"
+            },
+            "install-path": "../wp-media/plugin-family"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

@@ -1,0 +1,2442 @@
+# English (US) translation for Sitevorx
+# Copyright (C) 2024-2026 Sitevorx Community
+# All strings extracted from source code and fully translated
+msgid ""
+msgstr ""
+"Project-Id-Version: Sitevorx 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/sitevorx\n"
+"POT-Creation-Date: 2026-03-31 10:00+0700\n"
+"PO-Revision-Date: 2026-03-31 10:00+0700\n"
+"Last-Translator: Sitevorx Community\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Antigravity AI\n"
+"X-Domain: sitevorx\n"
+
+# =============================================================================
+# sitevorx.php — Sidebar, Dashboard, Widgets
+# =============================================================================
+
+msgid "Đóng"
+msgstr "Close"
+
+msgid "Đang lưu..."
+msgstr "Saving..."
+
+msgid "Đã sao chép cấu hình vào clipboard!"
+msgstr "Configuration copied to clipboard!"
+
+msgid "Đã tải file cấu hình xuống!"
+msgstr "Configuration file downloaded!"
+
+msgid "Đang chuyển ngôn ngữ..."
+msgstr "Switching language..."
+
+msgid "Đã lưu ngôn ngữ. Đang tải lại..."
+msgstr "Language saved. Reloading..."
+
+msgid "Không thể chuyển ngôn ngữ. Vui lòng thử lại."
+msgstr "Could not switch language. Please try again."
+
+msgid "Xác nhận hành động"
+msgstr "Confirm Action"
+
+msgid "Hủy bỏ"
+msgstr "Cancel"
+
+msgid "Xác nhận"
+msgstr "Confirm"
+
+msgid "Bạn có chắc chắn?"
+msgstr "Are you sure?"
+
+msgid "Kho Giao Diện"
+msgstr "Theme Store"
+
+msgid "Tối ưu & Bảo mật"
+msgstr "Optimize & Security"
+
+msgid "Cấu hình SMTP"
+msgstr "SMTP Settings"
+
+msgid "Tiện ích Website"
+msgstr "Website Utilities"
+
+msgid "Quản lý Dung lượng"
+msgstr "Storage Management"
+
+msgid "Extensions"
+msgstr "Extensions"
+
+msgid "Nhập/Xuất Cấu hình"
+msgstr "Import / Export Settings"
+
+msgid "Thu gọn"
+msgstr "Collapse"
+
+msgid "Trang chủ"
+msgstr "Home"
+
+msgid "Thông số Server"
+msgstr "Server Info"
+
+msgid "Bảo trì & Cập nhật"
+msgstr "Maintenance & Updates"
+
+msgid "Trung Tâm Hỗ Trợ"
+msgstr "Support Center"
+
+msgid "Luôn đồng hành cùng Website của bạn"
+msgstr "Always supporting your Website"
+
+msgid "Hotline CSKH"
+msgstr "Customer Hotline"
+
+msgid "Hệ Thống Ticket"
+msgstr "Ticket System"
+
+msgid "Gửi Yêu Cầu"
+msgstr "Submit Request"
+
+msgid "Tài Liệu Helpdesk"
+msgstr "Helpdesk Docs"
+
+msgid "Xem Thư Viện"
+msgstr "View Library"
+
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "Hệ Sinh Thái Sitevorx"
+msgstr "Sitevorx Ecosystem"
+
+msgid "Nền tảng quản trị, tối ưu và bảo mật Website toàn diện."
+msgstr "A comprehensive platform for managing, optimizing and securing websites."
+
+msgid "Mạnh"
+msgstr "Strong"
+
+msgid "Trung bình"
+msgstr "Medium"
+
+msgid "Yếu"
+msgstr "Weak"
+
+msgid "CHƯA CẤU HÌNH"
+msgstr "NOT CONFIGURED"
+
+msgid "Sẵn sàng"
+msgstr "Ready"
+
+msgid "Tùy chọn"
+msgstr "Optional"
+
+msgid "Đang chạy"
+msgstr "Running"
+
+msgid "Đang tắt"
+msgstr "Disabled"
+
+msgid "Bảo mật chưa đạt mức khuyến nghị"
+msgstr "Security has not reached the recommended level"
+
+msgid "Dọn dẹp tự động đang tắt"
+msgstr "Automatic cleanup is disabled"
+
+msgid "Ổn định cao"
+msgstr "Highly stable"
+
+msgid "Cần tối ưu nhẹ"
+msgstr "Needs minor optimization"
+
+msgid "Cần chú ý"
+msgstr "Needs attention"
+
+msgid "Theo dõi"
+msgstr "Monitor"
+
+msgid "Ước tính"
+msgstr "Estimated"
+
+msgid "Không có hạng mục cần xử lý ngay."
+msgstr "No items require immediate action."
+
+msgid "Tổng Quan Hệ Thống"
+msgstr "System Overview"
+
+msgid "Điểm sức khỏe website"
+msgstr "Website health score"
+
+msgid "Tài nguyên website"
+msgstr "Website resources"
+
+msgid "Tổng hợp từ %1$swp-content%2$s và %1$sdatabase%2$s để phản ánh sát hơn quy mô thực tế của website."
+msgstr "Combined from %1$swp-content%2$s and %1$sdatabase%2$s to more accurately reflect the actual size of the website."
+
+msgid "Xem dung lượng chi tiết"
+msgstr "View detailed storage"
+
+msgid "Lớp bảo mật"
+msgstr "Security layers"
+
+msgid "lớp đang bật"
+msgstr "layers enabled"
+
+msgid "Website đã bật gần như đầy đủ các lớp bảo mật quan trọng."
+msgstr "Website has enabled nearly all important security layers."
+
+msgid "Còn %d lớp nên kích hoạt thêm."
+msgstr "%d more layer(s) should be enabled."
+
+msgid "Đang bật %1$s mục, còn %2$s mục nên bổ sung."
+msgstr "%1$s item(s) enabled, %2$s more item(s) recommended."
+
+msgid "Mở cấu hình bảo mật"
+msgstr "Open security settings"
+
+msgid "Hệ thống email"
+msgstr "Email system"
+
+msgid "Kênh gửi mail đã sẵn sàng cho các email thông báo quan trọng."
+msgstr "Mail channel is ready for important notification emails."
+
+msgid "Nên cấu hình SMTP để tránh lỗi gửi mail hoặc vào spam."
+msgstr "SMTP should be configured to avoid email delivery failures or spam."
+
+msgid "Trạng thái hiện tại: %sSẵn sàng gửi%s."
+msgstr "Current status: %sReady to send%s."
+
+msgid "Khuyến nghị: %sThiết lập ngay%s để tránh lỗi gửi mail."
+msgstr "Recommended: %sSet up now%s to avoid email delivery failures."
+
+msgid "Mở cấu hình SMTP"
+msgstr "Open SMTP settings"
+
+msgid "Tối ưu tự động"
+msgstr "Auto optimization"
+
+msgid "Đã bật"
+msgstr "Enabled"
+
+msgid "Lần chạy tiếp theo: %s."
+msgstr "Next run: %s."
+
+msgid "Chưa có lịch chạy tự động."
+msgstr "No automatic schedule set."
+
+msgid "Dọn dẹp tự động hiện đang %s."
+msgstr "Automatic cleanup is currently %s."
+
+msgid "hoạt động"
+msgstr "active"
+
+msgid "tắt"
+msgstr "off"
+
+msgid "Mở tối ưu hệ thống"
+msgstr "Open system optimizer"
+
+msgid "Đang cập nhật..."
+msgstr "Updating..."
+
+msgid "Đã cập nhật"
+msgstr "Updated"
+
+msgid "Cập nhật thất bại. Vui lòng thử lại."
+msgstr "Update failed. Please try again."
+
+msgid "Đã cập nhật lên phiên bản %s."
+msgstr "Updated to version %s."
+
+msgid "Phiên bản hiện tại: %s"
+msgstr "Current version: %s"
+
+msgid "Tác Vụ Nhanh"
+msgstr "Quick Actions"
+
+msgid "Quét và xóa rác, file log, backup"
+msgstr "Scan and delete junk, log files, backups"
+
+msgid "Kiểm tra và gửi thử email"
+msgstr "Check and test email delivery"
+
+msgid "Xem Error Log"
+msgstr "View Error Log"
+
+msgid "Nhật ký lỗi code gần nhất"
+msgstr "Most recent code error logs"
+
+msgid "Sao lưu toàn bộ thiết lập Sitevorx"
+msgstr "Back up all Sitevorx settings"
+
+msgid "Đang làm mới dữ liệu..."
+msgstr "Refreshing data..."
+
+msgid "⏳ Đang quét toàn bộ hệ thống (File + DB)..."
+msgstr "⏳ Scanning entire system (Files + DB)..."
+
+msgid "Đang quét toàn bộ hệ thống..."
+msgstr "Scanning entire system..."
+
+msgid "Thời gian từ 30–90 giây, vui lòng không tắt trang."
+msgstr "This may take 30–90 seconds, please do not close the page."
+
+msgid "Vui lòng nhập từ khóa bảo mật trước khi bật \"Đổi Đường Dẫn Đăng Nhập\"."
+msgstr "Please enter a secret key before enabling \"Custom Login URL\"."
+
+msgid "Vui lòng nhập đầy đủ Site Key và Secret Key trước khi bật \"Khóa Tự Động Đăng Nhập\"."
+msgstr "Please enter both Site Key and Secret Key before enabling \"Auto Login Lock\"."
+
+msgid "Dung Lượng Chi Tiết"
+msgstr "Detailed Storage"
+
+msgid "File Cỡ Lớn (>50 MB)"
+msgstr "Large Files (>50 MB)"
+
+msgid "Tổng Quan Dung Lượng"
+msgstr "Storage Overview"
+
+msgid "Làm mới"
+msgstr "Refresh"
+
+msgid "Làm mới dữ liệu"
+msgstr "Refresh Data"
+
+msgid "TỔNG CỘNG"
+msgstr "TOTAL"
+
+msgid "Chi tiết /wp-content"
+msgstr "WP Content Breakdown"
+
+msgid "Media / Uploads"
+msgstr "Media / Uploads"
+
+msgid "Khác (cache, logs...)"
+msgstr "Other (cache, logs...)"
+
+msgid "Dữ liệu được cache 1 giờ. Nhấn \"Làm mới\" để quét lại ngay lập tức."
+msgstr "Data is cached for 1 hour. Click \"Refresh\" to rescan immediately."
+
+msgid "Không lấy được thông tin bảng DB."
+msgstr "Could not retrieve DB table information."
+
+msgid "Xem chi tiết dung lượng từng thành phần hoặc quét tìm và xóa các file cỡ lớn (trên 50 MB) đang chiếm dụng không gian lưu trữ."
+msgstr "View detailed storage by component or scan for large files (over 50 MB) taking up space."
+
+msgid "Phân Hệ Chức Năng"
+msgstr "Feature Modules"
+
+msgid "Tối Ưu Tốc Độ & Bảo Mật"
+msgstr "Speed Optimization & Security"
+
+msgid "Dọn dẹp Database, tối ưu Lazy Load, chống Brute Force, quét mã độc và chặn bot tự động."
+msgstr "Database cleanup, Lazy Load optimization, Brute Force protection, malware scanning and bot blocking."
+
+msgid "Cấu hình Gửi Mail SMTP"
+msgstr "SMTP Mail Configuration"
+
+msgid "Đảm bảo email thông báo từ website luôn vào Inbox với tỉ lệ 99%."
+msgstr "Ensure notification emails always reach Inbox with 99% delivery rate."
+
+msgid "Chèn mã Script, nút liên hệ nổi, bảo vệ nội dung, chế độ bảo trì và tuỳ biến trang đăng nhập."
+msgstr "Script injection, floating contact buttons, content protection, maintenance mode and login page customization."
+
+msgid "Quét và xóa rác, file log, file backup rác để giải phóng bộ nhớ Hosting."
+msgstr "Scan and delete junk, log files, backup files to free up hosting storage."
+
+msgid "Sao lưu và khôi phục toàn bộ cấu hình Sitevorx giữa các website."
+msgstr "Back up and restore all Sitevorx settings across websites."
+
+msgid "Theo dõi plugin, theme cần update, kiểm tra PHP, SSL và cảnh báo bảo mật."
+msgstr "Monitor plugins, themes needing updates, check PHP, SSL and security warnings."
+
+msgid "Thông Số Hosting Cơ Bản"
+msgstr "Basic Hosting Information"
+
+msgid "Xem chi tiết"
+msgstr "View details"
+
+msgid "PHIÊN BẢN PHP"
+msgstr "PHP VERSION"
+
+# =============================================================================
+# system-optimizer.php
+# =============================================================================
+
+msgid "BẢO MẬT"
+msgstr "SECURITY"
+
+msgid "Vui lòng xác minh reCAPTCHA."
+msgstr "Please verify reCAPTCHA."
+
+msgid "Xác minh reCAPTCHA không thành công."
+msgstr "reCAPTCHA verification failed."
+
+msgid "IP bị tạm khóa 1 giờ do nhập sai quá nhiều."
+msgstr "IP temporarily locked for 1 hour due to too many failed attempts."
+
+msgid "Đã cập nhật các thiết lập tối ưu hệ thống."
+msgstr "System optimization settings updated."
+
+msgid "Cấu hình bảo mật đã được áp dụng thành công."
+msgstr "Security configuration has been applied successfully."
+
+msgid "Hoàn tất dọn dẹp dữ liệu hệ thống"
+msgstr "System data cleanup completed"
+
+msgid "Nâng cấp hiệu suất và bảo vệ Website toàn diện khỏi các nguy cơ tấn công từ bên ngoài."
+msgstr "Enhance performance and comprehensively protect your Website from external threats."
+
+msgid "Tăng Tốc Website"
+msgstr "Speed Boost"
+
+msgid "Bảo Mật & Tường Lửa"
+msgstr "Security & Firewall"
+
+msgid "Quét Mã Độc"
+msgstr "Malware Scanner"
+
+msgid "Dọn Rác Hệ Thống"
+msgstr "System Cleanup"
+
+msgid "Xóa Bản Nháp (Revisions)"
+msgstr "Delete Revisions"
+
+msgid "Các bài viết cũ thường lưu rất nhiều bản nháp gây nặng máy chủ. Nút này sẽ dọn dẹp chúng."
+msgstr "Old posts often store many revisions that burden the server. This button will clean them up."
+
+msgid "Dọn Bình Luận Rác"
+msgstr "Clean Spam Comments"
+
+msgid "Xóa vĩnh viễn các bình luận đang nằm trong thùng rác hoặc bị đánh dấu là spam."
+msgstr "Permanently delete comments in trash or marked as spam."
+
+msgid "Dọn File Tạm (Transients)"
+msgstr "Clean Transients"
+
+msgid "Bộ nhớ tạm thời của website đôi khi bị đầy gây chậm, xóa đi sẽ dọn sạch để máy chủ nhẹ hơn."
+msgstr "Website temporary cache can sometimes fill up causing slowdowns, clearing it will lighten the server."
+
+msgid "Chạy dọn dẹp"
+msgstr "Run cleanup"
+
+msgid "Tối Ưu Nâng Cao"
+msgstr "Advanced Optimization"
+
+msgid "Tải Ảnh Chậm (Lazy Load)"
+msgstr "Lazy Load Images"
+
+msgid "Chỉ tải hình ảnh khi người dùng cuộn tới. Giúp trang chủ tải cực nhanh và tiết kiệm băng thông."
+msgstr "Only load images when users scroll to them. Makes homepage load very fast and saves bandwidth."
+
+msgid "Giảm Tải Máy Chủ (Heartbeat)"
+msgstr "Reduce Server Load (Heartbeat)"
+
+msgid "Tắt các tiến trình ngầm không quan trọng (Heartbeat API) để Hosting/VPS của bạn không bị quá tải."
+msgstr "Disable non-essential background processes (Heartbeat API) to prevent your Hosting/VPS from overloading."
+
+msgid "Chặn Cập Nhật Tự Động"
+msgstr "Block Auto Updates"
+
+msgid "Tránh tình trạng vỡ giao diện website một cách bất ngờ do WordPress tự động cập nhật phiên bản mới."
+msgstr "Prevent unexpected layout breakage caused by WordPress auto-updating to new versions."
+
+msgid "Giới Hạn Bản Nháp (Tối đa 5)"
+msgstr "Limit Revisions (Max 5)"
+
+msgid "Ngăn chặn việc 1 bài viết lưu hàng trăm bản nháp làm phình to dung lượng Database."
+msgstr "Prevent a single post from storing hundreds of revisions that bloat the database."
+
+msgid "Cho phép Upload file SVG"
+msgstr "Allow SVG Upload"
+
+msgid "Mở khóa tính năng tải lên Icon và hình ảnh vector định dạng .svg siêu nhẹ và sắc nét."
+msgstr "Unlock the ability to upload ultra-light and crisp .svg vector icons and images."
+
+msgid "Lưu tùy chỉnh"
+msgstr "Save settings"
+
+msgid "Chống Spam Đăng Nhập (reCAPTCHA v2)"
+msgstr "Anti-Spam Login (reCAPTCHA v2)"
+
+msgid "Ngăn chặn các phần mềm tự động (Bot) cố gắng đoán mật khẩu đăng nhập. %sLấy Key bảo mật tại đây%s."
+msgstr "Block automated software (Bots) from guessing login passwords. %sGet security keys here%s."
+
+msgid "Khóa Tự Động Đăng Nhập"
+msgstr "Auto Lock Login"
+
+msgid "Bảo Mật Trang Đăng Nhập"
+msgstr "Login Page Security"
+
+msgid "Khóa IP Truy Cập Trái Phép"
+msgstr "Block Unauthorized IP Access"
+
+msgid "Tự động khóa IP trong 1 giờ nếu ai đó nhập sai mật khẩu quá 5 lần liên tục."
+msgstr "Automatically lock IP for 1 hour if someone enters the wrong password more than 5 consecutive times."
+
+msgid "Đổi Đường Dẫn Đăng Nhập (URL Bí Mật)"
+msgstr "Change Login URL (Secret URL)"
+
+msgid "Giấu đường link đăng nhập mặc định. Chỉ những ai biết từ khóa bí mật mới vào được."
+msgstr "Hide the default login URL. Only those who know the secret keyword can access it."
+
+msgid "Từ khóa bảo mật"
+msgstr "Security keyword"
+
+msgid "Đường dẫn truy cập:"
+msgstr "Access URL:"
+
+msgid "Củng Cố Lõi Hệ Thống"
+msgstr "System Core Hardening"
+
+msgid "Chống Quét Mật Khẩu (Khóa XML-RPC)"
+msgstr "Anti-Password Scanning (Block XML-RPC)"
+
+msgid "Đóng cổng kết nối cũ của hệ thống để chặn phần mềm dùng tấn công dò mật khẩu (Brute-force)."
+msgstr "Close the legacy system port to block software used for brute-force password attacks."
+
+msgid "Khóa Chỉnh Sửa Mã Nguồn"
+msgstr "Lock Source Code Editor"
+
+msgid "Ngăn chặn việc lỡ tay sửa nhầm mã nguồn Theme/Plugin từ giao diện làm sập website."
+msgstr "Prevent accidental source code edits of Theme/Plugin from the admin panel that could crash the website."
+
+msgid "Thực thi chuỗi mã hóa / giải nén qua eval"
+msgstr "Execute encoded/compressed string via eval"
+
+msgid "Gọi lệnh hệ thống từ dữ liệu đầu vào hoặc chuỗi đã mã hóa"
+msgstr "System command execution from input data or encoded string"
+
+msgid "Sử dụng preg_replace với modifier /e"
+msgstr "Using preg_replace with /e modifier"
+
+msgid "Thực thi động từ dữ liệu không tin cậy"
+msgstr "Dynamic execution from untrusted data"
+
+msgid "Chữ ký web shell phổ biến"
+msgstr "Common web shell signature"
+
+msgid "Chữ ký web shell WSO"
+msgstr "WSO web shell signature"
+
+msgid "Giải mã trực tiếp dữ liệu đầu vào"
+msgstr "Direct decoding of input data"
+
+msgid "Chuỗi giải mã / giải nén nhiều lớp"
+msgstr "Multi-layer decode/decompress chain"
+
+msgid "Có sử dụng hàm thực thi lệnh hệ thống"
+msgstr "System command execution function detected"
+
+msgid "Chuỗi mã hóa dài được giải mã trực tiếp"
+msgstr "Long encoded string decoded directly"
+
+msgid "Trình Quét Mã Độc Toàn Diện"
+msgstr "Comprehensive Malware Scanner"
+
+msgid "Quét đệ quy tất cả file .php (Core, Themes, Plugins) trên toàn bộ Server và phân tích Database để tìm kiếm các chữ ký Shell, Backdoor. Thời gian quét có thể từ 30-90 giây tùy dung lượng."
+msgstr "Recursively scan all .php files (Core, Themes, Plugins) across the entire Server and analyze the Database to find Shell and Backdoor signatures. Scan time may take 30-90 seconds depending on size."
+
+msgid "Đang quét toàn bộ hệ thống (File + DB)..."
+msgstr "Scanning entire system (Files + DB)..."
+
+msgid "Bắt đầu quét chuyên sâu"
+msgstr "Start deep scan"
+
+msgid "Không phát hiện mã độc!"
+msgstr "No malware detected!"
+
+msgid "Đã quét %s đối tượng (File PHP + Database Records) trên toàn bộ Server WP. Hệ thống hiện tại an toàn tuyệt đối."
+msgstr "Scanned %s objects (PHP files + Database records) across the entire WP Server. System is currently absolutely safe."
+
+msgid "Phát hiện %d file nghi ngờ!"
+msgstr "Detected %d suspicious file(s)!"
+
+msgid "Đã quét %s file. Vui lòng kiểm tra các file bên dưới."
+msgstr "Scanned %s files. Please review the files below."
+
+msgid "Đường dẫn File"
+msgstr "File Path"
+
+msgid "Loại đe dọa"
+msgstr "Threat Type"
+
+msgid "Kích thước"
+msgstr "Size"
+
+# =============================================================================
+# smtp.php
+# =============================================================================
+
+msgid "Thành công"
+msgstr "Success"
+
+msgid "Thất bại"
+msgstr "Failed"
+
+msgid "Đã lưu cấu hình Gmail!"
+msgstr "Gmail configuration saved!"
+
+msgid "Đã lưu cấu hình SMTP tùy chỉnh!"
+msgstr "Custom SMTP configuration saved!"
+
+msgid "Đã xóa sạch lịch sử gửi mail."
+msgstr "Email sending history cleared."
+
+msgid "Hệ thống SMTP hoạt động hoàn hảo. Thời gian:"
+msgstr "SMTP system is working perfectly. Duration:"
+
+msgid "Gửi thử thành công tới: %s"
+msgstr "Test email sent successfully to: %s"
+
+msgid "Không thể kết nối tới máy chủ SMTP. Kiểm tra lại Host, Port, Tài khoản và Mật khẩu."
+msgstr "Could not connect to SMTP server. Please check Host, Port, Username and Password."
+
+msgid "Gửi mail thất bại"
+msgstr "Email sending failed"
+
+msgid "Cấu hình Gửi Email Tự Động (SMTP)"
+msgstr "Automatic Email Sending Configuration (SMTP)"
+
+msgid "Kết nối website với luồng gửi thư chuyên nghiệp, giúp email hóa đơn, quên mật khẩu không bị rơi vào hòm thư Rác (Spam)."
+msgstr "Connect your website to a professional mail server, ensuring invoice emails and password resets don't end up in Spam."
+
+msgid "Trạng thái hiện tại:"
+msgstr "Current status:"
+
+msgid "ĐANG GỬi QUA GMAIL"
+msgstr "SENDING VIA GMAIL"
+
+msgid "ĐANG GỬi QUA SMTP RIÊNG"
+msgstr "SENDING VIA CUSTOM SMTP"
+
+msgid "Cấu hình Gmail"
+msgstr "Gmail Settings"
+
+msgid "SMTP Tùy chỉnh"
+msgstr "Custom SMTP"
+
+msgid "Gửi Test Email"
+msgstr "Send Test Email"
+
+msgid "Lịch sử Log"
+msgstr "Log History"
+
+msgid "Tài khoản Google Workspace / Gmail"
+msgstr "Google Workspace / Gmail Account"
+
+msgid "Tài khoản Gmail"
+msgstr "Gmail Account"
+
+msgid "Địa chỉ Gmail dùng để gửi thư hệ thống."
+msgstr "Gmail address used to send system emails."
+
+msgid "Mật khẩu Ứng dụng"
+msgstr "App Password"
+
+msgid "Dùng mật khẩu ứng dụng 16 ký tự do Google cấp."
+msgstr "Use the 16-character app password provided by Google."
+
+msgid "Máy chủ SMTP"
+msgstr "SMTP Host"
+
+msgid "Máy chủ & Cổng"
+msgstr "Host & Port"
+
+msgid "Thông tin máy chủ SMTP (Host) và cổng kết nối (Port)."
+msgstr "SMTP server (Host) and connection port (Port) information."
+
+msgid "Tài khoản Email"
+msgstr "Email Account"
+
+msgid "Địa chỉ email dùng để đăng nhập vào máy chủ SMTP."
+msgstr "Email address used to login to the SMTP server."
+
+msgid "Mật khẩu Email"
+msgstr "Email Password"
+
+msgid "Mật khẩu của tài khoản email tương ứng ở trên."
+msgstr "Password of the corresponding email account above."
+
+msgid "Tùy chọn Nâng cao"
+msgstr "Advanced Options"
+
+msgid "Tên người gửi (From Name)"
+msgstr "From Name"
+
+msgid "Tên sẽ hiển thị trong hòm thư của khách hàng (Ví dụ: My Shop, My Brand)."
+msgstr "Name displayed in the customer's inbox (e.g.: My Shop, My Brand)."
+
+msgid "Găm chặt Địa chỉ Email"
+msgstr "Force From Email"
+
+msgid "Ghi đè mọi thiết lập mặc định của nền tảng, đảm bảo 100% email luôn được gửi đi từ địa chỉ này."
+msgstr "Override all platform defaults, ensuring 100% of emails are always sent from this address."
+
+msgid "Găm chặt Tên Người Gửi"
+msgstr "Force From Name"
+
+msgid "Bắt buộc hệ thống luôn dùng tên hiển thị đã thiết lập ở mục trên cùng, không được tự ý đổi tên."
+msgstr "Force the system to always use the display name set above, not allowed to change automatically."
+
+msgid "Lưu Lịch sử (Logs)"
+msgstr "Save History (Logs)"
+
+msgid "Ghi lại toàn bộ lịch sử gửi thư thành công/thất bại để dễ dàng kiểm tra hệ thống."
+msgstr "Record all successful/failed email history for easy system monitoring."
+
+msgid "Chạy Thử Nghiệm Gửi Mail"
+msgstr "Run Email Test"
+
+msgid "Nhập Email của bạn"
+msgstr "Enter your Email"
+
+msgid "Gõ email cá nhân của bạn vào đây để hệ thống gửi thử một bức thư xem cấu hình đã chuẩn chưa."
+msgstr "Enter your personal email here so the system can send a test email to verify the configuration."
+
+msgid "Gửi Thử"
+msgstr "Send Test"
+
+msgid "Lịch sử gửi Mail"
+msgstr "Email Sending History"
+
+msgid "Bạn có chắc chắn muốn xóa sạch log?"
+msgstr "Are you sure you want to clear all logs?"
+
+msgid "Xóa Log"
+msgstr "Clear Logs"
+
+msgid "Chưa có dữ liệu log nào."
+msgstr "No log data available."
+
+msgid "Thời gian"
+msgstr "Time"
+
+msgid "Gửi tới"
+msgstr "Sent to"
+
+msgid "Tiêu đề"
+msgstr "Subject"
+
+msgid "Trạng thái"
+msgstr "Status"
+
+msgid "Nguyên nhân lỗi"
+msgstr "Error Reason"
+
+msgid "Không rõ"
+msgstr "Unknown"
+
+msgid "Lưu cấu hình"
+msgstr "Save Settings"
+
+msgid "Lưu Cấu Hình"
+msgstr "Save Configuration"
+
+# =============================================================================
+# sv-utilities.php
+# =============================================================================
+
+msgid "Website đang được bảo trì"
+msgstr "Website Under Maintenance"
+
+msgid "Chúng tôi đang nâng cấp hệ thống. Vui lòng quay lại sau ít phút."
+msgstr "We are upgrading the system. Please come back in a few minutes."
+
+msgid "Bảo trì hệ thống"
+msgstr "System Maintenance"
+
+msgid "Đã làm sạch nội dung file error_log!"
+msgstr "Error log file content has been cleared!"
+
+msgid "Đã lưu cấu hình tiện ích thành công!"
+msgstr "Utility settings saved successfully!"
+
+msgid "Đã lưu cấu hình nút liên hệ thành công!"
+msgstr "Contact button settings saved successfully!"
+
+msgid "Không tìm thấy file error_log hoặc hệ thống chưa ghi nhận lỗi nào."
+msgstr "No error_log file found or no errors have been recorded."
+
+msgid "File log hiện đang trống. Tuyệt vời!"
+msgstr "Log file is currently empty. Excellent!"
+
+msgid "Công Cụ & Tiện Ích Website"
+msgstr "Website Tools & Utilities"
+
+msgid "Các công cụ mở rộng: chèn mã tracking, bảo vệ nội dung, nút liên hệ nổi và gỡ lỗi hệ thống."
+msgstr "Extended tools: tracking code injection, content protection, floating contact buttons, and system debugging."
+
+msgid "Tiện Ích & Script"
+msgstr "Utilities & Scripts"
+
+msgid "Nút Liên Hệ Nổi"
+msgstr "Floating Contact Buttons"
+
+msgid "Mã Kịch Bản (Script) & Thống Kê"
+msgstr "Scripts & Analytics"
+
+msgid "Chèn mã vào Header (Phần Đầu Trang)"
+msgstr "Insert Code into Header"
+
+msgid "Dán mã theo dõi Google Analytics, Facebook Pixel, hoặc mã xác minh chủ sở hữu (Meta Tags) vào đây."
+msgstr "Paste Google Analytics, Facebook Pixel tracking code, or site verification meta tags here."
+
+msgid "Chèn mã vào Footer (Phần Chân Trang)"
+msgstr "Insert Code into Footer"
+
+msgid "Dán mã Livechat (Zalo, Tawk.to) vào khu vực này để biểu tượng chat tải sau cùng, không làm chậm tốc độ web."
+msgstr "Paste Livechat code (Zalo, Tawk.to) here so the chat icon loads last, without slowing down the website."
+
+msgid "Tính Năng Đặc Biệt"
+msgstr "Special Features"
+
+msgid "Chống Copy & Ăn Cắp Bài Viết"
+msgstr "Anti-Copy & Content Protection"
+
+msgid "Tự động chặn bôi đen văn bản, vô hiệu hóa chuột phải và đóng băng hình ảnh để tránh bị người khác copy."
+msgstr "Automatically block text selection, disable right-click, and freeze images to prevent content theft."
+
+msgid "Nhập thông báo khi click chuột phải..."
+msgstr "Enter message for right-click..."
+
+msgid "Bật Cửa Cuốn (Chế độ Bảo trì)"
+msgstr "Maintenance Mode"
+
+msgid "Tạm thời chặn khách truy cập (hiện thông báo đang nâng cấp) trong lúc bạn đang cấu hình lại web. Quản trị viên vẫn xem được bình thường."
+msgstr "Temporarily block visitors (show upgrade notice) while you reconfigure the site. Administrators can still access normally."
+
+msgid "Đổi Logo Trang Đăng Nhập"
+msgstr "Custom Login Logo"
+
+msgid "Thay thế logo WordPress (chữ W) mặc định nhàm chán bằng hình ảnh logo thương hiệu riêng của bạn."
+msgstr "Replace the default WordPress (W) logo with your own brand logo."
+
+msgid "Dán link ảnh logo (PNG/SVG). Lấy từ %sMedia → Thư viện%s → click ảnh → copy URL."
+msgstr "Paste logo image URL (PNG/SVG). Get it from %sMedia → Library%s → click image → copy URL."
+
+msgid "Logo đã được cài đặt"
+msgstr "Logo has been set up"
+
+msgid "Nhật Ký Lỗi Code (Error Log)"
+msgstr "Code Error Log"
+
+msgid "Màn hình xem trực tiếp %s50 lỗi lập trình gần nhất%s để gửi cho coder hoặc bộ phận kỹ thuật."
+msgstr "Live view of the %s50 most recent coding errors%s to send to your developer or technical team."
+
+msgid "Bạn có chắc chắn muốn xóa trống toàn bộ dữ liệu lỗi?"
+msgstr "Are you sure you want to clear all error data?"
+
+msgid "Xóa Sạch Lịch Sử Lỗi"
+msgstr "Clear Error History"
+
+msgid "Nút Gọi Điện & Nhắn Tin Nổi"
+msgstr "Floating Call & Message Buttons"
+
+msgid "Cài đặt các nút liên hệ nổi (Zalo, Messenger, Hotline) góc màn hình giúp khách hàng dễ dàng tiếp cận bạn."
+msgstr "Set up floating contact buttons (Zalo, Messenger, Hotline) at the screen corner to help customers reach you easily."
+
+msgid "Số điện thoại Gọi ngay"
+msgstr "Phone Number (Call Now)"
+
+msgid "Nút sẽ tự động rung rinh thu hút khách."
+msgstr "The button will automatically wiggle to attract visitors."
+
+msgid "Số Zalo"
+msgstr "Zalo Number"
+
+msgid "Tự động mở app Zalo khi khách click."
+msgstr "Automatically opens Zalo app when visitor clicks."
+
+msgid "Link Messenger"
+msgstr "Messenger Link"
+
+msgid "Đường dẫn m.me Fanpage của bạn."
+msgstr "Your Fanpage m.me URL."
+
+# =============================================================================
+# sv-disk-cleaner.php
+# =============================================================================
+
+msgid "Đã xóa %1$d file. Giải phóng %2$s dung lượng."
+msgstr "Deleted %1$d file(s). Freed %2$s of space."
+
+msgid "Vui lòng chọn ít nhất một file để xóa."
+msgstr "Please select at least one file to delete."
+
+msgid "FILE DUNG LƯỢNG LỚN"
+msgstr "LARGE FILE"
+
+msgid "BACKUP / LOG NẶNG"
+msgstr "HEAVY BACKUP / LOG"
+
+msgid "Quản Lý File"
+msgstr "File Manager"
+
+msgid "Quét toàn bộ thư mục cài đặt WordPress (bao gồm wp-content, themes, plugins, uploads) để tìm các file có dung lượng trên 50 MB như bản sao lưu (.zip, .sql, .tar.gz), file log, video… giúp giải phóng không gian lưu trữ."
+msgstr "Scan the entire WordPress installation directory (including wp-content, themes, plugins, uploads) to find files over 50 MB such as backups (.zip, .sql, .tar.gz), log files, videos... to free up storage space."
+
+msgid "Thống kê File Cỡ Lớn"
+msgstr "Large File Statistics"
+
+msgid "Lưu ý:"
+msgstr "Note:"
+
+msgid "Vui lòng nhìn kỹ %sTên file%s trước khi xóa. Tránh xóa nhầm các file quan trọng của bạn!"
+msgstr "Please carefully check the %sfile name%s before deleting. Avoid accidentally deleting important files!"
+
+msgid "Tổng Dung Lượng"
+msgstr "Total Size"
+
+msgid "Số lượng file tìm thấy"
+msgstr "Files Found"
+
+msgid "file"
+msgstr "file(s)"
+
+msgid "Kết quả Quét đệ quy"
+msgstr "Recursive Scan Results"
+
+msgid "Máy chủ của bạn đang cực kỳ gọn gàng!"
+msgstr "Your server is extremely clean!"
+
+msgid "Tuyệt vời! Không có tệp tin nào quá khổ chiếm dụng diện tích máy chủ."
+msgstr "Excellent! No oversized files are taking up server space."
+
+msgid "Tên File & Phân loại"
+msgstr "File Name & Category"
+
+msgid "Đường dẫn chi tiết"
+msgstr "Full Path"
+
+msgid "Dung lượng"
+msgstr "Size"
+
+msgid "Ngày sửa đổi"
+msgstr "Modified Date"
+
+msgid "Hành động xóa sẽ không thể hoàn tác!"
+msgstr "Deletion cannot be undone!"
+
+msgid "Xóa File Đã Chọn"
+msgstr "Delete Selected Files"
+
+# =============================================================================
+# sv-import-export.php
+# =============================================================================
+
+msgid "Đã khôi phục tất cả thiết lập về mặc định thành công!"
+msgstr "All settings have been restored to defaults successfully!"
+
+msgid "Nhập thành công %s thiết lập!"
+msgstr "Successfully imported %s setting(s)!"
+
+msgid "Dữ liệu JSON không hợp lệ."
+msgstr "Invalid JSON data."
+
+msgid "Xuất / Nhập Cấu Hình"
+msgstr "Export / Import Settings"
+
+msgid "Sao lưu toàn bộ thiết lập của Sitevorx và di chuyển sang website khác một cách nhanh chóng."
+msgstr "Back up all Sitevorx settings and quickly migrate to another website."
+
+msgid "Xuất Cấu Hình"
+msgstr "Export Settings"
+
+msgid "Sao chép hoặc tải xuống toàn bộ thiết lập hiện tại dưới dạng JSON."
+msgstr "Copy or download all current settings as JSON."
+
+msgid "Sao chép"
+msgstr "Copy"
+
+msgid "Tải xuống"
+msgstr "Download"
+
+msgid "Nhập Cấu Hình"
+msgstr "Import Settings"
+
+msgid "Dán nội dung JSON đã xuất từ website khác vào đây để nhập nhanh."
+msgstr "Paste the exported JSON content from another website here for quick import."
+
+msgid "Dán nội dung JSON vào đây..."
+msgstr "Paste JSON content here..."
+
+msgid "Khôi Phục Mặc Định"
+msgstr "Restore Defaults"
+
+msgid "Xóa toàn bộ thiết lập"
+msgstr "Delete all settings"
+
+msgid "Hành động này sẽ xóa tất cả cấu hình của Sitevorx và đưa về trạng thái ban đầu. Không thể hoàn tác!"
+msgstr "This action will delete all Sitevorx settings and restore to initial state. This cannot be undone!"
+
+msgid "Bạn có chắc chắn muốn xóa TẤT CẢ thiết lập? Hành động này không thể hoàn tác!"
+msgstr "Are you sure you want to delete ALL settings? This action cannot be undone!"
+
+# =============================================================================
+# sv-scheduled-cleanup.php
+# =============================================================================
+
+msgid "Đã lưu thiết lập Dọn dẹp tự động thành công!"
+msgstr "Auto-cleanup settings saved successfully!"
+
+msgid "Hàng tuần"
+msgstr "Weekly"
+
+msgid "Hàng ngày"
+msgstr "Daily"
+
+msgid "2 lần/ngày"
+msgstr "Twice daily"
+
+msgid "Dọn dẹp tự động:"
+msgstr "Auto cleanup:"
+
+msgid "Không có gì cần dọn"
+msgstr "Nothing to clean"
+
+msgid "Database đã tối ưu."
+msgstr "Database optimized."
+
+msgid "Bảo Trì & Dọn Rác Tự Động Định Kỳ"
+msgstr "Scheduled Auto Maintenance & Cleanup"
+
+msgid "ĐANG CHẠY"
+msgstr "RUNNING"
+
+msgid "Chưa bật"
+msgstr "Not enabled"
+
+msgid "Kích hoạt dọn dẹp rác máy chủ"
+msgstr "Enable server cleanup"
+
+msgid "Hệ thống tự động dò tìm và xóa bỏ bản nháp cũ, bình luận rác và tối ưu lại cơ sở dữ liệu để web luôn phản hồi nhanh nhất."
+msgstr "System automatically finds and removes old drafts, spam comments, and optimizes the database for fastest response."
+
+msgid "Tần suất"
+msgstr "Frequency"
+
+msgid "Chọn khoảng thời gian giữa các lần dọn dẹp tự động."
+msgstr "Choose the interval between automatic cleanup runs."
+
+msgid "Lần chạy tiếp theo:"
+msgstr "Next run:"
+
+msgid "Chạy dọn dẹp ngay"
+msgstr "Run cleanup now"
+
+msgid "Lưu thiết lập"
+msgstr "Save Settings"
+
+msgid "Nhật ký Dọn dẹp Tự động"
+msgstr "Auto Cleanup Log"
+
+# =============================================================================
+# sv-server-info.php
+# =============================================================================
+
+msgid "Không xác định"
+msgstr "Unknown"
+
+msgid "Thông Số Máy Chủ & Hệ Thống"
+msgstr "Server & System Information"
+
+msgid "Xem nhanh các giới hạn cấu hình môi trường Hosting/VPS để tối ưu hoá chức năng hoặc làm việc với kỹ thuật viên."
+msgstr "Quick overview of Hosting/VPS configuration limits to optimize features or work with technical support."
+
+msgid "Môi trường Máy chủ"
+msgstr "Server Environment"
+
+msgid "Phiên bản MySQL/MariaDB"
+msgstr "MySQL/MariaDB Version"
+
+msgid "Giới hạn cấu hình PHP (PHP Limits)"
+msgstr "PHP Configuration Limits"
+
+msgid "Thông tin WordPress"
+msgstr "WordPress Information"
+
+msgid "Phiên bản WordPress"
+msgstr "WordPress Version"
+
+msgid "Chế độ Debug (WP_DEBUG)"
+msgstr "Debug Mode (WP_DEBUG)"
+
+msgid "ĐANG BẬT"
+msgstr "ENABLED"
+
+msgid "ĐÃ TẮT"
+msgstr "DISABLED"
+
+msgid "Dung lượng Database"
+msgstr "Database Size"
+
+msgid "Tổng kích thước thực tế của Cơ sở dữ liệu."
+msgstr "Total actual size of the database."
+
+# =============================================================================
+# sv-maintenance-check.php
+# =============================================================================
+
+msgid "Bảo Trì & Cập Nhật"
+msgstr "Maintenance & Updates"
+
+msgid "Theo dõi trạng thái cập nhật plugin, theme, WordPress Core và các cảnh báo bảo mật quan trọng."
+msgstr "Monitor update status for plugins, themes, WordPress Core and important security warnings."
+
+msgid "%d plugin cần cập nhật"
+msgstr "%d plugin(s) need updating"
+
+msgid "%d theme cần cập nhật"
+msgstr "%d theme(s) need updating"
+
+msgid "WordPress chưa cập nhật (%s → %s)"
+msgstr "WordPress is not up to date (%s → %s)"
+
+msgid "PHP %s quá cũ — khuyến nghị nâng lên 8.0+ (không bắt buộc)"
+msgstr "PHP %s is outdated — recommend upgrading to 8.0+ (not mandatory)"
+
+msgid "PHP %s — khuyến nghị 8.0+ để tối ưu hiệu suất (không bắt buộc)"
+msgstr "PHP %s — recommend 8.0+ for optimal performance (not mandatory)"
+
+msgid "SSL/HTTPS chưa kích hoạt"
+msgstr "SSL/HTTPS is not enabled"
+
+msgid "WP_DEBUG đang bật trên production"
+msgstr "WP_DEBUG is enabled on production"
+
+msgid "Phát hiện %d hạng mục cần lưu ý"
+msgstr "Found %d item(s) that need attention"
+
+msgid "Kiểm Tra Môi Trường"
+msgstr "Environment Check"
+
+msgid "Phiên bản WordPress"
+msgstr "WordPress Version"
+
+msgid "Đã cập nhật mới nhất."
+msgstr "Already up to date."
+
+msgid "Có phiên bản mới, nên cập nhật sớm."
+msgstr "A new version is available, consider updating soon."
+
+msgid "Phiên bản PHP"
+msgstr "PHP Version"
+
+msgid "Phiên bản được khuyến nghị."
+msgstr "Recommended version."
+
+msgid "Khuyến nghị nâng lên PHP 8.0+ để tối ưu hiệu suất. Đây chỉ là gợi ý, không bắt buộc — việc nâng PHP có thể gây xung đột với một số plugin hoặc theme cũ. Hãy kiểm tra tương thích trước khi nâng cấp."
+msgstr "Recommend upgrading to PHP 8.0+ for optimal performance. This is only a suggestion, not mandatory — upgrading PHP may cause conflicts with some older plugins or themes. Please check compatibility before upgrading."
+
+msgid "Phiên bản PHP đã cũ. Khuyến nghị nâng cấp lên 8.0+ nhưng không bắt buộc — hãy kiểm tra tương thích plugin/theme trước khi nâng để tránh xung đột."
+msgstr "PHP version is outdated. Recommend upgrading to 8.0+ but not mandatory — please check plugin/theme compatibility before upgrading to avoid conflicts."
+
+msgid "Website đã được bảo mật bằng chứng chỉ SSL."
+msgstr "Website is secured with an SSL certificate."
+
+msgid "Nên kích hoạt SSL để bảo mật dữ liệu truyền tải."
+msgstr "You should enable SSL to secure data transmission."
+
+msgid "Đang bật chế độ debug. Nên tắt trên môi trường production để tránh lộ thông tin nhạy cảm."
+msgstr "Debug mode is enabled. Should be disabled on production to prevent exposing sensitive information."
+
+msgid "Đã tắt, đúng chuẩn cho môi trường production."
+msgstr "Disabled, correct for production environment."
+
+msgid "Trình chỉnh sửa code trong Dashboard đã bị vô hiệu hóa."
+msgstr "The code editor in Dashboard has been disabled."
+
+msgid "Nên thêm define('DISALLOW_FILE_EDIT', true) vào wp-config.php để chặn chỉnh sửa code từ Dashboard."
+msgstr "You should add define('DISALLOW_FILE_EDIT', true) to wp-config.php to block code editing from Dashboard."
+
+msgid "Cập Nhật Plugin"
+msgstr "Plugin Updates"
+
+msgid "Tất cả plugin đã cập nhật mới nhất!"
+msgstr "All plugins are up to date!"
+
+msgid "Cập nhật"
+msgstr "Update"
+
+msgid "Cập Nhật Theme"
+msgstr "Theme Updates"
+
+msgid "Tất cả theme đã cập nhật mới nhất!"
+msgstr "All themes are up to date!"
+
+msgid "Chi?m %s trong /wp-content"
+msgstr "Uses %s of /wp-content"
+
+msgid "Chi?m %s trong Database"
+msgstr "Uses %s of the Database"
+
+msgid "Chi?m %s trong nh?m n?y"
+msgstr "Uses %s of this group"
+
+msgid "Top Plugin Theo Dung L??ng"
+msgstr "Top Plugins by Size"
+
+msgid "Top Theme Theo Dung L??ng"
+msgstr "Top Themes by Size"
+
+msgid "Top Th? M?c Trong Uploads"
+msgstr "Top Folders in Uploads"
+
+msgid "Top M?c Kh?c Trong /wp-content"
+msgstr "Top Other Items in /wp-content"
+
+msgid "Hi?n th? 10 m?c con l?n nh?t trong nh?m n?y."
+msgstr "Showing the 10 largest child items in this group."
+
+msgid "Th?ng S? Server"
+msgstr "Server Info"
+
+msgid "Theo d?i phi?n b?n PHP, MySQL, WordPress, gi?i h?n b? nh?, extensions v? dung l??ng Database."
+msgstr "Track PHP, MySQL, and WordPress versions, memory limits, extensions, and database size."
+
+msgid "Chiếm %s trong /wp-content"
+msgstr "Uses %s of /wp-content"
+
+msgid "Chiếm %s trong Database"
+msgstr "Uses %s of the Database"
+
+msgid "Chiếm %s trong nhóm này"
+msgstr "Uses %s of this group"
+
+msgid "Top Plugin Theo Dung Lượng"
+msgstr "Top Plugins by Size"
+
+msgid "Top Theme Theo Dung Lượng"
+msgstr "Top Themes by Size"
+
+msgid "Top Thư Mục Trong Uploads"
+msgstr "Top Folders in Uploads"
+
+msgid "Top Mục Khác Trong /wp-content"
+msgstr "Top Other Items in /wp-content"
+
+msgid "Hiển thị 10 mục con lớn nhất trong nhóm này."
+msgstr "Showing the 10 largest child items in this group."
+
+msgid "Hệ Sinh Thái Sitevorx Pro"
+msgstr "Sitevorx Pro Ecosystem"
+
+msgid "Nền tảng quản trị, tối ưu và bảo mật Website toàn diện kèm Kho Giao Diện Premium và Rank Math SEO Pro."
+msgstr "A complete website management, optimization, and security platform with a premium theme library and Rank Math SEO Pro."
+
+msgid "Thông Số Server"
+msgstr "Server Info"
+
+msgid "Theo dõi phiên bản PHP, MySQL, WordPress, giới hạn bộ nhớ, extensions và dung lượng Database."
+msgstr "Track PHP, MySQL, and WordPress versions, memory limits, extensions, and database size."
+
+msgid "Chưa cấu hình"
+msgstr "Not Configured"
+
+msgid "Cài đặt và kích hoạt Rank Math SEO Pro thành công!"
+msgstr "Rank Math SEO Pro has been installed and activated successfully!"
+
+msgid "Rank Math SEO Pro đã kích hoạt thành công"
+msgstr "Rank Math SEO Pro activated successfully"
+
+msgid "Cài đặt & Kích hoạt tự động"
+msgstr "Install & Auto-Activate"
+
+msgid "Hệ thống sẽ tự động tải, cài đặt và kích hoạt bản quyền Rank Math SEO Pro chỉ với 1 click."
+msgstr "The system will automatically download, install and activate Rank Math SEO Pro license with just 1 click."
+
+msgid "Cài đặt & Kích hoạt Rank Math Pro"
+msgstr "Install & Activate Rank Math Pro"
+
+msgid "Quá trình mất khoảng 15-30 giây, vui lòng không đóng trang."
+msgstr "The process takes about 15-30 seconds, please do not close the page."
+
+msgid "Các Chức Năng Độc Quyền Bản Pro"
+msgstr "Exclusive Pro Features"
+
+msgid "Tích Hợp Google Analytics 4"
+msgstr "Google Analytics 4 Integration"
+
+msgid "Theo dõi toàn bộ lưu lượng Data và SEO Metrics ngay trong Dashboard WordPress."
+msgstr "Track all traffic data and SEO metrics directly in the WordPress Dashboard."
+
+msgid "Trình Cấu Trúc Dữ Liệu Nâng Cao"
+msgstr "Advanced Schema Builder"
+
+msgid "Hỗ trợ đa dạng Schema JSON-LD Pro để chiếm định dạng Rich Snippet hiển thị đẹp trên Google."
+msgstr "Comprehensive JSON-LD Pro Schema support to capture Rich Snippet formats and display beautifully on Google."
+
+msgid "Không Giới Hạn Từ Khóa"
+msgstr "Unlimited Focus Keywords"
+
+msgid "Tối ưu hóa hàng tá focus keywords trong cùng 1 bài viết để chăn dắt SEO hiệu quả hơn."
+msgstr "Optimize dozens of focus keywords in a single post for more effective SEO targeting."
+
+msgid "Tối Ưu WooCommerce & EDD SEO"
+msgstr "WooCommerce & EDD SEO Optimization"
+
+msgid "Đẩy mạnh thứ hạng sản phẩm e-commerce tự động tích hợp thông minh các biến thể."
+msgstr "Boost e-commerce product rankings with smart automatic integration of variants."
+msgid "Rank Math Pro đã cài nhưng chưa kích hoạt license"
+msgstr "Rank Math Pro is installed but the license is not activated"
+
+msgid "Bước cài plugin đã xong, nhưng bước lấy license bị gián đoạn (thường do PHP max_execution_time). Bấm bên dưới để thử lại — chỉ chạy bước license, không tải lại plugin."
+msgstr "The plugin install step finished, but the license step was interrupted (usually due to PHP max_execution_time). Click below to retry — runs the license step only, without re-downloading the plugin."
+
+msgid "Kích hoạt lại license"
+msgstr "Retry license activation"
+
+msgid "Chi tiết debug lần chạy gần nhất"
+msgstr "Debug details from the last run"
+
+# =============================================================================
+# Sitevorx 1.1.0 — Security Center, new optimizer toggles, dashboard cards
+# =============================================================================
+
+msgid "Dọn rác Database, Lazy Load, giảm tải Heartbeat, gỡ Emoji / oEmbed / jQuery Migrate, dọn wp_head và lịch dọn tự động."
+msgstr "Clean up database, Lazy Load, throttle Heartbeat, strip Emoji / oEmbed / jQuery Migrate, prune wp_head, scheduled cleanup."
+
+msgid "reCAPTCHA, khóa IP, URL đăng nhập bí mật, quét mã độc, Security Headers + HSTS, honeypot, kiểm tra core và sửa quyền file."
+msgstr "reCAPTCHA, IP lockout, secret login URL, malware scan, Security Headers + HSTS, honeypot, core integrity and file permission fixes."
+
+msgid "Tổng Quan"
+msgstr "Overview"
+
+msgid "Cấu Hình"
+msgstr "Settings"
+
+msgid "Giám Sát"
+msgstr "Monitor"
+
+msgid "Kiểm Tra"
+msgstr "Inspect"
+
+msgid "Security Headers"
+msgstr "Security Headers"
+
+msgid "Trung tâm Bảo mật"
+msgstr "Security Center"
+
+msgid "Trung tâm điều khiển & giám sát bảo mật toàn diện cho website của bạn."
+msgstr "Central control & monitoring hub for your site's security."
+
+msgid "Bạn không có quyền truy cập trang này."
+msgstr "You do not have permission to access this page."
+
+msgid "Trạng thái bảo mật"
+msgstr "Security status"
+
+msgid "Hành động nhanh"
+msgstr "Quick actions"
+
+msgid "Quét mã độc"
+msgstr "Malware scan"
+
+msgid "Kiểm tra lõi WordPress"
+msgstr "WordPress core check"
+
+msgid "Test Security Headers"
+msgstr "Test Security Headers"
+
+msgid "Nhật ký kiểm toán"
+msgstr "Audit log"
+
+msgid "Lần cuối: %s trước"
+msgstr "Last run: %s ago"
+
+msgid "Chưa quét lần nào"
+msgstr "Never scanned"
+
+msgid "Đối chiếu MD5 với wp.org"
+msgstr "Match MD5 against wp.org"
+
+msgid "Xem header server thực tế gửi"
+msgstr "View headers the server actually sends"
+
+msgid "200 hành động gần nhất"
+msgstr "200 most recent actions"
+
+msgid "Hạng mục cần xử lý"
+msgstr "Items needing attention"
+
+msgid "Tất cả lớp bảo mật đã được kích hoạt."
+msgstr "All security layers are enabled."
+
+msgid "Đang bật %1$d/%2$d lớp. %3$d hạng mục chưa kích hoạt."
+msgstr "%1$d of %2$d layers enabled. %3$d items not yet active."
+
+msgid "Tuyệt vời"
+msgstr "Excellent"
+
+msgid "Cần tối ưu"
+msgstr "Needs work"
+
+msgid "Cảnh báo"
+msgstr "Warning"
+
+msgid "SSL / HTTPS"
+msgstr "SSL / HTTPS"
+
+msgid "WP_DEBUG tắt"
+msgstr "WP_DEBUG off"
+
+msgid "PHP ≥ 8.0"
+msgstr "PHP ≥ 8.0"
+
+msgid "reCAPTCHA"
+msgstr "reCAPTCHA"
+
+msgid "Giới hạn đăng nhập"
+msgstr "Login throttle"
+
+msgid "URL đăng nhập bí mật"
+msgstr "Secret login URL"
+
+msgid "Khóa XML-RPC"
+msgstr "Disable XML-RPC"
+
+msgid "Khóa Code Editor"
+msgstr "Disable Code Editor"
+
+msgid "Honeypot đăng nhập"
+msgstr "Login honeypot"
+
+msgid "Chặn dò username"
+msgstr "Block user enumeration"
+
+msgid "Email báo đăng nhập admin"
+msgstr "Admin login email alert"
+
+msgid "IP đang bị khóa"
+msgstr "Locked-out IPs"
+
+msgid "Mở khóa tất cả"
+msgstr "Unlock all"
+
+msgid "Không có IP nào đang bị khóa."
+msgstr "No IP is currently locked out."
+
+msgid "Mã khóa"
+msgstr "Lock hash"
+
+msgid "Lần thử"
+msgstr "Attempts"
+
+msgid "Hết hạn"
+msgstr "Expires"
+
+msgid "Ghi Nhận Gần Đây"
+msgstr "Recent activity"
+
+msgid "Xem tất cả"
+msgstr "View all"
+
+msgid "Chưa có hoạt động đáng ngờ nào."
+msgstr "No suspicious activity yet."
+
+msgid "Chống Spam Đăng Nhập (reCAPTCHA v2 / v3)"
+msgstr "Login spam protection (reCAPTCHA v2 / v3)"
+
+msgid "Bật reCAPTCHA cho trang đăng nhập"
+msgstr "Enable reCAPTCHA on the login page"
+
+msgid "Ngăn bot dò mật khẩu trên wp-login.php. %sLấy Site/Secret Key tại đây%s."
+msgstr "Stop bots from brute-forcing wp-login.php. %sGet Site/Secret keys here%s."
+
+msgid "Phiên bản"
+msgstr "Version"
+
+msgid "Khóa IP truy cập trái phép"
+msgstr "Lock unauthorized IPs"
+
+msgid "Tự động khóa IP sau số lần đăng nhập sai. Quản lý IP bị khóa chi tiết tại trang \"Tối ưu Tốc Độ\" → tab Bảo Mật."
+msgstr "Lock IPs after repeated failed logins. Manage lock entries in detail on \"Speed Optimizer\" → Security tab."
+
+msgid "Đổi đường dẫn đăng nhập (URL bí mật)"
+msgstr "Change the login URL (secret slug)"
+
+msgid "Giấu đường link đăng nhập mặc định. Chỉ ai biết từ khóa bí mật mới vào được."
+msgstr "Hide the default login URL. Only people with the secret keyword get in."
+
+msgid "Vô hiệu hóa XML-RPC"
+msgstr "Disable XML-RPC"
+
+msgid "Đóng cổng kết nối cũ để chặn brute-force và DDoS qua XML-RPC."
+msgstr "Close the legacy XML-RPC endpoint to block brute-force and DDoS via XML-RPC."
+
+msgid "Khóa Theme/Plugin File Editor"
+msgstr "Disable Theme/Plugin File Editor"
+
+msgid "Ngăn việc sửa nhầm mã nguồn Theme/Plugin từ giao diện admin làm sập website."
+msgstr "Prevent accidental theme/plugin code edits from the admin UI that could break the site."
+
+msgid "Vui lòng nhập từ khóa bảo mật trước khi bật tính năng."
+msgstr "Please enter a secret keyword before enabling this feature."
+
+msgid "Vui lòng nhập đầy đủ Site Key và Secret Key."
+msgstr "Please provide both the Site Key and Secret Key."
+
+msgid "Đã lưu cấu hình bảo mật"
+msgstr "Security settings saved"
+
+msgid "Đã lưu cấu hình bảo mật."
+msgstr "Security settings saved."
+
+msgid "Giám sát đăng nhập"
+msgstr "Login monitor"
+
+msgid "Bẫy bot đăng nhập (Honeypot)"
+msgstr "Login bot trap (Honeypot)"
+
+msgid "Chèn ô nhập ẩn vào form đăng nhập. Bot điền vào sẽ bị từ chối, người dùng thật không thấy ô này nên không ảnh hưởng."
+msgstr "Inject a hidden field into the login form. Bots that fill it are rejected; humans never see the field so they are unaffected."
+
+msgid "Chặn truy vấn ?author=N và REST API /wp/v2/users từ khách truy cập chưa đăng nhập để hacker không thu thập được danh sách tài khoản."
+msgstr "Block ?author=N queries and the REST /wp/v2/users endpoint for guests so attackers cannot harvest the user list."
+
+msgid "Email báo khi admin đăng nhập"
+msgstr "Email on admin login"
+
+msgid "Gửi mail tới %s mỗi khi có tài khoản quyền manage_options đăng nhập thành công."
+msgstr "Send mail to %s whenever a manage_options account logs in successfully."
+
+msgid "Giới hạn 1 email/giờ cho mỗi IP để tránh spam. Đổi địa chỉ nhận tại Cài đặt → Tổng quan → Địa chỉ Email của trang."
+msgstr "Throttled to 1 email per IP per hour. Change the recipient at Settings → General → Site Email."
+
+msgid "Đã lưu cấu hình giám sát"
+msgstr "Monitor settings saved"
+
+msgid "Đã lưu cấu hình giám sát."
+msgstr "Monitor settings saved."
+
+msgid "Truy cập bị từ chối."
+msgstr "Access denied."
+
+msgid "Đăng nhập Admin mới"
+msgstr "New admin login"
+
+msgid "Tài khoản"
+msgstr "Account"
+
+msgid "Bộ header bảo mật cơ bản"
+msgstr "Baseline security headers"
+
+msgid "Bật 4 header an toàn cho frontend"
+msgstr "Enable 4 safe headers on the frontend"
+
+msgid "Áp dụng 4 header phòng vệ trên trang public. Không động vào admin / AJAX / REST / cron để tránh ảnh hưởng vận hành. Tất cả đều an toàn — không yêu cầu chỉnh hosting."
+msgstr "Apply 4 defensive headers on public pages. Skipped for admin / AJAX / REST / cron to avoid breaking operations. All are safe and require no hosting changes."
+
+msgid "Bốn header được gửi khi bật:"
+msgstr "Four headers emitted when enabled:"
+
+msgid "chặn browser đoán MIME type sai (XSS qua upload)."
+msgstr "stops the browser from guessing MIME types (XSS via uploads)."
+
+msgid "chỉ cho domain chính nhúng site qua iframe, chặn clickjacking."
+msgstr "only the main domain may embed the site in an iframe, blocking clickjacking."
+
+msgid "chỉ gửi đầy đủ referrer trong cùng domain, ngoài domain chỉ gửi origin."
+msgstr "send full referrer within the same domain only, origin only across domains."
+
+msgid "tắt 3 API nhạy cảm cho mọi iframe nhúng vào site."
+msgstr "disable three sensitive APIs for any iframe embedded on the site."
+
+msgid "HSTS — Ép trình duyệt luôn dùng HTTPS"
+msgstr "HSTS — Force browsers to always use HTTPS"
+
+msgid "⚠ Không thể bật HSTS"
+msgstr "⚠ HSTS cannot be enabled"
+
+msgid "Site đang truy cập qua HTTP, chưa có SSL ổn định. Cài SSL trước (Let's Encrypt miễn phí) rồi mới bật HSTS, nếu không khách sẽ không vào được site."
+msgstr "Site is being accessed over HTTP without stable SSL. Install SSL first (Let's Encrypt is free), then enable HSTS — otherwise visitors will be locked out."
+
+msgid "Bật HTTP Strict-Transport-Security"
+msgstr "Enable HTTP Strict-Transport-Security"
+
+msgid "Báo trình duyệt: \"Domain này CHỈ phục vụ qua HTTPS — đừng thử HTTP nữa\". Bảo vệ trước tấn công SSL stripping và man-in-the-middle."
+msgstr "Tell the browser: \"This domain is HTTPS-only — never try HTTP again\". Defends against SSL stripping and man-in-the-middle attacks."
+
+msgid "⚠ Lưu ý: Một khi browser đã nhận HSTS, suốt thời gian max-age sẽ KHÔNG cho phép truy cập qua HTTP. Nếu SSL hết hạn / hỏng → khách không vào được site cho tới khi sửa SSL."
+msgstr "⚠ Note: Once the browser has cached HSTS, for the entire max-age period it will REFUSE plain HTTP. If SSL expires or breaks, visitors cannot reach the site until SSL is fixed."
+
+msgid "Thời gian áp dụng (max-age)"
+msgstr "Lifetime (max-age)"
+
+msgid "Bắt đầu bằng 5 phút để test, ổn định mới tăng lên. Tăng dần — không giảm."
+msgstr "Start at 5 minutes to test, increase once stable. Only go up, never down."
+
+msgid "includeSubDomains"
+msgstr "includeSubDomains"
+
+msgid "Áp dụng HSTS cho cả mọi subdomain. CHỈ bật khi MỌI subdomain đều có SSL — nếu không, các subdomain không SSL sẽ bị chặn."
+msgstr "Apply HSTS to every subdomain too. ONLY enable when EVERY subdomain has SSL — otherwise non-SSL subdomains get blocked."
+
+msgid "Kiểm tra header thực tế"
+msgstr "Probe live headers"
+
+msgid "Đọc HTTP response của trang chủ"
+msgstr "Read the HTTP response of the homepage"
+
+msgid "Gọi GET tới home_url() rồi liệt kê các security header thực tế server trả về. Dùng để xác nhận: header đã active, hoặc CDN/Cloudflare có đè header không."
+msgstr "Issue a GET to home_url() and list the security headers the server actually returns. Confirms the header is active, or that a CDN/Cloudflare is overwriting it."
+
+msgid "Kiểm tra ngay"
+msgstr "Run check"
+
+msgid "Đang gọi…"
+msgstr "Calling…"
+
+msgid "Đang fetch home_url()…"
+msgstr "Fetching home_url()…"
+
+msgid "Kiểm tra lại"
+msgstr "Re-check"
+
+msgid "Thử lại"
+msgstr "Retry"
+
+msgid "Không kết nối được tới home URL."
+msgstr "Could not connect to the home URL."
+
+msgid "không có"
+msgstr "missing"
+
+msgid "URL kiểm tra:"
+msgstr "URL probed:"
+
+msgid "Đã lưu cấu hình Security Headers"
+msgstr "Security Headers settings saved"
+
+msgid "Đã lưu cấu hình Security Headers."
+msgstr "Security Headers settings saved."
+
+msgid "Kiểm tra toàn vẹn lõi WordPress"
+msgstr "WordPress core integrity check"
+
+msgid "Đối chiếu tệp core với api.wordpress.org"
+msgstr "Compare core files against api.wordpress.org"
+
+msgid "Tải MD5 chính thức của phiên bản WordPress đang chạy từ WordPress.org, sau đó so với từng file core trên server để phát hiện file bị sửa đổi hoặc thiếu. Chỉ chạy khi bạn bấm — không tự động."
+msgstr "Download the official MD5 checksums for the running WordPress version from WordPress.org, then diff every core file on the server to spot modified or missing files. Runs on demand only — never automatically."
+
+msgid "Bắt đầu kiểm tra"
+msgstr "Start check"
+
+msgid "Đang kiểm tra... có thể mất tới 30 giây."
+msgstr "Checking… this can take up to 30 seconds."
+
+msgid "Đang kiểm tra…"
+msgstr "Checking…"
+
+msgid "Đang tải checksum từ api.wordpress.org…"
+msgstr "Downloading checksums from api.wordpress.org…"
+
+msgid "Lỗi:"
+msgstr "Error:"
+
+msgid "Không phản hồi"
+msgstr "No response"
+
+msgid "Tất cả tệp lõi khớp với phiên bản chính thức."
+msgstr "All core files match the official release."
+
+msgid "Tệp bị sửa đổi"
+msgstr "Modified files"
+
+msgid "Tệp bị thiếu"
+msgstr "Missing files"
+
+msgid "Không thể kết nối WordPress.org API."
+msgstr "Could not reach the WordPress.org API."
+
+msgid "Không nhận được dữ liệu checksums."
+msgstr "No checksum data received."
+
+msgid "Không kết nối được WordPress.org API."
+msgstr "Could not reach the WordPress.org API."
+
+msgid "%d sửa đổi, %d thiếu"
+msgstr "%d modified, %d missing"
+
+msgid "Sửa quyền file quan trọng"
+msgstr "Fix critical file permissions"
+
+msgid "Đặt lại chmod chuẩn cho các file nhạy cảm. Hostings shared thường để mặc định 644/664 — quá rộng. Bấm \"Sửa về 640\" để tự khoá xuống mức an toàn. Nếu Hosting không cho PHP đổi quyền (PHP-FPM khác user với file owner), sẽ hiện cảnh báo, lúc đó cần SSH/FTP đổi tay."
+msgstr "Reset chmod to a safer value for sensitive files. Shared hosts often default to 644/664 — too permissive. Click \"Fix to 640\" to lock down. If the host does not let PHP change permissions (PHP-FPM runs as a different user from the file owner) a warning appears and you must chmod via SSH/FTP."
+
+msgid "Tên file"
+msgstr "File"
+
+msgid "Quyền hiện tại"
+msgstr "Current chmod"
+
+msgid "Đề xuất"
+msgstr "Suggested"
+
+msgid "Mô tả & Hành động"
+msgstr "Description & action"
+
+msgid "wp-config.php"
+msgstr "wp-config.php"
+
+msgid "Chứa DB credentials + secret salts. Lý tưởng 600 hoặc 640 để chỉ owner web đọc được, tránh user khác trên cùng server xem."
+msgstr "Holds DB credentials + secret salts. Ideally 600 or 640 so only the web owner can read it and other users on the shared server cannot peek."
+
+msgid "File rewrite rules của Apache. Cần readable (644) để Apache đọc nhưng không nên writable bởi web (664/666 nguy hiểm)."
+msgstr "Apache rewrite rules. Needs to be readable (644) for Apache, but must not be writable by the web user (664/666 are dangerous)."
+
+msgid "Không tồn tại"
+msgstr "Does not exist"
+
+msgid "An toàn"
+msgstr "Safe"
+
+msgid "Quá rộng"
+msgstr "Too permissive"
+
+msgid "Sửa về %s"
+msgstr "Fix to %s"
+
+msgid "PHP có thể không có quyền ghi"
+msgstr "PHP may not have write permission"
+
+msgid "Áp dụng chmod mới cho file này?"
+msgstr "Apply the new chmod to this file?"
+
+msgid "Đang sửa…"
+msgstr "Fixing…"
+
+msgid "Không sửa được:"
+msgstr "Could not fix:"
+
+msgid "Lỗi kết nối server."
+msgstr "Server connection error."
+
+msgid "File không nằm trong danh sách cho phép."
+msgstr "File is not in the allow-list."
+
+msgid "File %s không tồn tại."
+msgstr "File %s does not exist."
+
+msgid "PHP không có quyền đổi chmod (%1$s → %2$s). Hosting có thể đang chạy PHP-FPM với user khác file owner. Hãy SSH/FTP đổi tay: chmod %3$s %4$s"
+msgstr "PHP cannot change chmod (%1$s → %2$s). The host probably runs PHP-FPM as a different user from the file owner. Change it manually over SSH/FTP: chmod %3$s %4$s"
+
+msgid "Đã đổi quyền %1$s từ %2$s sang %3$s."
+msgstr "Permissions of %1$s changed from %2$s to %3$s."
+
+msgid "Đã xóa nhật ký đăng nhập thất bại"
+msgstr "Failed-login log cleared"
+
+msgid "Đã xóa tất cả IP bị khóa"
+msgstr "All locked IPs cleared"
+
+msgid "Đã xóa tất cả khóa IP."
+msgstr "All IP locks cleared."
+
+msgid "Thông số quét"
+msgstr "Scanner parameters"
+
+msgid "Bộ chữ ký"
+msgstr "Signature set"
+
+msgid "pattern"
+msgstr "patterns"
+
+msgid "Critical + heuristic patterns: eval, base64_decode, shell_exec, web shells."
+msgstr "Critical + heuristic patterns: eval, base64_decode, shell_exec, web shells."
+
+msgid "Phạm vi"
+msgstr ".scope"
+
+msgid ".php files + DB posts"
+msgstr ".php files + DB posts"
+
+msgid "Quét đệ quy %s, bỏ qua backup/cache directories và thư viện third-party."
+msgstr "Recursively scan %s, skipping backup/cache directories and third-party libraries."
+
+msgid "Giới hạn / lần"
+msgstr "Per-run limits"
+
+msgid "Timeout 30s, bỏ qua file > 2MB, dừng khi đủ 50 hit để tránh treo server."
+msgstr "30s timeout, skip files larger than 2MB, stop at 50 hits to avoid stalling the server."
+
+msgid "Lần quét trước"
+msgstr "Previous scan"
+
+msgid "✓ Sạch · %s đối tượng"
+msgstr "✓ Clean · %s objects"
+
+msgid "⚠ %1$d nghi ngờ / %2$s đối tượng"
+msgstr "⚠ %1$d suspicious / %2$s objects"
+
+msgid "Trình quét mã độc chuyên sâu"
+msgstr "Deep malware scanner"
+
+msgid "Bấm <strong>Bắt đầu quét</strong> để chạy ngay. Quá trình dùng <code>token_get_all()</code> để tách comment + string literal trước khi match regex — tránh false positive trên code hợp pháp đề cập tới hàm nguy hiểm trong comment hoặc docstring."
+msgstr "Click <strong>Start scan</strong> to run. The scanner uses <code>token_get_all()</code> to strip comments + string literals before running regex matches — that avoids false positives on legitimate code that mentions dangerous functions inside comments or docstrings."
+
+msgid "Bỏ qua các thư mục backup phổ biến (updraftplus, wordfence, litespeed-cache, woocommerce backups, rank-math) và core libraries (Requests, SimplePie, ID3, pomo) để giảm tiếng ồn."
+msgstr "Skips common backup directories (updraftplus, wordfence, litespeed-cache, woocommerce backups, rank-math) and core libraries (Requests, SimplePie, ID3, pomo) to reduce noise."
+
+msgid "Quét lần cuối %s trước"
+msgstr "Last scan %s ago"
+
+msgid "Đã quét %s đối tượng. Hệ thống an toàn."
+msgstr "Scanned %s objects. System is clean."
+
+msgid "Đã quét %s đối tượng. Mở từng file bằng FTP/SSH để xác nhận trước khi xóa — đôi khi plugin nén code hợp pháp cũng bị nghi."
+msgstr "Scanned %s objects. Open each file via FTP/SSH to confirm before deleting — some legitimate plugin code is heavily packed and may trip detection."
+
+msgid "Quét %s đối tượng, %d nghi ngờ"
+msgstr "Scanned %s objects, %d suspicious"
+
+msgid "⏳ Đang quét..."
+msgstr "⏳ Scanning…"
+
+msgid "Đường dẫn"
+msgstr "Path"
+
+msgid "Critical signature"
+msgstr "Critical signature"
+
+msgid "Gọi lệnh hệ thống từ dữ liệu đầu vào"
+msgstr "System command call from input data"
+
+msgid "preg_replace với modifier /e"
+msgstr "preg_replace with /e modifier"
+
+msgid "Hàm thực thi lệnh hệ thống"
+msgstr "System command execution function"
+
+msgid "Chuỗi giải mã nhiều lớp"
+msgstr "Multi-layered decode chain"
+
+msgid "Chuỗi mã hóa dài được giải mã"
+msgstr "Long encoded string being decoded"
+
+msgid "Gỡ Script Thừa (Frontend Bloat)"
+msgstr "Strip Unused Scripts (Frontend Bloat)"
+
+msgid "Tắt Emoji của WordPress"
+msgstr "Disable WordPress Emoji"
+
+msgid "Gỡ script wp-emoji-release.min.js (~15KB) và style emoji khỏi mọi trang. Trình duyệt hiện đại đã hiển thị emoji native, không cần WP hỗ trợ riêng."
+msgstr "Remove wp-emoji-release.min.js (~15KB) and emoji styles from every page. Modern browsers render emoji natively — WP's helper is no longer needed."
+
+msgid "Tắt oEmbed (nhúng URL tự động)"
+msgstr "Disable oEmbed (auto URL embed)"
+
+msgid "Gỡ wp-embed.min.js (~12KB) + endpoint /oembed/. Tắt khi không dán link YouTube/Twitter trực tiếp trong post (vẫn nhúng được qua iframe thủ công)."
+msgstr "Remove wp-embed.min.js (~12KB) + the /oembed/ endpoint. Disable when you don't paste YouTube/Twitter links directly into posts (manual iframe embeds still work)."
+
+msgid "Gỡ jQuery Migrate"
+msgstr "Remove jQuery Migrate"
+
+msgid "Gỡ jquery-migrate.min.js (~10KB) — chỉ cần cho theme/plugin cực cũ dùng jQuery 1.x API. Nếu site hoạt động bình thường sau khi tắt → để tắt luôn."
+msgstr "Remove jquery-migrate.min.js (~10KB) — only needed for ancient themes/plugins on the jQuery 1.x API. If the site works fine after disabling, leave it off."
+
+msgid "Dọn wp_head"
+msgstr "Clean up wp_head"
+
+msgid "Gỡ các meta tag không cần thiết: WP generator (lộ version), RSD link, wlwmanifest (Windows Live Writer), shortlink. Giảm 5-7 dòng HTML không ai dùng."
+msgstr "Remove unused meta tags: WP generator (leaks version), RSD link, wlwmanifest (Windows Live Writer), shortlink. 5-7 lines of dead HTML gone."
+
+msgid "Tắt Trackback / Pingback"
+msgstr "Disable Trackback / Pingback"
+
+msgid "Tắt cơ chế trackback (đa số site không dùng) — vừa giảm spam comment, vừa chặn DDoS amplification qua pingback.ping."
+msgstr "Disable the trackback mechanism (most sites don't use it) — cuts spam comments and blocks DDoS amplification via pingback.ping."
+
+msgid "Tắt Emoji"
+msgstr "Disable Emoji"
+
+msgid "Tắt oEmbed"
+msgstr "Disable oEmbed"
+
+msgid "Tắt Trackback/Pingback"
+msgstr "Disable Trackback/Pingback"
+
+msgid "Tối Ưu Tốc Độ"
+msgstr "Speed Optimizer"
+
+msgid "Dọn rác hệ thống, giảm tải máy chủ, gỡ các script không cần thiết — giúp website tải nhanh hơn mà không cần plugin cache."
+msgstr "Clean system clutter, throttle server load, strip unused scripts — make the site faster without needing a cache plugin."
+
+msgid "Các cấu hình bảo mật và quét mã độc đã chuyển sang <a href=\"?page=sitevorx-security-center\" style=\"color:#dc2626; font-weight:600;\">Trung tâm Bảo mật</a>."
+msgstr "Security settings and malware scanning have moved to <a href=\"?page=sitevorx-security-center\" style=\"color:#dc2626; font-weight:600;\">Security Center</a>."
+
+msgid "WordPress cập nhật"
+msgstr "WordPress up to date"
+
+msgid " (+%d khác)"
+msgstr " (+%d more)"
+
+msgid "%d email SMTP thất bại trong 24h qua."
+msgstr "%d SMTP emails failed in the last 24h."
+
+msgid "%d giờ"
+msgstr "%d hours"
+
+msgid "%d phút"
+msgstr "%d minutes"
+
+msgid "Báo email admin login"
+msgstr "Admin login email alert"
+
+msgid "Bảo mật chưa đạt mức khuyến nghị. Còn thiếu: %s."
+msgstr "Security has not reached the recommended level. Missing: %s."
+
+msgid "Bẫy bot đăng nhập"
+msgstr "Login honeypot"
+
+msgid "Bật cron"
+msgstr "Enable cron"
+
+msgid "Bổ sung key"
+msgstr "Add key"
+
+msgid "Chế độ Bảo trì đang BẬT — khách truy cập không xem được site."
+msgstr "Maintenance Mode is ON — visitors cannot see the site."
+
+msgid "Cron dọn dẹp đã bật nhưng chưa có lịch chạy — vào trang Bảo trì lưu lại cấu hình để đặt lại lịch."
+msgstr "Cleanup cron is enabled but no schedule is registered — open the Maintenance page and save the settings to re-arm the schedule."
+
+msgid "Còn %d lớp chưa bật:"
+msgstr "Còn %d lớp chưa bật:"
+
+msgid "Có %d IP đang bị khóa đăng nhập."
+msgstr "%d IPs are currently locked out from logging in."
+
+msgid "Dọn dẹp thành công!"
+msgstr "Cleanup successful!"
+
+msgid "Dọn dẹp tự động đang tắt."
+msgstr "Automatic cleanup is off."
+
+msgid "Dọn: %1$s — tổng %2$d nhóm"
+msgstr "Cleaned: %1$s — %2$d groups total"
+
+msgid "Giảm tải Heartbeat"
+msgstr "Throttle Heartbeat"
+
+msgid "Giới hạn bản nháp"
+msgstr "Limit revisions"
+
+msgid "Hoàn tất SMTP"
+msgstr "SMTP ready"
+
+msgid "Hệ thống của bạn đang rất sạch sẽ, không có rác cục bộ nào cần dọn lúc này!"
+msgstr "Your system is squeaky clean — nothing local needs cleaning up right now!"
+
+msgid "IP bị tạm khóa %s do nhập sai quá nhiều."
+msgstr "IP temporarily locked for %s due to too many failed attempts."
+
+msgid "Khi bật, Heartbeat được giảm tần suất xuống 60 giây để vẫn giữ autosave và khóa bài viết."
+msgstr "When enabled, Heartbeat is throttled to 60 seconds so autosave and post-locking still work."
+
+msgid "Khóa chỉnh sửa mã nguồn"
+msgstr "Disable code editor"
+
+msgid "Không chọn mục nào"
+msgstr "No category selected"
+
+msgid "Không nhận được token reCAPTCHA. Vui lòng thử lại."
+msgstr "No reCAPTCHA token received. Please try again."
+
+msgid "Không thể kết nối tới máy chủ reCAPTCHA."
+msgstr "Could not reach the reCAPTCHA server."
+
+msgid "Không thể lưu tệp SVG sau khi lọc nội dung không an toàn."
+msgstr "Could not save the SVG after stripping unsafe content."
+
+msgid "Không thể xử lý tệp SVG trên máy chủ này. Vui lòng kiểm tra quyền ghi tạm thời."
+msgstr "Could not process the SVG on this server. Check the temp directory write permissions."
+
+msgid "Không thể đọc nội dung tệp SVG để kiểm tra an toàn."
+msgstr "Could not read the SVG contents for the safety scan."
+
+msgid "Không tìm thấy bản ghi khóa cần mở."
+msgstr "No matching lock record to unlock."
+
+msgid "Lazy Load ảnh"
+msgstr "Image Lazy Load"
+
+msgid "Lưu lại không có thay đổi"
+msgstr "Saved with no changes"
+
+msgid "Lỗi lịch"
+msgstr "Schedule error"
+
+msgid "Mở Trung tâm Bảo mật"
+msgstr "Open Security Center"
+
+msgid "Nhật ký Kiểm toán"
+msgstr "Audit log"
+
+msgid "Phiên đăng nhập bị nghi ngờ là bot. Vui lòng thử lại."
+msgstr "Login session flagged as bot. Please try again."
+
+msgid "Quản lý"
+msgstr "Manage"
+
+msgid "SMTP đã chọn nhưng thiếu thông tin đăng nhập."
+msgstr "SMTP is selected but the credentials are missing."
+
+msgid "Thiếu credential"
+msgstr "Missing credential"
+
+msgid "Tất cả lớp bảo mật đã được bật. Tốt!"
+msgstr "All security layers are enabled. Nice!"
+
+msgid "Tắt bảo trì"
+msgstr "Disable maintenance"
+
+msgid "Tệp SVG chứa cấu trúc nguy hiểm và đã bị chặn."
+msgstr "The SVG contains dangerous structures and was blocked."
+
+msgid "Tối ưu Tốc Độ"
+msgstr "Speed Optimizer"
+
+msgid "Upload SVG"
+msgstr "SVG upload"
+
+msgid "WP_DEBUG đang bật trên môi trường production — cân nhắc tắt khi go-live."
+msgstr "WP_DEBUG is on in production — consider turning it off before going live."
+
+msgid "Xem log"
+msgstr "View log"
+
+msgid "bình luận rác"
+msgstr "spam comments"
+
+msgid "bản nháp"
+msgstr "revisions"
+
+msgid "bộ nhớ đệm"
+msgstr "transient cache"
+
+msgid "danh sách IP miễn khóa"
+msgstr "lockout allowlist"
+
+msgid "khác"
+msgstr "more"
+
+msgid "phiên bản reCAPTCHA"
+msgstr "reCAPTCHA version"
+
+msgid "reCAPTCHA Secret Key"
+msgstr "reCAPTCHA Secret Key"
+
+msgid "reCAPTCHA Site Key"
+msgstr "reCAPTCHA Site Key"
+
+msgid "reCAPTCHA đang bật nhưng thiếu Site Key hoặc Secret Key — đăng nhập có thể fail."
+msgstr "reCAPTCHA is enabled but the Site Key or Secret Key is missing — login may fail."
+
+msgid "reCAPTCHA đăng nhập"
+msgstr "Login reCAPTCHA"
+
+msgid "số lần sai tối đa"
+msgstr "max failed attempts"
+
+msgid "thời gian khóa (phút)"
+msgstr "lockout duration (minutes)"
+
+msgid "từ khóa URL đăng nhập"
+msgstr "login URL keyword"
+
+msgid "wp-config.php có DISALLOW_WP_CRON=true — WP-Cron nội bộ bị tắt. Hãy chắc chắn rằng server cron / hosting panel đang gọi wp-cron.php định kỳ, nếu không các tác vụ tự động sẽ không chạy."
+msgstr "wp-config.php sets DISALLOW_WP_CRON=true — internal WP-Cron is disabled. Make sure the server cron / hosting panel is calling wp-cron.php on a schedule, otherwise scheduled tasks will not run."
+
+msgid "Đã giải phóng:"
+msgstr "Reclaimed:"
+
+msgid "Đã mở khóa IP."
+msgstr "IP unlocked."
+
+msgid "Đặt lại lịch"
+msgstr "Reset schedule"
+
+msgid "Đổi URL đăng nhập"
+msgstr "Change login URL"
+
+msgid "Bạn có thể tắt trình chỉnh sửa code từ Sitevorx hoặc chặn ở mức hệ thống bằng wp-config.php."
+msgstr "You can disable the code editor inside Sitevorx, or block it at the server level via wp-config.php."
+
+msgid "Bạn không có quyền cập nhật plugin."
+msgstr "You do not have permission to update plugins."
+
+msgid "Bật"
+msgstr "Enabled"
+
+msgid "Tắt"
+msgstr "Disabled"
+
+msgid "Đang bật"
+msgstr "Enabled"
+
+msgid "Đã tắt"
+msgstr "Disabled"
+
+msgid "Chi tiết %s"
+msgstr "%s details"
+
+msgid "Chiếm %1$s trong %2$s"
+msgstr "%1$s of %2$s used"
+
+msgid "Chưa có mục nào."
+msgstr "No entries yet."
+
+msgid "Chạy dọn dẹp thủ công"
+msgstr "Run manual cleanup"
+
+msgid "Chạy quét mã độc"
+msgstr "Run malware scan"
+
+msgid "Chế độ Bảo trì"
+msgstr "Maintenance Mode"
+
+msgid "Chống sao chép nội dung"
+msgstr "Content copy protection"
+
+msgid "Content + Database"
+msgstr "Content + Database"
+
+msgid "Cảnh báo SPF/DKIM: Force From Email đang dùng domain %1$s khác domain website %2$s. Nếu DNS chưa cấu hình đúng, email có thể vào spam."
+msgstr "SPF/DKIM warning: Force From Email is using domain %1$s which differs from the website domain %2$s. If DNS is not properly configured, mail may go to spam."
+
+msgid "Cập nhật lịch dọn dẹp tự động"
+msgstr "Update automatic cleanup schedule"
+
+msgid "DATABASE"
+msgstr "DATABASE"
+
+msgid "Database"
+msgstr "Database"
+
+msgid "Error Details"
+msgstr "Error Details"
+
+msgid "Foo"
+msgstr "Foo"
+
+msgid "Ghi lại các thao tác quản trị nhạy cảm trong Sitevorx (lưu, đặt lại, nhập/xuất cấu hình, quét mã độc, dọn dẹp, xóa log). Bộ đệm giữ tối đa 200 mục mới nhất; mục cũ được thay thế tự động."
+msgstr "Records sensitive administrative actions inside Sitevorx (save, reset, import/export, malware scan, cleanup, log purge). The ring buffer keeps the 200 most recent entries; older ones are evicted automatically."
+
+msgid "Gửi email test SMTP"
+msgstr "Send SMTP test email"
+
+msgid "Hành động"
+msgstr "Action"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "If Google reCAPTCHA protection is enabled for the login form, login verification tokens and the visitor IP address are sent to Google only during login attempts. This happens only when the feature is explicitly enabled and configured by the site administrator."
+msgstr "If Google reCAPTCHA protection is enabled for the login form, login verification tokens and the visitor IP address are sent to Google only during login attempts. This happens only when the feature is explicitly enabled and configured by the site administrator."
+
+msgid "Khóa đăng nhập IP"
+msgstr "IP login lockout"
+
+msgid "Khôi phục mặc định"
+msgstr "Restore defaults"
+
+msgid "Không còn bản ghi log nào trong hệ thống."
+msgstr "No log entries are present in the system."
+
+msgid "Không có file hợp lệ nào được xóa. Nếu bạn vừa mở lại trang sau một lúc, hãy quét lại danh sách trước khi xóa."
+msgstr "No valid file was deleted. If you reopened this page after a while, re-scan the list before deleting."
+
+msgid "Không thể làm sạch bảng log do tên bảng không hợp lệ."
+msgstr "Could not clear the log table because the table name is invalid."
+
+msgid "Không thể truy cập hệ thống file (WP_Filesystem). Vui lòng kiểm tra quyền ghi của thư mục wp-content hoặc cấu hình FTP trong wp-config.php."
+msgstr "Could not access the filesystem (WP_Filesystem). Please check write permissions on the wp-content directory or the FTP settings in wp-config.php."
+
+msgid "Không thể truy cập hệ thống tệp để xóa dữ liệu. Vui lòng kiểm tra cấu hình quyền ghi của máy chủ."
+msgstr "Could not access the filesystem to delete data. Check the server's write-permission configuration."
+
+msgid "Không tìm thấy file debug.log hoặc file đã trống."
+msgstr "The debug.log file is missing or empty."
+
+msgid "Không tìm thấy file debug.log hoặc hệ thống chưa ghi nhận lỗi nào."
+msgstr "No debug.log file found, or the system has not logged any errors yet."
+
+msgid "Logo đăng nhập tùy chỉnh"
+msgstr "Custom login logo"
+
+msgid "Lưu cấu hình Bảo mật & Tường lửa"
+msgstr "Save Security & Firewall settings"
+
+msgid "Lưu cấu hình SMTP"
+msgstr "Save SMTP settings"
+
+msgid "Lưu cấu hình Tiện ích Website"
+msgstr "Save Website Utilities settings"
+
+msgid "Lưu cấu hình Tăng tốc Website"
+msgstr "Save Website Speed-up settings"
+
+msgid "Lịch sử thao tác (%d mục)"
+msgstr "Action history (%d entries)"
+
+msgid "Mở khóa đăng nhập thủ công"
+msgstr "Manually unlock login"
+
+msgid "Người dùng"
+msgstr "User"
+
+msgid "Ngữ cảnh"
+msgstr "Context"
+
+msgid "Nhập cấu hình từ JSON"
+msgstr "Import settings from JSON"
+
+msgid "Nhật Ký Kiểm Toán"
+msgstr "Audit Log"
+
+msgid "Nonce verification failed."
+msgstr "Nonce verification failed."
+
+msgid "Plugin này hiện không còn bản cập nhật hợp lệ."
+msgstr "This plugin no longer has a valid update available."
+
+msgid "Plugins"
+msgstr "Plugins"
+
+msgid "Quản Lý Dung Lượng"
+msgstr "Storage Management"
+
+msgid "Recipient Email(s)"
+msgstr "Recipient Email(s)"
+
+msgid "Sent At"
+msgstr "Sent At"
+
+msgid "Sitevorx SMTP Logs"
+msgstr "Sitevorx SMTP Logs"
+
+msgid "Sitevorx can optionally log outgoing email delivery activity when SMTP logging is enabled by an administrator. These logs may include recipient email addresses, message subjects, delivery status, and related error details for troubleshooting purposes."
+msgstr "Sitevorx can optionally log outgoing email delivery activity when SMTP logging is enabled by an administrator. These logs may include recipient email addresses, message subjects, delivery status, and related error details for troubleshooting purposes."
+
+msgid "Sitevorx could not erase SMTP log entry #%d automatically."
+msgstr "Sitevorx could not erase SMTP log entry #%d automatically."
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Subject"
+msgstr "Subject"
+
+msgid "Sẵn sàng cập nhật ngay trên trang này."
+msgstr "Ready to update right from this page."
+
+msgid "Themes"
+msgstr "Themes"
+
+msgid "Thiếu thông tin plugin cần cập nhật."
+msgstr "Missing the plugin information needed for the update."
+
+msgid "Top Mục Khác Trong %s"
+msgstr "Other Top Items In %s"
+
+msgid "Trình chỉnh sửa code trong Dashboard đã bị vô hiệu hóa bởi Sitevorx hoặc cấu hình hệ thống."
+msgstr "The Dashboard code editor has been disabled by Sitevorx or by the server configuration."
+
+msgid "Trình sửa code Dashboard"
+msgstr "Dashboard code editor"
+
+msgid "URL logo đăng nhập"
+msgstr "Login logo URL"
+
+msgid "WP CONTENT"
+msgstr "WP CONTENT"
+
+msgid "WordPress không thể hoàn tất quá trình cập nhật plugin."
+msgstr "WordPress could not finish the plugin update."
+
+msgid "Xuất cấu hình"
+msgstr "Export settings"
+
+msgid "Xóa Nhật Ký"
+msgstr "Clear Log"
+
+msgid "Xóa file từ Disk Cleaner"
+msgstr "Delete file via Disk Cleaner"
+
+msgid "Xóa log SMTP"
+msgstr "Clear SMTP log"
+
+msgid "Xóa nhật ký kiểm toán"
+msgstr "Clear audit log"
+
+msgid "Xóa toàn bộ nhật ký kiểm toán?"
+msgstr "Clear the entire audit log?"
+
+msgid "bỏ qua %d bảng lớn (>500MB)"
+msgstr "skipped %d large tables (>500MB)"
+
+msgid "script trong <head>"
+msgstr "scripts in <head>"
+
+msgid "script trước </body>"
+msgstr "scripts before </body>"
+
+msgid "thông báo khi chặn sao chép"
+msgstr "copy-blocked notice"
+
+msgid "Đang làm mới..."
+msgstr "Refreshing…"
+
+msgid "Đã làm sạch nội dung file debug.log!"
+msgstr "Cleared the contents of debug.log!"
+
+msgid "Đã xóa nhật ký kiểm toán."
+msgstr "Audit log cleared."
+
+msgid "Đặt lại toàn bộ cấu hình"
+msgstr "Reset all settings"
+
+msgid "Đổi %s"
+msgstr "Changed %s"
+
+msgid "%1$d/%2$d lớp bảo mật đang bật. Xem chi tiết bên dưới."
+msgstr "%1$d of %2$d security layers active. See details below."
+
+msgid "Bấm <strong>Bắt đầu quét</strong> để rà soát toàn bộ website tìm mã độc, backdoor, shell ẩn. Hệ thống tự bỏ qua phần ghi chú trong code để tránh báo nhầm."
+msgstr "Click <strong>Start scan</strong> to sweep the entire site for malware, backdoors and hidden shells. The scanner automatically ignores code comments to avoid false alarms."
+
+msgid "Các thư mục sao lưu của plugin lớn (UpdraftPlus, Wordfence, LiteSpeed, WooCommerce, Rank Math) và thư viện gốc của WordPress được bỏ qua để kết quả không bị nhiễu."
+msgstr "Backup folders from major plugins (UpdraftPlus, Wordfence, LiteSpeed, WooCommerce, Rank Math) and WordPress' own internal libraries are skipped to keep the results clean."
+
+msgid "Số dấu hiệu kiểm tra"
+msgstr "Detection signatures"
+
+msgid "dấu hiệu"
+msgstr "signatures"
+
+msgid "Đối chiếu với các loại mã độc và backdoor phổ biến nhất hiện nay."
+msgstr "Matches the most common malware and backdoor patterns seen in the wild."
+
+msgid "Phạm vi quét"
+msgstr "Scan scope"
+
+msgid "File PHP + Bài viết trong DB"
+msgstr "PHP files + database content"
+
+msgid "Quét toàn bộ source code WordPress và nội dung trong database."
+msgstr "Scans the full WordPress source code and the content stored in the database."
+
+msgid "Giới hạn mỗi lượt"
+msgstr "Per-run limit"
+
+msgid "Tối đa 30 giây"
+msgstr "Max 30 seconds"
+
+msgid "Tự dừng sau 30 giây để không làm chậm website. Có thể quét lại nếu cần."
+msgstr "Stops automatically after 30 seconds so the site never slows down. Re-run as needed."
+
+msgid "Đã quét %s mục. Kiểm tra kỹ từng file trước khi xóa — đôi khi plugin hợp lệ có code phức tạp cũng bị báo nhầm. Liên hệ kỹ thuật nếu không chắc chắn."
+msgstr "Scanned %s items. Review each file carefully before deleting — sometimes legitimate plugins with complex code trigger false alarms. Contact a developer if unsure."
+
+msgid "Gỡ thành phần không cần thiết"
+msgstr "Strip unused components"
+
+msgid "Trình duyệt hiện đại hiển thị emoji 😀 sẵn — bỏ phần WordPress chèn thêm để mỗi trang nhẹ hơn ~15KB và tải nhanh hơn."
+msgstr "Modern browsers display emoji 😀 natively — skipping WordPress' extra helper makes every page ~15KB lighter and faster to load."
+
+msgid "Tắt nhúng link tự động"
+msgstr "Disable auto-embed links"
+
+msgid "Khi bạn dán link YouTube/Twitter vào bài viết, WordPress nhúng tự động (cần thêm ~12KB JavaScript). Tắt nếu bạn không dùng tính năng này — nhúng video bằng iframe vẫn hoạt động bình thường."
+msgstr "When you paste a YouTube/Twitter link into a post, WordPress auto-embeds it (needs ~12KB of JavaScript). Disable if you don't use that — manual iframe embeds still work fine."
+
+msgid "Bỏ thư viện JavaScript cũ"
+msgstr "Remove legacy JavaScript library"
+
+msgid "Bỏ một thư viện JavaScript chỉ cần cho theme/plugin rất cũ (~10KB). Hầu hết theme hiện đại không cần nữa — nếu site vẫn chạy bình thường sau khi bật thì để bật luôn."
+msgstr "Drops a JavaScript library only needed by very old themes/plugins (~10KB). Most modern themes don't need it — if the site still works fine after enabling, leave it on."
+
+msgid "Ẩn thông tin phiên bản WordPress"
+msgstr "Hide WordPress version"
+
+msgid "Mặc định WordPress in ra version đang dùng trong source code — hacker có thể dùng để tìm lỗ hổng tương ứng. Bật để ẩn thông tin này và xóa vài dòng HTML rác kèm theo."
+msgstr "By default WordPress prints the running version in the page source — attackers can use it to look for matching exploits. Enable to hide it and strip a few unused HTML tags along the way."
+
+msgid "Tắt thông báo liên kết tự động"
+msgstr "Disable auto-link notifications"
+
+msgid "Tính năng cũ của WordPress: khi có blog khác đăng link tới bài viết của bạn, hệ thống tự tạo bình luận thông báo. Thực tế chỉ gây spam và bị hacker lợi dụng để tấn công. Khuyên nên tắt."
+msgstr "Legacy WordPress feature: when another blog links to your post, the system auto-creates a notification comment. In practice it only generates spam and is abused by attackers — recommended to disable."
+
+msgid "Bấm nút bên dưới để gửi 1 email thử tới %s. Email sẽ có tiền tố [Sitevorx TEST] để dễ phân biệt với email thật."
+msgstr "Click the button below to send a test email to %s. The message uses a [Sitevorx TEST] prefix so it's easy to tell apart from real alerts."
+
+msgid "Cảnh báo đăng nhập admin"
+msgstr "Admin login alert"
+
+msgid "Cảnh báo đăng nhập tài khoản quản trị"
+msgstr "Administrator login alert"
+
+msgid "Email này được gửi tự động bởi Sitevorx. Nếu bạn vừa đăng nhập thì có thể bỏ qua. Nếu không phải bạn → đổi mật khẩu ngay và xem nhật ký kiểm toán."
+msgstr "This email was sent automatically by Sitevorx. If you just logged in, ignore it. If it wasn't you, change your password immediately and review the audit log."
+
+msgid "Gửi email thử"
+msgstr "Send test email"
+
+msgid "Gửi thất bại"
+msgstr "Send failed"
+
+msgid "Không có quyền."
+msgstr "Not authorized."
+
+msgid "Kiểm thử ngay"
+msgstr "Test now"
+
+msgid "Lần gửi gần nhất: %1$s — tài khoản %2$s từ IP %3$s — %4$s"
+msgstr "Last send: %1$s — account %2$s from IP %3$s — %4$s"
+
+msgid "Một tài khoản quản trị vừa đăng nhập vào website của bạn."
+msgstr "An administrator account has just logged in to your site."
+
+msgid "Trình duyệt"
+msgstr "Browser"
+
+msgid "Website"
+msgstr "Website"
+
+msgid "wp_mail() trả về false. Có thể server chưa cấu hình SMTP, hoặc PHP mail() bị hosting chặn. Hãy cài cấu hình SMTP trước (Sitevorx → Cấu hình SMTP)."
+msgstr "wp_mail() returned false. The server may not have SMTP configured, or PHP mail() is blocked by the host. Set up SMTP first (Sitevorx → SMTP Settings)."
+
+msgid "Đang gửi…"
+msgstr "Sending…"
+
+msgid "Đây là email thử nghiệm để bạn xác nhận chức năng cảnh báo đăng nhập đang hoạt động."
+msgstr "This is a test email so you can confirm the login alert feature is working."
+
+msgid "Đã gửi"
+msgstr "Sent"
+
+msgid "Đã gửi email test tới %s. Kiểm tra hộp thư (cả thư mục Spam/Promotions)."
+msgstr "Test email sent to %s. Check the inbox (also the Spam/Promotions folder)."
+
+msgid "Địa chỉ IP"
+msgstr "IP address"
+
+msgid "⚠ Email gửi qua <code>wp_mail()</code>. Nếu Hosting chưa cấu hình SMTP thì email có thể không tới hoặc vào Spam. Bật <a href=\"?page=sitevorx-smtp\" style=\"color:#2563eb; font-weight:600;\">Cấu hình SMTP</a> để chắc chắn giao mail."
+msgstr "⚠ Mail goes through <code>wp_mail()</code>. Without an SMTP configuration on the host, messages may never arrive or land in Spam. Configure <a href=\"?page=sitevorx-smtp\" style=\"color:#2563eb; font-weight:600;\">SMTP</a> for reliable delivery."
+
+msgid "✓ wp_mail trả về thành công"
+msgstr "✓ wp_mail returned success"
+
+msgid "✕ wp_mail thất bại"
+msgstr "✕ wp_mail failed"
+
+msgid "(Asia/Ho_Chi_Minh — múi giờ mặc định, hãy chỉnh WordPress → Cài đặt → Tổng quan)"
+msgstr "(Asia/Ho_Chi_Minh — fallback default, set WordPress → Settings → General to your real timezone)"

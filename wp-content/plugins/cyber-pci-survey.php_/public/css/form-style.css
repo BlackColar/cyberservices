@@ -1,0 +1,602 @@
+/* ============================================================
+   CYBER SERVICES VIETNAM — Assessment Hub Form Styles v8.0
+   Thiết kế: Enterprise · Sạch · Thân thiện người dùng
+   ============================================================ */
+
+:root {
+  --cs-navy: #0b3c5d;
+  --cs-navy-dark: #082c45;
+  --cs-navy-light: #14507a;
+  --cs-accent: #e67e22;
+  --cs-accent-hover: #cf6a15;
+  --cs-success: #03543f;
+  --cs-success-bg: #def7ec;
+  --cs-danger: #9b1c1c;
+  --cs-danger-bg: #fde8e8;
+  --cs-info-bg: #e1effe;
+  --cs-text: #1e293b;
+  --cs-text-muted: #64748b;
+  --cs-border: #dbe2ea;
+  --cs-border-light: #edf2f7;
+  --cs-bg-soft: #f8fafc;
+  --cs-radius: 12px;
+  --cs-radius-sm: 8px;
+  --cs-shadow: 0 4px 20px rgba(11, 60, 93, 0.08);
+  --cs-shadow-lg: 0 12px 40px rgba(11, 60, 93, 0.14);
+}
+
+/* ---------- Container & Header ---------- */
+.hub-wizard-container {
+  max-width: 880px;
+  margin: 32px auto;
+  padding: 0 16px 48px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--cs-text);
+  line-height: 1.55;
+}
+
+.hub-header {
+  background: linear-gradient(135deg, var(--cs-navy) 0%, var(--cs-navy-light) 100%);
+  color: #fff;
+  border-radius: var(--cs-radius);
+  padding: 36px 40px 30px;
+  box-shadow: var(--cs-shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+.hub-header::after {
+  content: "";
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 220px; height: 220px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+}
+.hub-brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #ffd9ae;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+.hub-header h2 {
+  margin: 0 0 8px;
+  font-size: clamp(20px, 3vw, 27px);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+}
+.hub-header .subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 20px;
+}
+.hub-trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.hub-trust-row span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 7px 14px;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+
+/* ---------- Progress bar ---------- */
+.hub-progress {
+  display: flex;
+  gap: 8px;
+  margin: 24px 0 28px;
+  position: sticky;
+  top: 32px;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  padding: 12px;
+  border-radius: var(--cs-radius);
+  box-shadow: var(--cs-shadow);
+  border: 1px solid var(--cs-border-light);
+}
+.hub-progress span {
+  flex: 1;
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--cs-text-muted);
+  background: var(--cs-bg-soft);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 9px 10px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.hub-progress b {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: #cbd5e0;
+  color: #fff;
+  font-size: 11.5px;
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+}
+.hub-progress span.is-active {
+  color: var(--cs-navy);
+  background: var(--cs-info-bg);
+  border-color: #b6d4fe;
+}
+.hub-progress span.is-active b {
+  background: var(--cs-navy);
+}
+
+/* ---------- Step titles ---------- */
+.hub-step-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--cs-navy);
+  margin: 34px 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--cs-border-light);
+  scroll-margin-top: 110px;
+}
+.hub-step-title span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px; height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--cs-navy), var(--cs-navy-light));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 3px 8px rgba(11, 60, 93, 0.25);
+}
+.hub-step-title em {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.5px;
+  color: var(--cs-text-muted);
+  margin-left: auto;
+  text-align: right;
+}
+
+/* ---------- Alerts ---------- */
+.hub-alert {
+  padding: 15px 18px;
+  border-radius: var(--cs-radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 18px 0;
+  border-left: 4px solid transparent;
+  animation: csFadeIn 0.35s ease;
+}
+.hub-alert-success {
+  background: var(--cs-success-bg);
+  color: var(--cs-success);
+  border-left-color: #31c48d;
+}
+.hub-alert-danger {
+  background: var(--cs-danger-bg);
+  color: var(--cs-danger);
+  border-left-color: #f05252;
+}
+@keyframes csFadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Form groups & inputs ---------- */
+#cyberHubForm {
+  background: #fff;
+  border: 1px solid var(--cs-border-light);
+  border-radius: var(--cs-radius);
+  box-shadow: var(--cs-shadow);
+  padding: 28px 32px 36px;
+}
+
+.hub-form-group {
+  margin-bottom: 20px;
+}
+.hub-form-group > label {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--cs-navy);
+  margin-bottom: 7px;
+}
+.hub-form-group > label > span:not(.hub-required) {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--cs-text-muted);
+  margin-top: 2px;
+}
+.hub-required {
+  color: #e53e3e;
+  font-weight: 800;
+}
+
+#cyberHubForm input[type="text"],
+#cyberHubForm input[type="email"],
+#cyberHubForm input[type="tel"],
+#cyberHubForm select,
+#cyberHubForm textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14.5px;
+  font-family: inherit;
+  color: var(--cs-text);
+  background: #fff;
+  border: 1.5px solid var(--cs-border);
+  border-radius: var(--cs-radius-sm);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-sizing: border-box;
+}
+#cyberHubForm textarea {
+  min-height: 96px;
+  resize: vertical;
+  line-height: 1.5;
+}
+#cyberHubForm input:hover,
+#cyberHubForm select:hover,
+#cyberHubForm textarea:hover {
+  border-color: #b9c6d4;
+}
+#cyberHubForm input:focus,
+#cyberHubForm select:focus,
+#cyberHubForm textarea:focus {
+  border-color: var(--cs-navy-light);
+  box-shadow: 0 0 0 3px rgba(20, 80, 122, 0.14);
+  background: #fffdf8;
+}
+#cyberHubForm input[readonly] {
+  background: var(--cs-bg-soft) !important;
+  cursor: default;
+}
+#cyberHubForm ::placeholder {
+  color: #a3b1c2;
+  opacity: 1;
+}
+#cyberHubForm select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2364748b' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 38px;
+  cursor: pointer;
+}
+
+/* ---------- Grid ---------- */
+.hub-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+
+/* ---------- OTP ---------- */
+.otp-wrap {
+  display: flex;
+  gap: 10px;
+}
+.otp-wrap input {
+  flex: 1;
+  min-width: 0;
+}
+.otp-btn {
+  flex-shrink: 0;
+  padding: 12px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #fff;
+  background: linear-gradient(135deg, var(--cs-navy), var(--cs-navy-light));
+  border: none;
+  border-radius: var(--cs-radius-sm);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  box-shadow: 0 3px 10px rgba(11, 60, 93, 0.25);
+}
+.otp-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(11, 60, 93, 0.32);
+}
+.otp-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+.otp-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.otp-status-msg {
+  font-size: 12.5px;
+  font-weight: 600;
+  margin-top: 7px;
+  min-height: 18px;
+}
+.otp-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--cs-success);
+  background: var(--cs-success-bg);
+  border: 1px solid #a7e3cd;
+  padding: 3px 10px;
+  border-radius: 999px;
+  vertical-align: middle;
+  animation: csPopIn 0.3s ease;
+}
+@keyframes csPopIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ---------- Checkbox groups ---------- */
+.hub-checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px;
+}
+.hub-checkbox-item {
+  display: flex !important;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: var(--cs-text) !important;
+  background: var(--cs-bg-soft);
+  border: 1.5px solid var(--cs-border-light);
+  border-radius: var(--cs-radius-sm);
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 0 !important;
+}
+.hub-checkbox-item:hover {
+  border-color: #b9c6d4;
+  background: #f1f5f9;
+}
+.hub-checkbox-item:has(input:checked) {
+  border-color: var(--cs-navy-light);
+  background: var(--cs-info-bg);
+  font-weight: 600 !important;
+}
+.hub-checkbox-item input[type="checkbox"] {
+  width: 17px; height: 17px;
+  accent-color: var(--cs-navy);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* ---------- Upload ---------- */
+.hub-upload-group input[type="file"] {
+  width: 100%;
+  padding: 11px;
+  font-size: 13.5px;
+  border: 2px dashed #b9c6d4;
+  border-radius: var(--cs-radius-sm);
+  background: var(--cs-bg-soft);
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  box-sizing: border-box;
+}
+.hub-upload-group input[type="file"]:hover {
+  border-color: var(--cs-navy-light);
+  background: var(--cs-info-bg);
+}
+.hub-file-hint {
+  font-size: 12.5px;
+  color: var(--cs-text-muted);
+  margin-top: 8px;
+  font-weight: 500;
+}
+.hub-file-hint.is-selected {
+  color: var(--cs-success);
+  font-weight: 700;
+}
+
+/* ---------- NDA ---------- */
+.hub-nda-box {
+  background: var(--cs-bg-soft);
+  border: 1px solid var(--cs-border);
+  border-left: 4px solid var(--cs-accent);
+  border-radius: var(--cs-radius-sm);
+  padding: 20px 22px;
+  max-height: 260px;
+  overflow-y: auto;
+  font-size: 13px;
+  color: #334155;
+  line-height: 1.65;
+}
+.hub-nda-box h4 {
+  margin: 0 0 12px;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: var(--cs-navy);
+  letter-spacing: 0.3px;
+}
+.hub-nda-box p {
+  margin: 0 0 10px;
+  text-align: justify;
+}
+.hub-nda-box p:last-child {
+  margin-bottom: 0;
+}
+.hub-nda-consent label {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  color: var(--cs-text) !important;
+  background: #fffbeb;
+  border: 1.5px solid #fde68a;
+  border-radius: var(--cs-radius-sm);
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+.hub-nda-consent label:hover {
+  border-color: #f59e0b;
+}
+.hub-nda-consent input[type="checkbox"] {
+  width: 19px; height: 19px;
+  margin-top: 1px;
+  accent-color: var(--cs-accent);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* ---------- Submit button ---------- */
+.hub-btn-submit {
+  display: block;
+  width: 100%;
+  margin-top: 26px;
+  padding: 16px 24px;
+  font-size: 15.5px;
+  font-weight: 800;
+  font-family: inherit;
+  letter-spacing: 0.2px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--cs-accent) 0%, #f0932b 100%);
+  border: none;
+  border-radius: var(--cs-radius);
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(230, 126, 34, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+}
+.hub-btn-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 24px rgba(230, 126, 34, 0.42);
+  filter: brightness(1.04);
+}
+.hub-btn-submit:active:not(:disabled) {
+  transform: translateY(0);
+}
+.hub-btn-submit:disabled {
+  background: linear-gradient(135deg, #94a3b8, #b0bccb);
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .hub-wizard-container {
+    margin-top: 16px;
+    padding: 0 10px 32px;
+  }
+  .hub-header {
+    padding: 26px 22px 24px;
+  }
+  #cyberHubForm {
+    padding: 20px 16px 26px;
+  }
+  .hub-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .hub-progress {
+    top: 8px;
+    gap: 5px;
+    padding: 8px;
+  }
+  .hub-progress span {
+    font-size: 10.5px;
+    padding: 7px 6px;
+    gap: 5px;
+    white-space: normal;
+    line-height: 1.25;
+    text-align: center;
+  }
+  .hub-progress b {
+    width: 18px; height: 18px;
+    font-size: 10px;
+  }
+  .otp-wrap {
+    flex-direction: column;
+  }
+  .otp-btn {
+    width: 100%;
+  }
+  .hub-step-title em {
+    display: none;
+  }
+  .hub-checkbox-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Màn hình rất nhỏ (điện thoại): step wizard chỉ hiện số,
+   tránh nhãn dài làm lệch thanh tiến trình ---------- */
+@media (max-width: 480px) {
+  .hub-progress {
+    top: 4px;
+    gap: 4px;
+    padding: 6px;
+  }
+  .hub-progress span {
+    font-size: 0;          /* ẩn chữ, chỉ giữ ô số tròn */
+    gap: 0;
+    padding: 5px;
+    white-space: nowrap;
+  }
+  .hub-progress span b {
+    width: 24px;
+    height: 24px;
+    font-size: 11.5px;
+  }
+}
+
+/* ---------- Print ---------- */
+@media print {
+  .hub-progress,
+  .otp-wrap,
+  .hub-btn-submit,
+  .hub-upload-group {
+    display: none !important;
+  }
+  .hub-wizard-container {
+    max-width: 100%;
+    margin: 0;
+  }
+  .hub-header {
+    box-shadow: none;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  #cyberHubForm {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+}

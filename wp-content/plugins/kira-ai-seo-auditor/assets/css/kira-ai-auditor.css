@@ -1,0 +1,1213 @@
+/**
+ * Kira AI - Competitor Outline & NLP Keyword Auditor (Live Sidebar)
+ * Styles for the meta box in Gutenberg + Classic Editor.
+ */
+
+#kira-ai-auditor-box .inside {
+    padding: 0 !important;
+}
+
+#kira-ai-auditor-root {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+#kira-ai-auditor-root .kira-auditor-box {
+    padding: 16px;
+}
+
+/* ===== Loading ===== */
+.kira-ai-auditor-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 12px;
+}
+
+/* ===== Guide bar ===== */
+.kira-auditor-guide {
+    background: #eff6ff;
+    border-bottom: 1px solid #dbeafe;
+    padding: 10px 14px;
+    font-size: 12px;
+    color: #1e40af;
+}
+
+.kira-auditor-guide-title {
+    font-weight: 700;
+    font-size: 11.5px;
+    margin-bottom: 6px;
+}
+
+.kira-auditor-guide-list {
+    margin: 0;
+    padding: 0 0 0 18px;
+    line-height: 1.65;
+}
+
+.kira-auditor-guide-list li {
+    margin-bottom: 3px;
+    font-size: 11.5px;
+}
+
+/* ===== Editor mode indicator ===== */
+.kira-auditor-mode {
+    font-size: 11px;
+    font-weight: 600;
+    color: #475569;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+/* ===== JS error ===== */
+.kira-auditor-js-error {
+    background: #fef2f2;
+    border: 1px solid #fee2e2;
+    color: #991b1b;
+    padding: 8px 12px;
+    font-size: 11.5px;
+    line-height: 1.45;
+    border-radius: 6px;
+    margin: 8px 12px;
+}
+
+/* ===== Details/Summary (native toggle) ===== */
+.kira-auditor-details {
+    display: block;
+    margin: 0;
+}
+
+.kira-auditor-details .kira-auditor-summary {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    background: linear-gradient(135deg, #ea580c 0%, #9a3412 100%);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(234, 88, 12, 0.25);
+    margin: 0;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.4;
+    border: none;
+}
+
+.kira-auditor-details .kira-auditor-summary::before {
+    content: "▶";
+    font-size: 11px;
+    transition: transform 0.2s ease;
+}
+
+.kira-auditor-details[open] .kira-auditor-summary::before {
+    transform: rotate(90deg);
+}
+
+.kira-auditor-details .kira-auditor-summary:hover {
+    background: linear-gradient(135deg, #c2410c 0%, #7c2d12 100%);
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.35);
+}
+
+.kira-auditor-details .kira-auditor-summary::-webkit-details-marker {
+    display: none;
+}
+
+.kira-auditor-details .kira-auditor-details-body {
+    padding: 10px 14px 0;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 8px;
+}
+
+.kira-auditor-details .kira-auditor-details-note {
+    font-size: 12px;
+    color: #64748b;
+    margin: 0 0 10px;
+    line-height: 1.45;
+}
+
+.kira-auditor-details .kira-auditor-details-loading {
+    color: #64748b;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ===== Setup Section ===== */
+.kira-auditor-setup {
+    padding: 14px 14px 4px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.kira-auditor-setup-title {
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.kira-auditor-label {
+    display: block;
+    font-weight: 600;
+    color: #334155;
+    font-size: 11.5px;
+    margin-bottom: 4px;
+}
+
+.kira-auditor-url-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.kira-auditor-url,
+.kira-auditor-focus-kw,
+.kira-auditor-extra-prompt {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 7px 10px;
+    font-size: 12.5px;
+    background: #f8fafc;
+    color: #0f172a;
+    transition: all 0.2s ease;
+}
+
+.kira-auditor-url:focus,
+.kira-auditor-focus-kw:focus,
+.kira-auditor-extra-prompt:focus {
+    border-color: #ea580c;
+    box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.18);
+    outline: none;
+    background: #ffffff;
+}
+
+.kira-auditor-extra-prompt {
+    resize: vertical;
+    min-height: 40px;
+}
+
+/* ===== Buttons ===== */
+.kira-auditor-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.kira-auditor-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.kira-auditor-btn-primary {
+    background: linear-gradient(135deg, #ea580c 0%, #9a3412 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(234, 88, 12, 0.25);
+}
+
+.kira-auditor-btn-primary:hover:not(:disabled) {
+    background: linear-gradient(135deg, #c2410c 0%, #7c2d12 100%);
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.35);
+}
+
+.kira-auditor-btn-ghost {
+    background: #ffffff;
+    border-color: #cbd5e1;
+    color: #475569;
+    white-space: nowrap;
+}
+
+.kira-auditor-btn-ghost:hover:not(:disabled) {
+    background: #f1f5f9;
+    border-color: #94a3b8;
+    color: #1e293b;
+}
+
+/* ===== Status: not using bootstrap-like dashed style ===== */
+.kira-auditor-status {
+    margin-top: 8px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1.45;
+    display: none;
+}
+
+.kira-auditor-status-info,
+.kira-auditor-status-loading,
+.kira-auditor-status-success,
+.kira-auditor-status-error {
+    display: block;
+}
+
+.kira-auditor-status-info {
+    background: #f1f5f9;
+    color: #475569;
+    border-left: 3px solid #64748b;
+}
+
+.kira-auditor-status-loading {
+    background: #fff7ed;
+    color: #c2410c;
+    border-left: 3px solid #ea580c;
+}
+
+.kira-auditor-status-success {
+    background: #f0fdf4;
+    color: #166534;
+    border-left: 3px solid #22c55e;
+}
+
+.kira-auditor-status-error {
+    background: #fef2f2;
+    color: #991b1b;
+    border-left: 3px solid #ef4444;
+}
+
+.kira-auditor-error {
+    background: #fef2f2;
+    border: 1px solid #fee2e2;
+    color: #991b1b;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 12.5px;
+    margin: 12px;
+    line-height: 1.5;
+}
+
+.kira-auditor-error a {
+    color: #ea580c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ===== Found info banner ===== */
+.kira-auditor-found-info {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    color: #92400e;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 1.45;
+}
+
+/* ===== Scrape preview ===== */
+.kira-auditor-scrape-preview {
+    margin-top: 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px 12px;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.kira-auditor-preview-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #64748b;
+    letter-spacing: 0.3px;
+    margin-bottom: 6px;
+}
+
+.kira-auditor-preview-title {
+    font-size: 12.5px;
+    margin-bottom: 4px;
+    color: #0f172a;
+}
+
+.kira-auditor-preview-meta {
+    font-size: 11.5px;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.kira-auditor-preview-h {
+    font-size: 12px;
+    margin-bottom: 3px;
+    color: #334155;
+}
+
+.kira-auditor-preview-empty {
+    color: #94a3b8;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.kira-auditor-preview-kws {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.kira-auditor-competitor-kws {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 6px;
+}
+
+/* ===== Tabs ===== */
+.kira-auditor-tabs {
+    display: flex;
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 4px 4px 0;
+    gap: 4px;
+}
+
+.kira-auditor-tab {
+    flex: 1;
+    padding: 8px 6px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #64748b;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    font-family: inherit;
+}
+
+.kira-auditor-tab:hover {
+    color: #ea580c;
+}
+
+.kira-auditor-tab-active {
+    color: #ea580c;
+    border-bottom-color: #ea580c;
+    background: #ffffff;
+}
+
+.kira-auditor-tab-panel {
+    display: none;
+    max-height: 420px;
+    overflow-y: auto;
+    padding: 12px;
+    scrollbar-gutter: stable; /* tránh layout nhảy khi scrollbar xuất hiện */
+}
+
+.kira-auditor-tab-panel-active {
+    display: block;
+}
+
+/* ===== Empty state ===== */
+.kira-auditor-empty {
+    padding: 16px;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 12.5px;
+    line-height: 1.6;
+    border: 1px dashed #e2e8f0;
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.kira-auditor-empty strong {
+    color: #ea580c;
+}
+
+/* ===== Section titles ===== */
+.kira-auditor-section-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+/* ===== Compare 2-column layout ===== */
+.kira-auditor-compare-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    align-items: start;
+    min-width: 0;
+}
+
+.kira-auditor-col-left,
+.kira-auditor-col-mid,
+.kira-auditor-col-right {
+    min-width: 0;
+    min-height: 0;
+    overflow-y: auto;
+    max-height: 480px;
+    padding: 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.kira-auditor-col-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #334155;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.kira-auditor-compare-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 6px;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 4px;
+    min-width: 0;
+}
+
+/* Diff colors for middle column (bố cục cần thay đổi) */
+.kira-auditor-compare-item.compare-changed-met {
+    border-left: 3px solid #22c55e;
+    background: #f0fdf4;
+}
+
+.kira-auditor-compare-item.compare-changed-partial {
+    border-left: 3px solid #f59e0b;
+    background: #fffbeb;
+}
+
+.kira-auditor-compare-item.compare-changed-missing {
+    border-left: 3px solid #ef4444;
+    background: #fef2f2;
+}
+
+.kira-auditor-compare-item .kira-auditor-heading-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Action buttons row inside each checklist item */
+.kira-auditor-item-actions {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+/* Responsive: collapse to single column on narrow screens */
+@media (max-width: 900px) {
+    .kira-auditor-compare-wrap {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Heading checklist items ===== */
+.kira-auditor-heading-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    background: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.kira-auditor-heading-item.kira-auditor-status-met {
+    border-left: 3px solid #22c55e;
+    background: #f0fdf4;
+}
+
+.kira-auditor-heading-item.kira-auditor-status-partial {
+    border-left: 3px solid #f59e0b;
+    background: #fffbeb;
+}
+
+.kira-auditor-heading-item.kira-auditor-status-missing {
+    border-left: 3px solid #ef4444;
+    background: #fef2f2;
+}
+
+/* ===== Smart Recommendation label ===== */
+.kira-auditor-rec {
+    margin-top: 6px;
+    font-size: 11px;
+    color: #166534;
+    background: #f0fdf4;
+    border: 1px dashed #86efac;
+    border-radius: 5px;
+    padding: 4px 8px;
+    line-height: 1.5;
+}
+
+.kira-auditor-heading-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.kira-auditor-level-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: #f1f5f9;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    flex-shrink: 0;
+}
+
+.kira-auditor-heading-text {
+    flex: 1;
+    font-size: 12.5px;
+    color: #0f172a;
+    font-weight: 500;
+    min-width: 80px;
+}
+
+.kira-auditor-item-keywords {
+    margin-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.kira-auditor-item-notes {
+    margin-top: 6px;
+    font-size: 11.5px;
+    color: #64748b;
+    font-style: italic;
+}
+
+.kira-auditor-gap-topic {
+    font-size: 12px;
+    color: #166534;
+    padding: 5px 0;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.kira-auditor-gap-topic:last-child {
+    border-bottom: none;
+}
+
+/* ===== Position picker: dropdown chọn vị trí chèn heading ===== */
+.kira-auditor-position-picker {
+    margin-top: 6px;
+}
+
+.kira-auditor-position-select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 11px;
+    padding: 3px 4px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #334155;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.kira-auditor-position-select option {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+/* ===== Badges ===== */
+.kira-auditor-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.kira-auditor-badge-met {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.kira-auditor-badge-partial {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.kira-auditor-badge-missing {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* ===== Insert button ===== */
+.kira-auditor-insert-btn {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #ea580c;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.kira-auditor-insert-btn:hover:not(:disabled) {
+    background: #ea580c;
+    border-color: #ea580c;
+    color: #ffffff;
+}
+
+.kira-auditor-insert-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ===== Mini tags ===== */
+.kira-auditor-mini-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    background: #f1f5f9;
+    color: #334155;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 1px 6px;
+}
+
+/* ===== Keyword tracker ===== */
+.kira-auditor-kw-summary {
+    font-size: 12.5px;
+    color: #475569;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+}
+
+.kira-auditor-kw-summary strong {
+    color: #ea580c;
+}
+
+.kira-auditor-kw-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    background: #ffffff;
+}
+
+.kira-auditor-kw-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.kira-auditor-kw-name {
+    flex: 1;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #0f172a;
+    cursor: pointer;
+    min-width: 70px;
+}
+
+.kira-auditor-kw-name:hover {
+    color: #ea580c;
+    text-decoration: underline;
+}
+
+/* Nút chèn từ khóa — AI viết câu rồi chèn vào bài */
+.kira-auditor-kw-insert-btn {
+    background: #ffffff;
+    border: 1px solid #22c55e;
+    color: #15803d;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.kira-auditor-kw-insert-btn:hover:not(:disabled) {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: #ffffff;
+}
+
+.kira-auditor-kw-insert-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.kira-auditor-kw-count {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.kira-auditor-progress {
+    margin-top: 7px;
+    height: 5px;
+    background: #e2e8f0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.kira-auditor-progress > div {
+    height: 100%;
+    background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+    border-radius: 3px;
+    transition: width 0.4s ease;
+    min-width: 0;
+}
+
+.kira-auditor-kw-places {
+    margin-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.kira-auditor-kw-places span {
+    font-size: 10px;
+    color: #64748b;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 1px 5px;
+}
+
+/* ===== Spinner ===== */
+.kira-auditor-spin {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: kira-auditor-rotate 0.8s linear infinite;
+}
+
+@keyframes kira-auditor-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ===== Toast ===== */
+.kira-auditor-toast {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    z-index: 1000000;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px -8px rgba(15, 23, 42, 0.2);
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1e293b;
+    opacity: 0;
+    transform: translateY(-16px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    max-width: 340px;
+}
+
+.kira-auditor-toast.kira-auditor-toast-show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.kira-auditor-toast-success { border-left: 4px solid #22c55e; }
+.kira-auditor-toast-error { border-left: 4px solid #ef4444; }
+.kira-auditor-toast-info { border-left: 4px solid #ea580c; }
+.kira-auditor-toast-loading { border-left: 4px solid #ea580c; }
+
+.kira-auditor-toast .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+/* ===== Scrollbar ===== */
+.kira-auditor-tab-panel::-webkit-scrollbar,
+.kira-auditor-scrape-preview::-webkit-scrollbar {
+    width: 6px;
+}
+
+.kira-auditor-tab-panel::-webkit-scrollbar-track,
+.kira-auditor-scrape-preview::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.kira-auditor-tab-panel::-webkit-scrollbar-thumb,
+.kira-auditor-scrape-preview::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+}
+
+.kira-auditor-tab-panel::-webkit-scrollbar-thumb:hover,
+.kira-auditor-scrape-preview::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* ===== Multi-URL textarea ===== */
+.kira-auditor-url {
+    min-height: 44px;
+    resize: vertical;
+    line-height: 1.45;
+}
+
+/* ===== AI Section Writer button ===== */
+.kira-auditor-write-btn {
+    background: #ffffff;
+    border: 1px dashed #f59e0b;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.kira-auditor-write-btn:hover:not(:disabled) {
+    background: #f59e0b;
+    border-color: #f59e0b;
+    color: #ffffff;
+}
+
+.kira-auditor-write-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ===== SEO Score Tab ===== */
+.kira-auditor-score-hero {
+    text-align: center;
+    padding: 18px 0 6px;
+    position: relative;
+}
+
+.kira-auditor-score-ring {
+    width: 90px;
+    height: 90px;
+    transform: rotate(-90deg);
+}
+
+.kira-auditor-score-ring .bg {
+    stroke: #e2e8f0;
+}
+
+.kira-auditor-score-ring .fg {
+    transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.kira-auditor-score-number {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+    margin-top: -62px;
+    position: relative;
+    z-index: 1;
+}
+
+.kira-auditor-score-label {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.kira-auditor-score-cta {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    color: #92400e;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.kira-auditor-score-cta-ok {
+    background: #f0fdf4;
+    border-color: #bbf7d0;
+    color: #166534;
+}
+
+.kira-auditor-score-checklist {
+    margin-top: 4px;
+}
+
+.kira-auditor-score-item {
+    display: flex;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    align-items: flex-start;
+}
+
+.kira-auditor-score-item-ok {
+    border-left: 3px solid #22c55e;
+    background: #f0fdf4;
+}
+
+.kira-auditor-score-item-warn {
+    border-left: 3px solid #f59e0b;
+    background: #fffbeb;
+}
+
+.kira-auditor-score-item-icon {
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.kira-auditor-score-item-body {
+    flex: 1;
+}
+
+.kira-auditor-score-item-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.kira-auditor-score-item-detail {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+/* ===== FAB (Floating Action Button) ===== */
+#kira-auditor-fab {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 999999;
+    background: linear-gradient(135deg, #ea580c 0%, #9a3412 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 28px;
+    padding: 13px 20px;
+    font-size: 13.5px;
+    font-weight: 700;
+    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.4);
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1;
+}
+
+#kira-auditor-fab:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(234, 88, 12, 0.55);
+}
+
+/* ===== Modal ===== */
+.kira-auditor-modal-hidden {
+    display: none !important;
+}
+
+#kira-auditor-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000000;
+}
+
+#kira-auditor-modal .kira-auditor-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.72);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+#kira-auditor-modal .kira-auditor-modal-box {
+    position: relative;
+    width: min(1120px, 94vw);
+    height: min(820px, 92vh);
+    margin: 4vh auto 0;
+    background: #f8fafc;
+    border-radius: 16px;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.45);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+#kira-auditor-modal .kira-auditor-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    flex-shrink: 0;
+}
+
+#kira-auditor-modal .kira-auditor-modal-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+#kira-auditor-modal .kira-auditor-modal-close {
+    background: #f1f5f9;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #475569;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#kira-auditor-modal .kira-auditor-modal-close:hover {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+#kira-auditor-modal .kira-auditor-modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 20px;
+}
+
+/* ===== Modal two-column layout ===== */
+#kira-auditor-modal #kira-auditor-root {
+    max-width: none;
+}
+
+#kira-auditor-modal .kira-auditor-guide {
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+#kira-auditor-modal .kira-auditor-guide-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 6px 18px;
+}
+
+/* Tabs span full width */
+#kira-auditor-modal .kira-auditor-tabs {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+#kira-auditor-modal .kira-auditor-tab-panel {
+    max-height: none;
+    padding: 14px 16px;
+}
+
+/* Make heading/keyword lists denser inside the big modal */
+#kira-auditor-modal .kira-auditor-headings-list,
+#kira-auditor-modal .kira-auditor-keywords-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 8px;
+    align-items: start;
+}
+
+#kira-auditor-modal .kira-auditor-score-list {
+    max-width: 720px;
+}
+
+/* Bigger buttons in modal */
+#kira-auditor-modal .kira-auditor-modal-loading {
+    padding: 50px 0;
+}
+
+/* Copy button */
+.kira-auditor-copy-btn {
+    background: #ffffff;
+    border: 1px solid #cfd8e3;
+    color: #475569;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.kira-auditor-copy-btn:hover:not(:disabled) {
+    background: #f1f5f9;
+    border-color: #94a3b8;
+    color: #0f172a;
+}
+
+/* ===== Gutenberg tweaks ===== */
+.edit-post-sidebar #kira-ai-auditor-box .inside {
+    padding: 0;
+}
+
+.edit-post-sidebar #kira-ai-auditor-root {
+    font-size: 12.5px;
+}
+
+.block-editor .postbox .handlediv,
+.edit-post-sidebar .postbox .handlediv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

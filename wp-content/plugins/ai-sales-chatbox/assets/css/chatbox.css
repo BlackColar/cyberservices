@@ -1,0 +1,381 @@
+/* =========================================
+   BASE & CHATBOX
+   ========================================= */
+#ai-chat-root, #ai-chat-root * {
+    box-sizing: border-box !important;
+    margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+#ai-chat-btn {
+    position: fixed; bottom: 24px; right: 24px;
+    width: 60px; height: 60px;
+    background: #c16724; /* Màu chủ đạo */
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(193, 103, 36, 0.4);
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    z-index: 999998; border: none; transition: transform 0.25s ease;
+    overflow: hidden; /* giữ shine nằm gọn trong hình tròn */
+}
+#ai-chat-btn:hover { transform: scale(1.08); }
+#ai-chat-btn svg { width: 26px; height: 26px; fill: #ffffff; position: relative; z-index: 2; }
+
+/* --- Hiệu ứng thu hút: vòng "ping" lan tỏa kiểu Messenger --- */
+#ai-chat-btn .ai-ping-ring {
+    position: absolute; top: 50%; left: 50%;
+    width: 60px; height: 60px;
+    margin: -30px 0 0 -30px;
+    border-radius: 50%;
+    background: rgba(193, 103, 36, 0.35);
+    pointer-events: none;
+    z-index: 1;
+    animation: aiPingRing 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+    animation-delay: 0.8s;
+}
+@keyframes aiPingRing {
+    0%   { transform: scale(1); opacity: 0.7; }
+    70%  { transform: scale(2.1); opacity: 0; }
+    100% { transform: scale(2.1); opacity: 0; }
+}
+
+/* --- Vệt sáng trôi qua nút (shine) --- */
+#ai-chat-btn::after {
+    content: '';
+    position: absolute; top: 0; left: -80%;
+    width: 50%; height: 100%;
+    background: linear-gradient(105deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.35) 50%, rgba(255,255,255,0) 100%);
+    transform: skewX(-20deg);
+    pointer-events: none;
+    z-index: 3;
+    animation: aiBtnShine 4s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+@keyframes aiBtnShine {
+    0%, 55%  { left: -80%; }
+    75%      { left: 130%; }
+    100%     { left: 130%; }
+}
+
+/* --- Nhấp nháy nhẹ toàn nút (nhịp tim) + wiggle khi hover --- */
+#ai-chat-btn { animation: aiBtnPulse 3s ease-in-out infinite; animation-delay: 0.8s; }
+@keyframes aiBtnPulse {
+    0%, 100% { transform: scale(1); }
+    8%       { transform: scale(1.09); }
+    16%      { transform: scale(1); }
+    24%      { transform: scale(1.06); }
+    32%      { transform: scale(1); }
+}
+#ai-chat-btn:hover { animation: aiBtnWiggle 0.6s ease-in-out; transform: scale(1.08); }
+@keyframes aiBtnWiggle {
+    0%, 100% { transform: scale(1.08) rotate(0deg); }
+    25%      { transform: scale(1.08) rotate(-6deg); }
+    75%      { transform: scale(1.08) rotate(6deg); }
+}
+
+/* Ring chạy vô hạn luôn trực — không tắt theo trạng thái chat (theo yêu cầu chủ shop) */
+
+/* Tôn trọng người dùng bật "giảm chuyển động" trong hệ điều hành */
+@media (prefers-reduced-motion: reduce) {
+    #ai-chat-btn,
+    #ai-chat-btn .ai-ping-ring,
+    #ai-chat-btn::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+#ai-chat-box {
+    display: none; position: fixed; bottom: 96px; right: 24px;
+    width: 390px; height: 620px;
+    max-width: calc(100vw - 32px); max-height: calc(100vh - 120px);
+    background: #f4f6f8; /* Nền xám nhạt */
+    border-radius: 20px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+    flex-direction: column; overflow: hidden;
+    z-index: 999999; animation: aiSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes aiSlideUp {
+    from { opacity: 0; transform: translateY(18px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+.ai-chat-header {
+    background: #c16724; color: #ffffff;
+    padding: 16px 20px;
+    display: flex; align-items: flex-start; justify-content: space-between;
+}
+.ai-chat-header-left { display: flex; align-items: center; gap: 12px; }
+.ai-header-avatar {
+    width: 44px; height: 44px;
+    background: rgba(255,255,255,0.25);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 600;
+}
+.ai-chat-header-info { display: flex; flex-direction: column; gap: 4px; }
+.ai-chat-title { font-size: 16px; font-weight: 700; letter-spacing: -0.2px; }
+.ai-chat-status { font-size: 13px; display: flex; align-items: center; gap: 6px; opacity: 0.9; }
+.ai-dot-online { width: 8px; height: 8px; background: #4ade80; border-radius: 50%; box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.2); }
+
+#ai-chat-close {
+    background: transparent; border: none;
+    color: #ffffff; font-size: 18px; font-weight: bold;
+    cursor: pointer; opacity: 0.8; transition: opacity 0.2s;
+    margin-top: 4px;
+}
+#ai-chat-close:hover { opacity: 1; }
+
+/* =========================================
+   MESSAGES AREA
+   ========================================= */
+.ai-chat-messages {
+    flex: 1; padding: 20px !important;
+    overflow-y: auto; background: #f4f6f8;
+    display: flex; flex-direction: column; gap: 16px;
+}
+.ai-chat-messages::-webkit-scrollbar { width: 4px; }
+.ai-chat-messages::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+.ai-msg-row-bot { display: flex; justify-content: flex-start; align-items: flex-end; gap: 8px; }
+.ai-msg-row-user { display: flex; justify-content: flex-end; }
+
+.ai-msg {
+    max-width: 85% !important; width: fit-content;
+    padding: 14px 16px !important;
+    font-size: 14px; line-height: 1.55; word-wrap: break-word;
+}
+
+/* User & Bot Bubble Styling */
+.ai-msg-bot {
+    background: #ffffff; color: #1f2937;
+    border-radius: 4px 18px 18px 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.ai-msg-user {
+    background: #c16724; color: #ffffff;
+    border-radius: 18px 4px 18px 18px;
+    box-shadow: 0 2px 10px rgba(193, 103, 36, 0.2);
+}
+
+.ai-msg-bot p { margin: 0 0 8px 0 !important; }
+.ai-msg-bot p:last-child { margin-bottom: 0 !important; }
+.ai-msg-bot ul, .ai-msg-bot ol { margin: 6px 0 8px 20px !important; padding: 0 !important; }
+.ai-msg-bot li { margin-bottom: 6px !important; }
+.ai-msg-bot strong { font-weight: 700 !important; color: #111827 !important; }
+
+/* =========================================
+   AVATAR INLINE BOT
+   ========================================= */
+.ai-bot-avatar-inline {
+    width: 28px;
+    height: 28px;
+    background: #c16724;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-bottom: 2px;
+}
+
+/* =========================================
+   LEAD FORM (THÔNG TIN KHÁCH HÀNG) - ƯU TIÊN CAO NHẤT
+   ========================================= */
+#ai-chat-box .ai-lead-inline-card {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 16px !important;
+    padding: 16px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+    margin: 4px 0 10px 0;
+}
+#ai-chat-box .ai-lead-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+#ai-chat-box .ai-lead-input-wrap {
+    display: flex;
+    align-items: center;
+    background: #f9fafb !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 10px !important;
+    padding: 0 12px !important;
+    height: 42px !important;
+    transition: all 0.2s ease;
+}
+#ai-chat-box .ai-lead-input-wrap:focus-within {
+    border-color: #c16724 !important;
+    background: #ffffff !important;
+    box-shadow: 0 0 0 2px rgba(193, 103, 36, 0.1) !important;
+}
+#ai-chat-box .ai-lead-input-wrap.is-invalid {
+    border-color: #ef4444 !important;
+    background: #fef2f2 !important;
+}
+
+/* FIX LỖI ICON KHỔNG LỒ TRIỆT ĐỂ */
+#ai-chat-box .ai-lead-input-wrap svg {
+    width: 18px !important;
+    height: 18px !important;
+    min-width: 18px !important;
+    max-width: 18px !important;
+    fill: #9ca3af !important;
+    margin-right: 8px !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+}
+
+#ai-chat-box .ai-lead-input-wrap input {
+    width: 100% !important;
+    border: none !important;
+    background: transparent !important;
+    outline: none !important;
+    font-size: 14px !important;
+    color: #1f2937 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    box-shadow: none !important;
+    line-height: normal !important;
+}
+#ai-chat-box .ai-lead-input-wrap input::placeholder {
+    color: #9ca3af !important;
+}
+#ai-chat-box .ai-lead-error {
+    font-size: 11.5px !important;
+    color: #ef4444 !important;
+    margin-left: 4px !important;
+    display: none;
+    font-weight: 500 !important;
+}
+#ai-chat-box .ai-lead-inline-btn {
+    height: 42px !important;
+    background: #c16724 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 10px rgba(193, 103, 36, 0.25) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    margin-top: 4px !important;
+    transition: transform 0.2s ease, background 0.2s;
+}
+#ai-chat-box .ai-lead-inline-btn:hover {
+    background: #ab5b20 !important;
+    transform: translateY(-1px);
+}
+
+/* =========================================
+   FOOTER & INPUT AREA
+   ========================================= */
+.ai-chat-footer-wrap {
+    background: #ffffff; padding: 12px 16px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.03);
+}
+.ai-chat-input-area { display: flex; align-items: center; gap: 10px; }
+.ai-input-wrap {
+    flex: 1; background: #ffffff;
+    border: 1px solid #e5e7eb; border-radius: 12px;
+    padding: 0 16px; height: 44px; display: flex; align-items: center;
+    transition: all 0.2s;
+}
+.ai-input-wrap:focus-within { border-color: #c16724; box-shadow: 0 0 0 3px rgba(193, 103, 36, 0.1); }
+.ai-input-wrap input {
+    width: 100% !important; border: none !important; background: transparent !important;
+    font-size: 14px !important; color: #374151 !important; outline: none !important; box-shadow: none !important;
+}
+.ai-input-wrap input::placeholder { color: #9ca3af; }
+
+.ai-chat-submit {
+    width: 44px; height: 44px;
+    background: #c16724; border: none; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; flex-shrink: 0;
+    transition: transform 0.15s ease, background 0.2s;
+}
+.ai-chat-submit:hover { background: #ab5b20; transform: translateY(-1px); }
+.ai-chat-submit svg { width: 18px; height: 18px; fill: #ffffff; margin-left: 2px; }
+
+/* Copyright text */
+.ai-chat-copyright {
+    text-align: center; font-size: 11px;
+    color: #9ca3af; margin-top: 10px; padding-bottom: 4px;
+}
+
+/* =========================================
+   TYPING INDICATOR
+   ========================================= */
+.ai-typing { display: flex; gap: 4px; padding: 14px 16px; background: #ffffff; border-radius: 4px 18px 18px 18px; width: fit-content; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+.ai-typing span { width: 6px; height: 6px; background: #cbd5e1; border-radius: 50%; animation: aiBounce 1.2s infinite ease-in-out; }
+.ai-typing span:nth-child(2) { animation-delay: 0.2s; }
+.ai-typing span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes aiBounce { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-4px); } }
+
+/* =========================================
+   QUICK REPLIES (CHIPS) - hàng pill nhỏ gọn
+   ========================================= */
+#ai-chat-root .ai-msg-row-bot.ai-qr-row {
+    /* căn chips thẳng hàng với bubble bot (bù độ rộng avatar 28px + gap 8px) */
+    padding-left: 36px;
+    /* thu hẹp khoảng cách với bubble lời chào phía trên */
+    margin-top: -8px;
+}
+#ai-chat-root .ai-quick-replies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+}
+#ai-chat-root .ai-quick-replies button {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #ffffff;
+    border: 1px solid #f0dcc8;
+    color: #b0601f;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    animation: aiQrFadeIn 0.25s ease both;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+#ai-chat-root .ai-quick-replies button:nth-child(2) { animation-delay: 0.06s; }
+#ai-chat-root .ai-quick-replies button:nth-child(3) { animation-delay: 0.12s; }
+#ai-chat-root .ai-quick-replies button:hover {
+    background: #c16724;
+    border-color: #c16724;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(193, 103, 36, 0.25);
+}
+#ai-chat-root .ai-quick-replies button:focus-visible {
+    outline: 2px solid #c16724;
+    outline-offset: 2px;
+}
+@keyframes aiQrFadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}

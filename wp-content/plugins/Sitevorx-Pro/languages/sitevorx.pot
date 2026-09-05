@@ -1,0 +1,895 @@
+# Copyright (C) 2024 Sitevorx
+# This file is distributed under the same license as the Sitevorx plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Sitevorx 1.0.0\n"
+"Report-Msgid-Bugs-To: https://inet.vn\n"
+"POT-Creation-Date: 2024-01-01 00:00+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: iNET <support@inet.vn>\n"
+"Language-Team: iNET <support@inet.vn>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Windsurf IDE\n"
+"X-Domain: sitevorx\n"
+
+#. Plugin Name of the plugin
+msgid "Sitevorx"
+msgstr ""
+
+#. Description of the plugin
+msgid "All-in-one WordPress toolkit: system optimizer, SMTP email, utilities, disk cleaner, server info, and more."
+msgstr ""
+
+#. Author of the plugin
+msgid "Sitevorx"
+msgstr ""
+
+# =============================================================================
+# sitevorx.php — Sidebar, Dashboard, Widgets
+# =============================================================================
+
+msgid "Bảng Điều Khiển"
+msgstr ""
+
+msgid "Tối Ưu Hệ Thống"
+msgstr ""
+
+msgid "Cấu Hình SMTP"
+msgstr ""
+
+msgid "Tiện Ích Website"
+msgstr ""
+
+msgid "Quản Lý File"
+msgstr ""
+
+msgid "Xuất / Nhập"
+msgstr ""
+
+msgid "Thông Số Server"
+msgstr ""
+
+msgid "Sitevorx"
+msgstr ""
+
+msgid "Phiên bản"
+msgstr ""
+
+msgid "Chào mừng bạn đến với Sitevorx — Bộ công cụ toàn diện giúp quản trị và tối ưu website WordPress của bạn."
+msgstr ""
+
+msgid "Tài liệu Hướng dẫn"
+msgstr ""
+
+msgid "Liên hệ Hỗ trợ"
+msgstr ""
+
+msgid "Cộng đồng WordPress"
+msgstr ""
+
+msgid "Đánh giá Plugin"
+msgstr ""
+
+msgid "Tin Tức & Cập Nhật"
+msgstr ""
+
+msgid "Đang tải tin tức..."
+msgstr ""
+
+msgid "Không thể tải tin tức. Vui lòng thử lại sau."
+msgstr ""
+
+msgid "Xem thêm →"
+msgstr ""
+
+msgid "Trạng Thái Hệ Thống"
+msgstr ""
+
+msgid "PHP"
+msgstr ""
+
+msgid "WordPress"
+msgstr ""
+
+msgid "Database"
+msgstr ""
+
+msgid "Sao lưu và khôi phục toàn bộ cấu hình Sitevorx giữa các website."
+msgstr ""
+
+msgid "Theo dõi plugin, theme cần update, kiểm tra PHP, SSL và cảnh báo bảo mật."
+msgstr ""
+
+# =============================================================================
+# system-optimizer.php
+# =============================================================================
+
+msgid "Tối Ưu & Bảo Mật Website"
+msgstr ""
+
+msgid "Tắt/Bật các tính năng tối ưu hiệu suất, bảo mật đăng nhập và quét mã độc cho website WordPress của bạn."
+msgstr ""
+
+msgid "Tối Ưu Hóa"
+msgstr ""
+
+msgid "Bảo Mật"
+msgstr ""
+
+msgid "Quét Mã Độc"
+msgstr ""
+
+msgid "Đã lưu cấu hình Tối ưu hóa thành công!"
+msgstr ""
+
+msgid "Đã lưu cấu hình Bảo mật thành công!"
+msgstr ""
+
+msgid "Tối Ưu Hiệu Suất Website"
+msgstr ""
+
+msgid "Cho phép SVG Upload"
+msgstr ""
+
+msgid "Cho phép tải lên file SVG (logo, icon) vào thư viện Media. Tiết kiệm băng thông và hiển thị sắc nét trên mọi thiết bị."
+msgstr ""
+
+msgid "Giới hạn Bản Nháp Lưu Trữ"
+msgstr ""
+
+msgid "Mỗi lần bạn nhấn Lưu nháp, WordPress tạo 1 bản sao. Bật để giới hạn còn 3 bản/bài — giúp Database gọn hơn đáng kể."
+msgstr ""
+
+msgid "Tắt Heartbeat API"
+msgstr ""
+
+msgid "WordPress liên tục gửi tín hiệu mỗi 15 giây khi bạn soạn bài. Tắt đi để giảm tải CPU và tăng tốc wp-admin."
+msgstr ""
+
+msgid "Tắt Tự Động Cập Nhật"
+msgstr ""
+
+msgid "Ngăn WordPress tự cập nhật Core, Plugin, Theme mà không hỏi bạn."
+msgstr ""
+
+msgid "Lazy Load Hình Ảnh"
+msgstr ""
+
+msgid "Hình ảnh chỉ được tải khi người đọc cuộn tới — giảm đáng kể thời gian tải trang đầu tiên."
+msgstr ""
+
+msgid "Lưu cấu hình"
+msgstr ""
+
+msgid "Bảo Mật Đăng Nhập"
+msgstr ""
+
+msgid "Khóa Truy Cập Trang Đăng Nhập"
+msgstr ""
+
+msgid "Thêm 1 lớp bảo vệ: Chỉ ai có link chứa mật khẩu bí mật mới mở được trang đăng nhập."
+msgstr ""
+
+msgid "Mật khẩu bí mật"
+msgstr ""
+
+msgid "Tắt Trình Chỉnh Sửa File"
+msgstr ""
+
+msgid "Vô hiệu hóa trình chỉnh sửa code Plugin/Theme trong wp-admin, chặn hacker chèn mã độc nếu lỡ bị chiếm tài khoản."
+msgstr ""
+
+msgid "Chặn XML-RPC"
+msgstr ""
+
+msgid "Tắt giao thức cũ hay bị lợi dụng để brute-force mật khẩu. Nếu bạn không dùng app WordPress Mobile, hãy tắt."
+msgstr ""
+
+msgid "Google reCAPTCHA v3"
+msgstr ""
+
+msgid "Thêm xác minh tự động (vô hình) vào form đăng nhập, chặn bot đăng nhập tự động 24/7."
+msgstr ""
+
+msgid "Site Key"
+msgstr ""
+
+msgid "Secret Key"
+msgstr ""
+
+msgid "Giới hạn Đăng nhập Sai"
+msgstr ""
+
+msgid "Tự động khóa IP trong 15 phút nếu đăng nhập sai liên tục 5 lần. Chống tấn công dò mật khẩu."
+msgstr ""
+
+msgid "Quét Mã Độc (Malware Scanner)"
+msgstr ""
+
+msgid "Kiểm tra toàn bộ file PHP trong thư mục cài đặt WordPress để phát hiện các đoạn mã nguy hiểm như base64_decode, eval, shell_exec..."
+msgstr ""
+
+msgid "Quét Ngay"
+msgstr ""
+
+msgid "Kết quả quét"
+msgstr ""
+
+msgid "Không tìm thấy mã độc! Website của bạn an toàn."
+msgstr ""
+
+msgid "Tìm thấy %d file đáng ngờ:"
+msgstr ""
+
+msgid "File:"
+msgstr ""
+
+msgid "Dòng %d:"
+msgstr ""
+
+msgid "Đã bị khóa vì đăng nhập sai quá nhiều lần. Vui lòng thử lại sau 15 phút."
+msgstr ""
+
+msgid "Sai mật khẩu. Bạn còn %d lần thử."
+msgstr ""
+
+# =============================================================================
+# smtp.php
+# =============================================================================
+
+msgid "Cấu hình Gửi Email Tự Động (SMTP)"
+msgstr ""
+
+msgid "Thiết lập gửi email qua Gmail hoặc máy chủ SMTP tùy chỉnh. Đảm bảo email thông báo, đặt lại mật khẩu luôn gửi thành công."
+msgstr ""
+
+msgid "Cấu hình Gmail"
+msgstr ""
+
+msgid "SMTP Nâng Cao"
+msgstr ""
+
+msgid "Gửi Thử"
+msgstr ""
+
+msgid "Nhật Ký Email"
+msgstr ""
+
+msgid "Đã lưu cấu hình Gmail!"
+msgstr ""
+
+msgid "Đã lưu cấu hình SMTP nâng cao!"
+msgstr ""
+
+msgid "Tài khoản Gmail"
+msgstr ""
+
+msgid "Địa chỉ Gmail dùng để gửi thư hệ thống."
+msgstr ""
+
+msgid "Mật khẩu ứng dụng (App Password)"
+msgstr ""
+
+msgid "Tạo App Password tại myaccount.google.com → Bảo mật → Mật khẩu ứng dụng."
+msgstr ""
+
+msgid "Để trống nếu không thay đổi"
+msgstr ""
+
+msgid "Lưu Cấu Hình"
+msgstr ""
+
+msgid "Máy chủ SMTP"
+msgstr ""
+
+msgid "Địa chỉ máy chủ gửi mail."
+msgstr ""
+
+msgid "Cổng SMTP"
+msgstr ""
+
+msgid "Thường dùng: 587 (TLS) hoặc 465 (SSL)."
+msgstr ""
+
+msgid "Tài khoản SMTP"
+msgstr ""
+
+msgid "Email hoặc username đăng nhập SMTP."
+msgstr ""
+
+msgid "Mật khẩu SMTP"
+msgstr ""
+
+msgid "Mật khẩu xác thực với máy chủ SMTP."
+msgstr ""
+
+msgid "Tùy Chọn Nâng Cao"
+msgstr ""
+
+msgid "Tên người gửi (From Name)"
+msgstr ""
+
+msgid "Tên hiển thị khi khách nhận email."
+msgstr ""
+
+msgid "Ép địa chỉ gửi (Force From Email)"
+msgstr ""
+
+msgid "Ghi đè email gửi của WordPress/plugin khác."
+msgstr ""
+
+msgid "Ép tên gửi (Force From Name)"
+msgstr ""
+
+msgid "Ghi đè tên người gửi mặc định."
+msgstr ""
+
+msgid "Ghi Log Email"
+msgstr ""
+
+msgid "Lưu lại lịch sử gửi email (tối đa 50 bản ghi gần nhất)."
+msgstr ""
+
+msgid "Kiểm Tra Gửi Email"
+msgstr ""
+
+msgid "Gửi một email thử nghiệm để kiểm tra cấu hình SMTP hoạt động đúng."
+msgstr ""
+
+msgid "Email nhận thử"
+msgstr ""
+
+msgid "Gửi Email Thử"
+msgstr ""
+
+msgid "Lịch Sử Gửi Email"
+msgstr ""
+
+msgid "Hệ thống ghi lại tối đa 50 lần gửi gần nhất."
+msgstr ""
+
+msgid "Thời gian"
+msgstr ""
+
+msgid "Người nhận"
+msgstr ""
+
+msgid "Tiêu đề"
+msgstr ""
+
+msgid "Trạng thái"
+msgstr ""
+
+msgid "Thành công"
+msgstr ""
+
+msgid "Thất bại"
+msgstr ""
+
+msgid "Chưa có nhật ký email nào."
+msgstr ""
+
+msgid "Bạn có chắc chắn muốn xóa toàn bộ nhật ký?"
+msgstr ""
+
+msgid "Xóa toàn bộ Log"
+msgstr ""
+
+msgid "Email thử đã được gửi thành công!"
+msgstr ""
+
+msgid "Gửi email thất bại: %s"
+msgstr ""
+
+msgid "Đã xóa toàn bộ nhật ký email."
+msgstr ""
+
+# =============================================================================
+# sv-utilities.php
+# =============================================================================
+
+msgid "Website đang được bảo trì"
+msgstr ""
+
+msgid "Chúng tôi đang nâng cấp hệ thống. Vui lòng quay lại sau ít phút."
+msgstr ""
+
+msgid "Bảo trì hệ thống"
+msgstr ""
+
+msgid "Đã làm sạch nội dung file error_log!"
+msgstr ""
+
+msgid "Đã lưu cấu hình tiện ích thành công!"
+msgstr ""
+
+msgid "Đã lưu cấu hình nút liên hệ thành công!"
+msgstr ""
+
+msgid "Không tìm thấy file error_log hoặc hệ thống chưa ghi nhận lỗi nào."
+msgstr ""
+
+msgid "File log hiện đang trống. Tuyệt vời!"
+msgstr ""
+
+msgid "Công Cụ & Tiện Ích Website"
+msgstr ""
+
+msgid "Các công cụ mở rộng: chèn mã tracking, bảo vệ nội dung, nút liên hệ nổi và gỡ lỗi hệ thống."
+msgstr ""
+
+msgid "Tiện Ích & Script"
+msgstr ""
+
+msgid "Nút Liên Hệ Nổi"
+msgstr ""
+
+msgid "Mã Kịch Bản (Script) & Thống Kê"
+msgstr ""
+
+msgid "Chèn mã vào Header (Phần Đầu Trang)"
+msgstr ""
+
+msgid "Dán mã theo dõi Google Analytics, Facebook Pixel, hoặc mã xác minh chủ sở hữu (Meta Tags) vào đây."
+msgstr ""
+
+msgid "Chèn mã vào Footer (Phần Chân Trang)"
+msgstr ""
+
+msgid "Dán mã Livechat (Zalo, Tawk.to) vào khu vực này để biểu tượng chat tải sau cùng, không làm chậm tốc độ web."
+msgstr ""
+
+msgid "Tính Năng Đặc Biệt"
+msgstr ""
+
+msgid "Chống Copy & Ăn Cắp Bài Viết"
+msgstr ""
+
+msgid "Tự động chặn bôi đen văn bản, vô hiệu hóa chuột phải và đóng băng hình ảnh để tránh bị người khác copy."
+msgstr ""
+
+msgid "Nhập thông báo khi click chuột phải..."
+msgstr ""
+
+msgid "Bật Cửa Cuốn (Chế độ Bảo trì)"
+msgstr ""
+
+msgid "Tạm thời chặn khách truy cập (hiện thông báo đang nâng cấp) trong lúc bạn đang cấu hình lại web. Quản trị viên vẫn xem được bình thường."
+msgstr ""
+
+msgid "Đổi Logo Trang Đăng Nhập"
+msgstr ""
+
+msgid "Thay thế logo WordPress (chữ W) mặc định nhàm chán bằng hình ảnh logo thương hiệu riêng của bạn."
+msgstr ""
+
+msgid "Dán link ảnh logo (PNG/SVG). Lấy từ %sMedia → Thư viện%s → click ảnh → copy URL."
+msgstr ""
+
+msgid "Logo đang hoạt động"
+msgstr ""
+
+msgid "Logo đã được cài đặt"
+msgstr ""
+
+msgid "Nhật Ký Lỗi Code (Error Log)"
+msgstr ""
+
+msgid "Màn hình xem trực tiếp %s50 lỗi lập trình gần nhất%s để gửi cho coder hoặc bộ phận kỹ thuật."
+msgstr ""
+
+msgid "Bạn có chắc chắn muốn xóa trống toàn bộ dữ liệu lỗi?"
+msgstr ""
+
+msgid "Xóa Sạch Lịch Sử Lỗi"
+msgstr ""
+
+msgid "Nút Gọi Điện & Nhắn Tin Nổi"
+msgstr ""
+
+msgid "Cài đặt các nút liên hệ nổi (Zalo, Messenger, Hotline) góc màn hình giúp khách hàng dễ dàng tiếp cận bạn."
+msgstr ""
+
+msgid "Số điện thoại Gọi ngay"
+msgstr ""
+
+msgid "Nút sẽ tự động rung rinh thu hút khách."
+msgstr ""
+
+msgid "Số Zalo"
+msgstr ""
+
+msgid "Tự động mở app Zalo khi khách click."
+msgstr ""
+
+msgid "Link Messenger"
+msgstr ""
+
+msgid "Đường dẫn m.me Fanpage của bạn."
+msgstr ""
+
+# =============================================================================
+# sv-disk-cleaner.php
+# =============================================================================
+
+msgid "Đã xóa %1$d file. Giải phóng %2$s dung lượng."
+msgstr ""
+
+msgid "Vui lòng chọn ít nhất một file để xóa."
+msgstr ""
+
+msgid "FILE DUNG LƯỢNG LỚN"
+msgstr ""
+
+msgid "BACKUP / LOG NẶNG"
+msgstr ""
+
+msgid "Quản Lý File"
+msgstr ""
+
+msgid "Quét toàn bộ thư mục cài đặt WordPress (bao gồm wp-content, themes, plugins, uploads) để tìm các file có dung lượng trên 50 MB như bản sao lưu (.zip, .sql, .tar.gz), file log, video… giúp giải phóng không gian lưu trữ."
+msgstr ""
+
+msgid "Thống kê File Cỡ Lớn"
+msgstr ""
+
+msgid "Lưu ý:"
+msgstr ""
+
+msgid "Vui lòng nhìn kỹ %sTên file%s trước khi xóa. Tránh xóa nhầm các file quan trọng của bạn!"
+msgstr ""
+
+msgid "Tổng Dung Lượng"
+msgstr ""
+
+msgid "Số lượng file tìm thấy"
+msgstr ""
+
+msgid "file"
+msgstr ""
+
+msgid "Kết quả Quét đệ quy"
+msgstr ""
+
+msgid "Máy chủ của bạn đang cực kỳ gọn gàng!"
+msgstr ""
+
+msgid "Tuyệt vời! Không có tệp tin nào quá khổ chiếm dụng diện tích máy chủ."
+msgstr ""
+
+msgid "Tên File & Phân loại"
+msgstr ""
+
+msgid "Đường dẫn chi tiết"
+msgstr ""
+
+msgid "Dung lượng"
+msgstr ""
+
+msgid "Ngày sửa đổi"
+msgstr ""
+
+msgid "Hành động xóa sẽ không thể hoàn tác!"
+msgstr ""
+
+msgid "Xóa File Đã Chọn"
+msgstr ""
+
+# =============================================================================
+# sv-import-export.php
+# =============================================================================
+
+msgid "Đã khôi phục tất cả thiết lập về mặc định thành công!"
+msgstr ""
+
+msgid "Nhập thành công %s thiết lập!"
+msgstr ""
+
+msgid "Dữ liệu JSON không hợp lệ."
+msgstr ""
+
+msgid "Xuất / Nhập Cấu Hình"
+msgstr ""
+
+msgid "Sao lưu toàn bộ thiết lập của Sitevorx và di chuyển sang website khác một cách nhanh chóng."
+msgstr ""
+
+msgid "Xuất Cấu Hình"
+msgstr ""
+
+msgid "Sao chép hoặc tải xuống toàn bộ thiết lập hiện tại dưới dạng JSON."
+msgstr ""
+
+msgid "Sao chép"
+msgstr ""
+
+msgid "Tải xuống"
+msgstr ""
+
+msgid "Nhập Cấu Hình"
+msgstr ""
+
+msgid "Dán nội dung JSON đã xuất từ website khác vào đây để nhập nhanh."
+msgstr ""
+
+msgid "Dán nội dung JSON vào đây..."
+msgstr ""
+
+msgid "Khôi Phục Mặc Định"
+msgstr ""
+
+msgid "Xóa toàn bộ thiết lập"
+msgstr ""
+
+msgid "Hành động này sẽ xóa tất cả cấu hình của Sitevorx và đưa về trạng thái ban đầu. Không thể hoàn tác!"
+msgstr ""
+
+msgid "Bạn có chắc chắn muốn xóa TẤT CẢ thiết lập? Hành động này không thể hoàn tác!"
+msgstr ""
+
+msgid "Khôi phục mặc định"
+msgstr ""
+
+# =============================================================================
+# sv-scheduled-cleanup.php
+# =============================================================================
+
+msgid "Đã lưu thiết lập Dọn dẹp tự động thành công!"
+msgstr ""
+
+msgid "Hàng tuần"
+msgstr ""
+
+msgid "Hàng ngày"
+msgstr ""
+
+msgid "2 lần/ngày"
+msgstr ""
+
+msgid "Dọn dẹp tự động:"
+msgstr ""
+
+msgid "Không có gì cần dọn"
+msgstr ""
+
+msgid "Database đã tối ưu."
+msgstr ""
+
+msgid "Bảo Trì & Dọn Rác Tự Động Định Kỳ"
+msgstr ""
+
+msgid "ĐANG CHẠY"
+msgstr ""
+
+msgid "Chưa bật"
+msgstr ""
+
+msgid "Kích hoạt dọn dẹp rác máy chủ"
+msgstr ""
+
+msgid "Hệ thống tự động dò tìm và xóa bỏ bản nháp cũ, bình luận rác và tối ưu lại cơ sở dữ liệu để web luôn phản hồi nhanh nhất."
+msgstr ""
+
+msgid "Tần suất"
+msgstr ""
+
+msgid "Chọn khoảng thời gian giữa các lần dọn dẹp tự động."
+msgstr ""
+
+msgid "Lần chạy tiếp theo:"
+msgstr ""
+
+msgid "Chạy dọn dẹp ngay"
+msgstr ""
+
+msgid "Lưu thiết lập"
+msgstr ""
+
+msgid "Nhật ký Dọn dẹp Tự động"
+msgstr ""
+
+# =============================================================================
+# sv-server-info.php
+# =============================================================================
+
+msgid "Không xác định"
+msgstr ""
+
+msgid "Thông Số Máy Chủ & Hệ Thống"
+msgstr ""
+
+msgid "Xem nhanh các giới hạn cấu hình môi trường Hosting/VPS để tối ưu hoá chức năng hoặc làm việc với kỹ thuật viên."
+msgstr ""
+
+msgid "Môi trường Máy chủ"
+msgstr ""
+
+msgid "Phiên bản PHP"
+msgstr ""
+
+msgid "Phiên bản MySQL/MariaDB"
+msgstr ""
+
+msgid "Giới hạn cấu hình PHP (PHP Limits)"
+msgstr ""
+
+msgid "Thông tin WordPress"
+msgstr ""
+
+msgid "Phiên bản WordPress"
+msgstr ""
+
+msgid "Chế độ Debug (WP_DEBUG)"
+msgstr ""
+
+msgid "ĐANG BẬT"
+msgstr ""
+
+msgid "ĐÃ TẮT"
+msgstr ""
+
+msgid "Dung lượng Database"
+msgstr ""
+
+msgid "Tổng kích thước thực tế của Cơ sở dữ liệu."
+msgstr ""
+
+# =============================================================================
+# system-optimizer.php — Scanner Signatures
+# =============================================================================
+
+msgid "Thực thi chuỗi mã hóa / giải nén qua eval"
+msgstr ""
+
+msgid "Gọi lệnh hệ thống từ dữ liệu đầu vào hoặc chuỗi đã mã hóa"
+msgstr ""
+
+msgid "Sử dụng preg_replace với modifier /e"
+msgstr ""
+
+msgid "Thực thi động từ dữ liệu không tin cậy"
+msgstr ""
+
+msgid "Chữ ký web shell phổ biến"
+msgstr ""
+
+msgid "Chữ ký web shell WSO"
+msgstr ""
+
+msgid "Giải mã trực tiếp dữ liệu đầu vào"
+msgstr ""
+
+msgid "Chuỗi giải mã / giải nén nhiều lớp"
+msgstr ""
+
+msgid "Có sử dụng hàm thực thi lệnh hệ thống"
+msgstr ""
+
+msgid "Chuỗi mã hóa dài được giải mã trực tiếp"
+msgstr ""
+
+# =============================================================================
+# sv-maintenance-check.php
+# =============================================================================
+
+msgid "Bảo Trì & Cập Nhật"
+msgstr ""
+
+msgid "Theo dõi trạng thái cập nhật plugin, theme, WordPress Core và các cảnh báo bảo mật quan trọng."
+msgstr ""
+
+msgid "%d plugin cần cập nhật"
+msgstr ""
+
+msgid "%d theme cần cập nhật"
+msgstr ""
+
+msgid "WordPress chưa cập nhật (%s → %s)"
+msgstr ""
+
+msgid "PHP %s quá cũ — khuyến nghị nâng lên 8.0+ (không bắt buộc)"
+msgstr ""
+
+msgid "PHP %s — khuyến nghị 8.0+ để tối ưu hiệu suất (không bắt buộc)"
+msgstr ""
+
+msgid "SSL/HTTPS chưa kích hoạt"
+msgstr ""
+
+msgid "WP_DEBUG đang bật trên production"
+msgstr ""
+
+msgid "Phát hiện %d hạng mục cần lưu ý"
+msgstr ""
+
+msgid "Kiểm Tra Môi Trường"
+msgstr ""
+
+msgid "Đã cập nhật mới nhất."
+msgstr ""
+
+msgid "Có phiên bản mới, nên cập nhật sớm."
+msgstr ""
+
+msgid "Phiên bản được khuyến nghị."
+msgstr ""
+
+msgid "Khuyến nghị nâng lên PHP 8.0+ để tối ưu hiệu suất. Đây chỉ là gợi ý, không bắt buộc — việc nâng PHP có thể gây xung đột với một số plugin hoặc theme cũ. Hãy kiểm tra tương thích trước khi nâng cấp."
+msgstr ""
+
+msgid "Phiên bản PHP đã cũ. Khuyến nghị nâng cấp lên 8.0+ nhưng không bắt buộc — hãy kiểm tra tương thích plugin/theme trước khi nâng để tránh xung đột."
+msgstr ""
+
+msgid "Website đã được bảo mật bằng chứng chỉ SSL."
+msgstr ""
+
+msgid "Nên kích hoạt SSL để bảo mật dữ liệu truyền tải."
+msgstr ""
+
+msgid "Đang bật chế độ debug. Nên tắt trên môi trường production để tránh lộ thông tin nhạy cảm."
+msgstr ""
+
+msgid "Đã tắt, đúng chuẩn cho môi trường production."
+msgstr ""
+
+msgid "Trình chỉnh sửa code trong Dashboard đã bị vô hiệu hóa."
+msgstr ""
+
+msgid "Nên thêm define('DISALLOW_FILE_EDIT', true) vào wp-config.php để chặn chỉnh sửa code từ Dashboard."
+msgstr ""
+
+msgid "Cập Nhật Plugin"
+msgstr ""
+
+msgid "Tất cả plugin đã cập nhật mới nhất!"
+msgstr ""
+
+msgid "Cập nhật"
+msgstr ""
+
+msgid "Cập Nhật Theme"
+msgstr ""
+
+msgid "Tất cả theme đã cập nhật mới nhất!"
+msgstr ""
+
+# =============================================================================
+# JS strings (sv-admin.js)
+# =============================================================================
+
+msgid "Đóng"
+msgstr ""
+
+msgid "Đang lưu..."
+msgstr ""
+
+msgid "Đã sao chép cấu hình vào clipboard!"
+msgstr ""
+
+msgid "Đã tải file cấu hình xuống!"
+msgstr ""
+
+msgid "Đang chuyển ngôn ngữ..."
+msgstr ""
+
+msgid "Đã lưu ngôn ngữ. Đang tải lại..."
+msgstr ""
+
+msgid "Không thể chuyển ngôn ngữ. Vui lòng thử lại."
+msgstr ""
+
+msgid "Xác nhận hành động"
+msgstr ""
+
+msgid "Hủy bỏ"
+msgstr ""
+
+msgid "Xác nhận"
+msgstr ""
+
+msgid "Bạn có chắc chắn?"
+msgstr ""

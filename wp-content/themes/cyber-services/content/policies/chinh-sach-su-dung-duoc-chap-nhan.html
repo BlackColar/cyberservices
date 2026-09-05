@@ -1,0 +1,53 @@
+<div class="policy-content">
+  <p class="policy-kicker">Quy định Sử dụng Nền tảng &amp; Cổng Dịch vụ Tuân thủ</p>
+  <p class="policy-lede">Các nguyên tắc bắt buộc nhằm bảo đảm an toàn, toàn vẹn dữ liệu khi truy cập và khai thác nền tảng quản trị tuân thủ (PCI DSS, ISO 27001, SOC 2, HIPAA) của Cyber Services Việt Nam.</p>
+  <p class="policy-meta">Cập nhật lần cuối: Tháng 8, 2026 <span aria-hidden="true">·</span> Phiên bản: 2.4</p>
+
+  <h2 id="section-1">1. Mục đích &amp; Phạm vi áp dụng</h2>
+  <p>Chính sách Sử dụng Được Chấp Nhận ("AUP") này quy định các chuẩn mực hành vi và trách nhiệm đối với tất cả người dùng khi truy cập Cổng quản lý đánh giá tuân thủ (Compliance Portal), cổng nộp minh chứng kiểm toán hoặc các nền tảng dịch vụ kỹ thuật số do <strong>Công ty Cổ phần Cyber Services Việt Nam</strong> ("Cyber Services VN", "chúng tôi") vận hành.</p>
+  <p>Chính sách này áp dụng cho toàn bộ khách hàng, nhân sự của đối tác, chuyên gia tư vấn và kiểm toán viên tham gia vào các dự án tư vấn tuân thủ <strong>PCI, ISO/IEC, SOC 2, HIPAA, CMMI và các dịch vụ khác mà Cyber Services cung cấp</strong>.</p>
+
+  <h2 id="section-2">2. Các hành vi bị nghiêm cấm (Prohibited Uses)</h2>
+  <p>Khi sử dụng hạ tầng và nền tảng của Cyber Services Việt Nam, người dùng <strong>tuyệt đối không được thực hiện</strong> các hành vi sau:</p>
+  <div class="policy-danger-list">
+    <p><strong>Xâm nhập &amp; Thử tải trái phép:</strong> Thực hiện quét lỗ hổng (Vulnerability Scan), tấn công từ chối dịch vụ (DoS/DDoS), hoặc kiểm thử thâm nhập vào chính nền tảng cổng dịch vụ khi chưa có phê duyệt bằng văn bản.</p>
+    <p><strong>Đảo ngược mã nguồn &amp; Can thiệp hệ thống:</strong> Dịch ngược (Reverse Engineer), decompile, hoặc can thiệp vào mã nguồn, API và logic xử lý đánh giá của hệ thống.</p>
+    <p><strong>Phát tán mã độc hại:</strong> Tải lên các tập tin chứa virus, trojan, phần mềm gián điệp hoặc tài liệu khai thác lỗ hổng vào kho lưu trữ bằng chứng.</p>
+    <p><strong>Gian lận thông tin &amp; Giả mạo:</strong> Tải lên các bằng chứng giả mạo, nhật ký hệ thống bị làm sai lệch nhằm gian lận kết quả đánh giá tuân thủ.</p>
+  </div>
+
+  <h2 id="section-3">3. Bảo mật tài khoản &amp; Xác thực</h2>
+  <p>Để đảm bảo an toàn truy cập tài nguyên dự án:</p>
+  <ul class="policy-list">
+    <li><strong>Không chia sẻ tài khoản:</strong> Mỗi tài khoản được cấp phát riêng biệt theo định danh nhân sự; nghiêm cấm sử dụng chung tài khoản hoặc chuyển giao mật khẩu.</li>
+    <li><strong>Bắt buộc MFA:</strong> Người dùng phải kích hoạt Xác thực đa yếu tố (Multi-Factor Authentication - MFA) để truy cập hệ thống.</li>
+    <li><strong>Thông báo sự cố tức thì:</strong> Nếu phát hiện lộ lọt thông tin đăng nhập hoặc nghi ngờ tài khoản bị chiếm đoạt, người dùng phải thông báo ngay cho đội ngũ an ninh của Cyber Services Việt Nam.</li>
+  </ul>
+
+  <h2 id="section-4">4. Tải lên bằng chứng &amp; Dữ liệu tuân thủ</h2>
+  <p>Trong quá trình tư vấn và đánh giá tuân thủ (PCI DSS, ISO 27001, SOC 2, HIPAA), khách hàng cần tuân thủ các nguyên tắc xử lý dữ liệu:</p>
+  <div class="policy-callout">
+    <p><strong>Khử nhận dạng (Masking/Redacting):</strong> Không tải lên số thẻ thanh toán thực tế (PAN đầy đủ) hoặc dữ liệu y tế cá nhân (PHI/PII) không được che dấu hợp lệ.</p>
+    <p><strong>Sử dụng đúng kênh mã hóa:</strong> Mọi tài liệu bằng chứng chỉ được tải lên qua cổng Portal được mã hóa TLS 1.3, không gửi qua các kênh chat/email không bảo mật.</p>
+  </div>
+
+  <h2 id="section-5">5. Giám sát an ninh &amp; Kiểm toán nhật ký</h2>
+  <p>Hệ thống tự động ghi nhận toàn bộ nhật ký kiểm toán (Audit Logs) bao gồm: IP truy cập, thời gian đăng nhập, lịch sử xem và tải xuống tài liệu. Việc giám sát này nhằm đảm bảo tính toàn vẹn của bằng chứng phục vụ kiểm toán độc lập và hỗ trợ điều tra khi có dấu hiệu vi phạm an ninh.</p>
+
+  <h2 id="section-6">6. Xử lý vi phạm &amp; Chấm dứt quyền truy cập</h2>
+  <p>Trường hợp phát hiện người dùng vi phạm các điều khoản trong Chính sách này, Cyber Services Việt Nam có quyền:</p>
+  <ul class="policy-list">
+    <li>Tạm đình chỉ hoặc khóa vĩnh viễn quyền truy cập vào cổng dịch vụ mà không cần báo trước.</li>
+    <li>Hủy bỏ tính hợp lệ của các báo cáo đánh giá hoặc bằng chứng liên quan đến hành vi gian lận.</li>
+    <li>Thông báo cho lãnh đạo tổ chức khách hàng và chuyển giao chứng cứ cho cơ quan pháp luật có thẩm quyền khi xảy ra hành vi phá hoại hệ thống.</li>
+  </ul>
+
+  <h2 id="section-7">7. Thông tin liên hệ &amp; Hỗ trợ kỹ thuật</h2>
+  <div class="policy-contact" id="contact">
+    <p>Nếu bạn cần hỗ trợ về tài khoản hoặc muốn báo cáo sự cố an ninh trên cổng nền tảng, vui lòng liên hệ:</p>
+    <p><strong>CÔNG TY CỔ PHẦN CYBER SERVICES VIỆT NAM</strong></p>
+    <p>LP08 2, P. Nguyễn Thị Duệ, Hà Nội 100000</p>
+    <p><a href="mailto:contacts@cyberservices.vn">contacts@cyberservices.vn</a></p>
+    <p><a href="tel:+84979875985">+84 979 875 985</a></p>
+  </div>
+</div>

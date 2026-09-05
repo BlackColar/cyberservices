@@ -1,0 +1,291 @@
+[04-Sep-2026 11:46:14 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = '6d02550d419a438e322dc5c6250d721d'
+				 AND timestamp > '2026-09-04 18:41:14' made by do_action_ref_array('wp_version_check'), WP_Hook->do_action, WP_Hook->apply_filters, wp_version_check, do_action('wp_maybe_auto_update'), WP_Hook->do_action, WP_Hook->apply_filters, wp_maybe_auto_update, WP_Automatic_Updater->run, WP_Automatic_Updater->update, Core_Upgrader->upgrade, do_action('upgrader_process_complete'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_plugin_update, WPBackItUp_Event_Logger->handle_core_update, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 11:46:14 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by do_action_ref_array('wp_version_check'), WP_Hook->do_action, WP_Hook->apply_filters, wp_version_check, do_action('wp_maybe_auto_update'), WP_Hook->do_action, WP_Hook->apply_filters, wp_maybe_auto_update, WP_Automatic_Updater->run, WP_Automatic_Updater->update, Core_Upgrader->upgrade, do_action('upgrader_process_complete'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_plugin_update, WPBackItUp_Event_Logger->handle_core_update, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 11:46:14 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(297): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(201): WPBackItUp_Event_Logger->handle_core_update()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(341): WPBackItUp_Event_Logger->log_plugin_update()
+#3 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#4 /home/iklaejryhosting/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#5 /home/iklaejryhosting/public_html/wp-admin/includes/class-core-upgrader.php(221): do_action()
+#6 /home/iklaejryhosting/public_html/wp-admin/includes/class-wp-automatic-updater.php(478): Core_Upgrader->upgrade()
+#7 /home/iklaejryhosting/public_html/wp-admin/includes/class-wp-automatic-updater.php(715): WP_Automatic_Updater->update()
+#8 /home/iklaejryhosting/public_html/wp-includes/update.php(890): WP_Automatic_Updater->run()
+#9 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(341): wp_maybe_auto_update()
+#10 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#11 /home/iklaejryhosting/public_html/wp-includes/plugin.php(522): WP_Hook->do_action()
+#12 /home/iklaejryhosting/public_html/wp-includes/update.php(337): do_action()
+#13 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(341): wp_version_check()
+#14 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#15 /home/iklaejryhosting/public_html/wp-includes/plugin.php(570): WP_Hook->do_action()
+#16 /home/iklaejryhosting/public_html/wp-cron.php(191): do_action_ref_array()
+#17 {main}
+[04-Sep-2026 11:50:30 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-04 17:00:00'
+				 AND timestamp < '2026-09-04 18:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[04-Sep-2026 11:50:32 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = '4061c2362d06989ef51965c48f9e5b0b'
+				 AND timestamp > '2026-08-28 18:50:32' made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 11:50:32 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 11:50:32 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(726): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->check_for_updates()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(571): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-cron.php(191): do_action_ref_array()
+#5 {main}
+[04-Sep-2026 11:50:32 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = '3ba0e8349f1b9d73cc72eceb891223f1'
+				 AND timestamp > '2026-08-28 18:50:32' made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 11:50:32 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 11:50:32 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(726): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->check_for_updates()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(571): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-cron.php(191): do_action_ref_array()
+#5 {main}
+[04-Sep-2026 11:50:32 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = 'c38c255377ec4abd051e3f737fdaee0b'
+				 AND timestamp > '2026-08-28 18:50:32' made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 11:50:32 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 11:50:32 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(726): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->check_for_updates()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(571): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-cron.php(191): do_action_ref_array()
+#5 {main}
+[04-Sep-2026 11:50:32 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = '7ac07ed3f53eba1ce2fa207802735520'
+				 AND timestamp > '2026-08-28 18:50:32' made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 11:50:32 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 11:50:32 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(726): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->check_for_updates()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(571): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-cron.php(191): do_action_ref_array()
+#5 {main}
+[04-Sep-2026 11:50:32 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id FROM wp_wpbackitup_events
+				 WHERE event_type = 'security_event_raw'
+				 AND timestamp >= '2026-09-03 00:00:00'
+				 AND timestamp < '2026-09-04 00:00:00' made by do_action_ref_array('wpbackitup_aggregate_security'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_security_events
+[04-Sep-2026 12:05:17 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-04 18:00:00'
+				 AND timestamp < '2026-09-04 19:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[04-Sep-2026 12:05:19 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = '4061c2362d06989ef51965c48f9e5b0b'
+				 AND timestamp > '2026-08-28 19:05:19' made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 12:05:19 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 12:05:19 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(726): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->check_for_updates()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(571): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-cron.php(191): do_action_ref_array()
+#5 {main}
+[04-Sep-2026 12:05:19 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = '3ba0e8349f1b9d73cc72eceb891223f1'
+				 AND timestamp > '2026-08-28 19:05:19' made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 12:05:19 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 12:05:19 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(726): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->check_for_updates()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(571): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-cron.php(191): do_action_ref_array()
+#5 {main}
+[04-Sep-2026 12:05:19 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = 'c38c255377ec4abd051e3f737fdaee0b'
+				 AND timestamp > '2026-08-28 19:05:19' made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 12:05:19 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 12:05:19 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(726): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->check_for_updates()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(571): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-cron.php(191): do_action_ref_array()
+#5 {main}
+[04-Sep-2026 12:05:19 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = '7ac07ed3f53eba1ce2fa207802735520'
+				 AND timestamp > '2026-08-28 19:05:19' made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 12:05:19 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by do_action_ref_array('wpbackitup_check_updates'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->check_for_updates, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 12:05:19 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(726): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->check_for_updates()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(571): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-cron.php(191): do_action_ref_array()
+#5 {main}
+[04-Sep-2026 12:05:19 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id FROM wp_wpbackitup_events
+				 WHERE event_type = 'security_event_raw'
+				 AND timestamp >= '2026-09-03 00:00:00'
+				 AND timestamp < '2026-09-04 00:00:00' made by do_action_ref_array('wpbackitup_aggregate_security'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_security_events
+[04-Sep-2026 13:05:18 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-04 19:00:00'
+				 AND timestamp < '2026-09-04 20:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[04-Sep-2026 14:05:23 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-04 20:00:00'
+				 AND timestamp < '2026-09-04 21:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[04-Sep-2026 15:05:21 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-04 21:00:00'
+				 AND timestamp < '2026-09-04 22:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[04-Sep-2026 16:05:23 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-04 22:00:00'
+				 AND timestamp < '2026-09-04 23:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[04-Sep-2026 17:05:19 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-04 23:00:00'
+				 AND timestamp < '2026-09-05 00:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[04-Sep-2026 18:05:20 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-05 00:00:00'
+				 AND timestamp < '2026-09-05 01:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[04-Sep-2026 19:05:21 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-05 01:00:00'
+				 AND timestamp < '2026-09-05 02:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[04-Sep-2026 20:05:21 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-05 02:00:00'
+				 AND timestamp < '2026-09-05 03:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[04-Sep-2026 21:05:22 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-05 03:00:00'
+				 AND timestamp < '2026-09-05 04:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[04-Sep-2026 22:05:07 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-05 04:00:00'
+				 AND timestamp < '2026-09-05 05:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[04-Sep-2026 23:05:22 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-05 05:00:00'
+				 AND timestamp < '2026-09-05 06:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[05-Sep-2026 00:05:25 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT id, event_data FROM wp_wpbackitup_events
+				 WHERE event_type = 'content_change_raw'
+				 AND timestamp >= '2026-09-05 06:00:00'
+				 AND timestamp < '2026-09-05 07:00:00' made by do_action_ref_array('wpbackitup_aggregate_content_changes'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->aggregate_content_changes
+[05-Sep-2026 00:20:33 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT query
+			FROM wp_rank_math_analytics_gsc
+			WHERE DATE(created) = (SELECT MAX(DATE(created)) FROM wp_rank_math_analytics_gsc WHERE created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59')
+			GROUP BY query made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Rest->get_keywords_overview, apply_filters('rank_math/analytics/keywords_overview'), WP_Hook->apply_filters, RankMathPro\Analytics\Keywords->add_winning_losing_data, RankMathPro\Analytics\Keywords->get_winning_keywords, RankMathPro\Analytics\Keywords->get_recent_keywords, RankMath\Helpers\DB::get_results, RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:33 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT a.query, a.position, t.max_created AS date, t.range_group
+			FROM wp_rank_math_analytics_gsc AS a
+			INNER JOIN (
+				SELECT
+					query,
+					CASE WHEN created BETWEEN '2026-08-03 00:00:00' AND '2026-08-08 23:59:59' THEN 'range1' WHEN created BETWEEN '2026-08-09 00:00:00' AND '2026-08-14 23:59:59' THEN 'range2' WHEN created BETWEEN '2026-08-15 00:00:00' AND '2026-08-20 23:59:59' THEN 'range3' WHEN created BETWEEN '2026-08-21 00:00:00' AND '2026-08-26 23:59:59' THEN 'range4' WHEN created BETWEEN '2026-08-27 00:00:00' AND '2026-09-02 23:59:59' THEN 'range5' ELSE 'none' END AS 'range_group',
+					MAX(created) AS max_created
+				FROM wp_rank_math_analytics_gsc
+				WHERE created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59'
+				AND query IN ('')
+				
+				GROUP BY query, range_group
+				ORDER BY max_created ASC
+			) t
+			ON a.query = t.query AND a.created = t.max_created
+			ORDER BY a.created ASC made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Rest->get_keywords_overview, apply_filters('rank_math/analytics/keywords_overview'), WP_Hook->apply_filters, RankMathPro\Analytics\Keywords->add_winning_losing_data, RankMathPro\Analytics\Keywords->get_winning_keywords, RankMathPro\Analytics\Keywords->get_graph_data_for_keywords, RankMath\Helpers\DB::get_results, RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:33 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT query
+			FROM wp_rank_math_analytics_gsc
+			WHERE DATE(created) = (SELECT MAX(DATE(created)) FROM wp_rank_math_analytics_gsc WHERE created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59')
+			GROUP BY query made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Rest->get_keywords_overview, apply_filters('rank_math/analytics/keywords_overview'), WP_Hook->apply_filters, RankMathPro\Analytics\Keywords->add_winning_losing_data, RankMathPro\Analytics\Keywords->get_losing_keywords, RankMathPro\Analytics\Keywords->get_recent_keywords, RankMath\Helpers\DB::get_results, RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:33 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT a.query, a.position, t.max_created AS date, t.range_group
+			FROM wp_rank_math_analytics_gsc AS a
+			INNER JOIN (
+				SELECT
+					query,
+					CASE WHEN created BETWEEN '2026-08-03 00:00:00' AND '2026-08-08 23:59:59' THEN 'range1' WHEN created BETWEEN '2026-08-09 00:00:00' AND '2026-08-14 23:59:59' THEN 'range2' WHEN created BETWEEN '2026-08-15 00:00:00' AND '2026-08-20 23:59:59' THEN 'range3' WHEN created BETWEEN '2026-08-21 00:00:00' AND '2026-08-26 23:59:59' THEN 'range4' WHEN created BETWEEN '2026-08-27 00:00:00' AND '2026-09-02 23:59:59' THEN 'range5' ELSE 'none' END AS 'range_group',
+					MAX(created) AS max_created
+				FROM wp_rank_math_analytics_gsc
+				WHERE created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59'
+				AND query IN ('')
+				
+				GROUP BY query, range_group
+				ORDER BY max_created ASC
+			) t
+			ON a.query = t.query AND a.created = t.max_created
+			ORDER BY a.created ASC made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Rest->get_keywords_overview, apply_filters('rank_math/analytics/keywords_overview'), WP_Hook->apply_filters, RankMathPro\Analytics\Keywords->add_winning_losing_data, RankMathPro\Analytics\Keywords->get_losing_keywords, RankMathPro\Analytics\Keywords->get_graph_data_for_keywords, RankMath\Helpers\DB::get_results, RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:33 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT NULLIF(COUNT(DISTINCT(query)), 0)
+				FROM wp_rank_math_analytics_gsc
+				WHERE created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Rest->get_dashboard, RankMath\Analytics\Summary->get_analytics_summary, RankMath\Analytics\Summary->get_keywords_summary, RankMath\Helpers\DB::get_var, RankMath\Admin\Database\Query_Builder->get_var, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:33 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT NULLIF(COUNT(DISTINCT(query)), 0)
+				FROM wp_rank_math_analytics_gsc
+				WHERE created BETWEEN '2026-06-27 00:00:00' AND '2026-07-30 23:59:59' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Rest->get_dashboard, RankMath\Analytics\Summary->get_analytics_summary, RankMath\Analytics\Summary->get_keywords_summary, RankMath\Helpers\DB::get_var, RankMath\Admin\Database\Query_Builder->get_var, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:33 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT DATE_FORMAT( created, '%Y-%m-%d') as date, SUM(clicks) as clicks, SUM(impressions) as impressions, AVG(position) as position, AVG(ctr) as ctr, CASE WHEN created BETWEEN '2026-08-03 00:00:00' AND '2026-08-08 23:59:59' THEN 'range1' WHEN created BETWEEN '2026-08-09 00:00:00' AND '2026-08-14 23:59:59' THEN 'range2' WHEN created BETWEEN '2026-08-15 00:00:00' AND '2026-08-20 23:59:59' THEN 'range3' WHEN created BETWEEN '2026-08-21 00:00:00' AND '2026-08-26 23:59:59' THEN 'range4' WHEN created BETWEEN '2026-08-27 00:00:00' AND '2026-09-02 23:59:59' THEN 'range5' ELSE 'none' END AS 'range_group'
+			FROM wp_rank_math_analytics_gsc
+			WHERE created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59'
+			GROUP BY range_group made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Rest->get_dashboard, RankMath\Analytics\Summary->get_analytics_summary, RankMath\Analytics\Summary->get_analytics_summary_graph, RankMath\Helpers\DB::get_results, RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:33 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT t.range_group, MAX(CONCAT(t.range_group, ':', t.date, ':', t.keywords )) as mixed FROM
+				(SELECT COUNT(DISTINCT(query)) as keywords, Date(created) as date, CASE WHEN created BETWEEN '2026-08-03 00:00:00' AND '2026-08-08 23:59:59' THEN 'range1' WHEN created BETWEEN '2026-08-09 00:00:00' AND '2026-08-14 23:59:59' THEN 'range2' WHEN created BETWEEN '2026-08-15 00:00:00' AND '2026-08-20 23:59:59' THEN 'range3' WHEN created BETWEEN '2026-08-21 00:00:00' AND '2026-08-26 23:59:59' THEN 'range4' WHEN created BETWEEN '2026-08-27 00:00:00' AND '2026-09-02 23:59:59' THEN 'range5' ELSE 'none' END AS 'range_group'
+				FROM wp_rank_math_analytics_gsc
+				WHERE created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59'
+				GROUP BY range_group, Date(created)) AS t
+			GROUP BY t.range_group made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Rest->get_dashboard, RankMath\Analytics\Summary->get_analytics_summary, RankMath\Analytics\Summary->get_analytics_summary_graph, RankMath\Helpers\DB::get_results, RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:33 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT SUM(clicks) AS clicks FROM wp_rank_math_analytics_gsc WHERE created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Rest->get_dashboard, RankMath\Analytics\Summary->get_analytics_summary, apply_filters('rank_math/analytics/summary'), WP_Hook->apply_filters, RankMathPro\Analytics\Summary->get_clicks_summary, RankMath\Admin\Database\Query_Builder->getVar, RankMath\Admin\Database\Query_Builder->one, RankMath\Admin\Database\Query_Builder->get_row, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:33 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT SUM(clicks) AS clicks FROM wp_rank_math_analytics_gsc WHERE created BETWEEN '2026-06-27 00:00:00' AND '2026-07-30 23:59:59' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Rest->get_dashboard, RankMath\Analytics\Summary->get_analytics_summary, apply_filters('rank_math/analytics/summary'), WP_Hook->apply_filters, RankMathPro\Analytics\Summary->get_clicks_summary, RankMath\Admin\Database\Query_Builder->getVar, RankMath\Admin\Database\Query_Builder->one, RankMath\Admin\Database\Query_Builder->get_row, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:36 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT page, date, MAX(CONCAT(t.uid, ':', t.range_group)) as range_group FROM
+				( SELECT page, DATE_FORMAT( created,'%Y-%m-%d') as date, MAX( CONCAT( page, ':', DATE( created ), ':', LPAD( ( 100 - position ), 3, '0' ) ) ) as uid, CASE WHEN created BETWEEN '2026-08-03 00:00:00' AND '2026-08-08 23:59:59' THEN 'range1' WHEN created BETWEEN '2026-08-09 00:00:00' AND '2026-08-14 23:59:59' THEN 'range2' WHEN created BETWEEN '2026-08-15 00:00:00' AND '2026-08-20 23:59:59' THEN 'range3' WHEN created BETWEEN '2026-08-21 00:00:00' AND '2026-08-26 23:59:59' THEN 'range4' WHEN created BETWEEN '2026-08-27 00:00:00' AND '2026-09-02 23:59:59' THEN 'range5' ELSE 'none' END AS 'range_group'
+				FROM wp_rank_math_analytics_gsc
+				WHERE page IN ('') AND created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59'
+				GROUP BY page, range_group, DATE(created)
+				ORDER BY page ASC, DATE(created) DESC) AS t
+			GROUP BY t.page, t.range_group
+			ORDER BY date ASC made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMathPro\Analytics\Rest->get_posts_overview, RankMathPro\Analytics\Posts->get_winning_posts, RankMathPro\Analytics\Posts->get_graph_data_for_pages, RankMath\Helpers\DB::get_results, RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:36 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT page, date, MAX(CONCAT(t.uid, ':', t.range_group)) as range_group FROM
+				( SELECT page, DATE_FORMAT( created,'%Y-%m-%d') as date, MAX( CONCAT( page, ':', DATE( created ), ':', LPAD( ( 100 - position ), 3, '0' ) ) ) as uid, CASE WHEN created BETWEEN '2026-08-03 00:00:00' AND '2026-08-08 23:59:59' THEN 'range1' WHEN created BETWEEN '2026-08-09 00:00:00' AND '2026-08-14 23:59:59' THEN 'range2' WHEN created BETWEEN '2026-08-15 00:00:00' AND '2026-08-20 23:59:59' THEN 'range3' WHEN created BETWEEN '2026-08-21 00:00:00' AND '2026-08-26 23:59:59' THEN 'range4' WHEN created BETWEEN '2026-08-27 00:00:00' AND '2026-09-02 23:59:59' THEN 'range5' ELSE 'none' END AS 'range_group'
+				FROM wp_rank_math_analytics_gsc
+				WHERE page IN ('') AND created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59'
+				GROUP BY page, range_group, DATE(created)
+				ORDER BY page ASC, DATE(created) DESC) AS t
+			GROUP BY t.page, t.range_group
+			ORDER BY date ASC made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMathPro\Analytics\Rest->get_posts_overview, RankMathPro\Analytics\Posts->get_losing_posts, RankMathPro\Analytics\Posts->get_graph_data_for_pages, RankMath\Helpers\DB::get_results, RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:40 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_ga' doesn't exist for query SELECT SQL_CALC_FOUND_ROWS t1.page as page, COALESCE( t1.pageviews, 0 ) as pageviews, COALESCE( t1.pageviews - t2.pageviews, 0 ) as difference
+				FROM ( SELECT page, SUM(pageviews) as pageviews FROM wp_rank_math_analytics_ga WHERE 1=1 AND page IN ('/soc-2/', '/pci-dss/', '/chung-nhan-iso-9001-cam-nang-toan-dien-tu-a-z-cho-doanh-nghiep/', '/viettel-dat-pci-dss-cung-cyber-services-buoc-ngoat-ha-tang-dam-may/', '/cyber-services-cap-chung-chi-pci-dss-cho-paytech-khang-dinh-vi-the-dan-dau-trong-an-ninh-thanh-toan/', '/cyber-services-trao-chung-chi-pci-dss-v4-0-1-cho-mobifone-khang-dinh-tieu-chuan-an-toan-thanh-toan-quoc-te/', '/quy-trinh-chung-nhan-soc-2/', '/chi-phi-chung-nhan-soc-2/', '/tu-van-iso-27001/', '/swift-csp/', '/soc-1/', '/hipaa/', '/bao-ve-du-lieu-ca-nhan-la-gi/', '/chung-nhan-pci-dss-tai-da-nang/', '/bao-gia-iso-27001-chi-tiet/', '/bao-gia-iso-42001-chi-tiet/', '/tuan-thu-gdpr/', '/pci-3ds/', '/ot-scanner/', '/dich-vu-pentest/', '/dich-vu-kiem-thu-phan-mem/', '/soc-3/', '/dich-vu-email-phishing/', '/dich-vu-dpo-thue-ngoai/', '/cmmi/') AND created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59' GROUP BY page ) as t1
+				LEFT JOIN ( SELECT page, SUM(pageviews) as pageviews FROM wp_rank_math_analytics_ga WHERE 1=1 AND page IN ('/soc-2/', '/pci-dss/', '/chung-nhan-iso-9001-cam-nang-toan-dien-tu-a-z-cho-doanh-nghiep/', '/viettel-dat-pci-dss-cung-cyber-services-buoc-ngoat-ha-tang-dam-may/', '/cyber-services-cap-chung-chi-pci-dss-cho-paytech-khang-dinh-vi-the-dan-dau-trong-an-ninh-thanh-toan/', '/cyber-services-trao-chung-chi-pci-dss-v4-0-1-cho-mobifone-khang-dinh-tieu-chuan-an-toan-thanh-toan-quoc-te/', '/quy-trinh-chung-nhan-soc-2/', '/chi-phi-chung-nhan-soc-2/', '/tu-van-iso-27001/', '/swift-csp/', '/soc-1/', '/hipaa/', '/bao-ve-du-lieu-ca-nhan-la-gi/', '/chung-nhan-pci-dss-tai-da-nang/', '/bao-gia-iso-27001-chi-tiet/', '/bao-gia-iso-42001-chi-tiet/', '/tuan-thu-gdpr/', '/pci-3ds/', '/ot-scanner/', '/dich-vu-pentest/', '/dich-vu-kiem-thu-phan-mem/', '/soc-3/', '/dich-vu-email-phishing/', '/dich-vu-dpo-thue-ngoai/', '/cmmi/') AND created BETWEEN '2026-06-27 00:00:00' AND '2026-07-30 23:59:59' GROUP BY page ) as t2
+				ON t1.page = t2.page
+				
+				ORDER BY t1.pageviews DESC
+				 made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Posts->get_posts_rows_by_objects, apply_filters('rank_math/analytics/get_posts_rows_by_objects'), WP_Hook->apply_filters, RankMathPro\Analytics\Posts->get_posts_rows_by_objects, RankMathPro\Analytics\Pageviews::get_pageviews, RankMath\Helpers\DB::get_results, RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:40 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT page, date, MAX(CONCAT(t.uid, ':', t.range_group)) as range_group FROM
+				( SELECT page, DATE_FORMAT( created,'%Y-%m-%d') as date, MAX( CONCAT( page, ':', DATE( created ), ':', LPAD( ( 100 - position ), 3, '0' ) ) ) as uid, CASE WHEN created BETWEEN '2026-08-03 00:00:00' AND '2026-08-08 23:59:59' THEN 'range1' WHEN created BETWEEN '2026-08-09 00:00:00' AND '2026-08-14 23:59:59' THEN 'range2' WHEN created BETWEEN '2026-08-15 00:00:00' AND '2026-08-20 23:59:59' THEN 'range3' WHEN created BETWEEN '2026-08-21 00:00:00' AND '2026-08-26 23:59:59' THEN 'range4' WHEN created BETWEEN '2026-08-27 00:00:00' AND '2026-09-02 23:59:59' THEN 'range5' ELSE 'none' END AS 'range_group'
+				FROM wp_rank_math_analytics_gsc
+				WHERE page IN ('/soc-2/', '/pci-dss/', '/chung-nhan-iso-9001-cam-nang-toan-dien-tu-a-z-cho-doanh-nghiep/', '/viettel-dat-pci-dss-cung-cyber-services-buoc-ngoat-ha-tang-dam-may/', '/cyber-services-cap-chung-chi-pci-dss-cho-paytech-khang-dinh-vi-the-dan-dau-trong-an-ninh-thanh-toan/', '/cyber-services-trao-chung-chi-pci-dss-v4-0-1-cho-mobifone-khang-dinh-tieu-chuan-an-toan-thanh-toan-quoc-te/', '/quy-trinh-chung-nhan-soc-2/', '/chi-phi-chung-nhan-soc-2/', '/tu-van-iso-27001/', '/swift-csp/', '/soc-1/', '/hipaa/', '/bao-ve-du-lieu-ca-nhan-la-gi/', '/chung-nhan-pci-dss-tai-da-nang/', '/bao-gia-iso-27001-chi-tiet/', '/bao-gia-iso-42001-chi-tiet/', '/tuan-thu-gdpr/', '/pci-3ds/', '/ot-scanner/', '/dich-vu-pentest/', '/dich-vu-kiem-thu-phan-mem/', '/soc-3/', '/dich-vu-email-phishing/', '/dich-vu-dpo-thue-ngoai/', '/cmmi/') AND created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59'
+				GROUP BY page, range_group, DATE(created)
+				ORDER BY page ASC, DATE(created) DESC) AS t
+			GROUP BY t.page, t.range_group
+			ORDER BY date ASC made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Posts->get_posts_rows_by_objects, apply_filters('rank_math/analytics/get_posts_rows_by_objects'), WP_Hook->apply_filters, RankMathPro\Analytics\Posts->get_posts_rows_by_objects, RankMathPro\Analytics\Posts->get_graph_data_for_pages, RankMath\Helpers\DB::get_results, RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:51 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT NULLIF(COUNT(DISTINCT(query)), 0)
+				FROM wp_rank_math_analytics_gsc
+				WHERE created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Summary->get_analytics_summary, RankMath\Analytics\Summary->get_keywords_summary, RankMath\Helpers\DB::get_var, RankMath\Admin\Database\Query_Builder->get_var, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:51 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT NULLIF(COUNT(DISTINCT(query)), 0)
+				FROM wp_rank_math_analytics_gsc
+				WHERE created BETWEEN '2026-06-27 00:00:00' AND '2026-07-30 23:59:59' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Summary->get_analytics_summary, RankMath\Analytics\Summary->get_keywords_summary, RankMath\Helpers\DB::get_var, RankMath\Admin\Database\Query_Builder->get_var, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:51 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT DATE_FORMAT( created, '%Y-%m-%d') as date, SUM(clicks) as clicks, SUM(impressions) as impressions, AVG(position) as position, AVG(ctr) as ctr, CASE WHEN created BETWEEN '2026-08-03 00:00:00' AND '2026-08-08 23:59:59' THEN 'range1' WHEN created BETWEEN '2026-08-09 00:00:00' AND '2026-08-14 23:59:59' THEN 'range2' WHEN created BETWEEN '2026-08-15 00:00:00' AND '2026-08-20 23:59:59' THEN 'range3' WHEN created BETWEEN '2026-08-21 00:00:00' AND '2026-08-26 23:59:59' THEN 'range4' WHEN created BETWEEN '2026-08-27 00:00:00' AND '2026-09-02 23:59:59' THEN 'range5' ELSE 'none' END AS 'range_group'
+			FROM wp_rank_math_analytics_gsc
+			WHERE created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59'
+			GROUP BY range_group made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Summary->get_analytics_summary, RankMath\Analytics\Summary->get_analytics_summary_graph, RankMath\Helpers\DB::get_results, RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:51 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT t.range_group, MAX(CONCAT(t.range_group, ':', t.date, ':', t.keywords )) as mixed FROM
+				(SELECT COUNT(DISTINCT(query)) as keywords, Date(created) as date, CASE WHEN created BETWEEN '2026-08-03 00:00:00' AND '2026-08-08 23:59:59' THEN 'range1' WHEN created BETWEEN '2026-08-09 00:00:00' AND '2026-08-14 23:59:59' THEN 'range2' WHEN created BETWEEN '2026-08-15 00:00:00' AND '2026-08-20 23:59:59' THEN 'range3' WHEN created BETWEEN '2026-08-21 00:00:00' AND '2026-08-26 23:59:59' THEN 'range4' WHEN created BETWEEN '2026-08-27 00:00:00' AND '2026-09-02 23:59:59' THEN 'range5' ELSE 'none' END AS 'range_group'
+				FROM wp_rank_math_analytics_gsc
+				WHERE created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59'
+				GROUP BY range_group, Date(created)) AS t
+			GROUP BY t.range_group made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Summary->get_analytics_summary, RankMath\Analytics\Summary->get_analytics_summary_graph, RankMath\Helpers\DB::get_results, RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:51 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT SUM(clicks) AS clicks FROM wp_rank_math_analytics_gsc WHERE created BETWEEN '2026-07-31 00:00:00' AND '2026-09-02 23:59:59' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Summary->get_analytics_summary, apply_filters('rank_math/analytics/summary'), WP_Hook->apply_filters, RankMathPro\Analytics\Summary->get_clicks_summary, RankMath\Admin\Database\Query_Builder->getVar, RankMath\Admin\Database\Query_Builder->one, RankMath\Admin\Database\Query_Builder->get_row, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:20:51 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_rank_math_analytics_gsc' doesn't exist for query SELECT SUM(clicks) AS clicks FROM wp_rank_math_analytics_gsc WHERE created BETWEEN '2026-06-27 00:00:00' AND '2026-07-30 23:59:59' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, RankMath\Analytics\Summary->get_analytics_summary, apply_filters('rank_math/analytics/summary'), WP_Hook->apply_filters, RankMathPro\Analytics\Summary->get_clicks_summary, RankMath\Admin\Database\Query_Builder->getVar, RankMath\Admin\Database\Query_Builder->one, RankMath\Admin\Database\Query_Builder->get_row, RankMath\Admin\Database\Query_Builder->run

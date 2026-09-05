@@ -1,0 +1,14 @@
+@font-face { font-family:"Be Vietnam Pro"; src:url("be-vietnam-pro.woff2") format("woff2"); font-weight:100 900; font-style:normal; font-display:swap; }
+.editor-styles-wrapper { color:#41473f; background:#f3f5ee; font-family:"Be Vietnam Pro",Arial,sans-serif; font-size:16px; line-height:1.85; }
+.editor-styles-wrapper .wp-block { max-width:860px; }
+.editor-styles-wrapper .wp-block[data-align="wide"] { max-width:1100px; }
+.editor-styles-wrapper .wp-block[data-align="full"] { max-width:none; }
+.editor-styles-wrapper .wp-block-post-title { max-width:1050px; color:#10130e; font-size:clamp(50px,7vw,94px); font-weight:550; line-height:1; letter-spacing:-.06em; }
+.editor-styles-wrapper :is(h2,h3,h4) { color:#10130e; font-weight:600; line-height:1.15; letter-spacing:-.035em; }
+.editor-styles-wrapper h2 { font-size:clamp(32px,4vw,48px); }
+.editor-styles-wrapper h3 { font-size:clamp(24px,3vw,34px); }
+.editor-styles-wrapper a { color:#a9521b; }
+.editor-styles-wrapper blockquote { border-left:4px solid #d17a3a; padding-left:24px; color:#5c6259; }
+.editor-styles-wrapper img { border-radius:18px; }
+.editor-styles-wrapper p,body#tinymce p { text-align:justify; }
+.editor-styles-wrapper .has-text-align-justify { text-align:justify; }

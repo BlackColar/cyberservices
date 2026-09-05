@@ -1,0 +1,59 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "rank-math/related-posts",
+	"title": "Related Posts [Content AI]",
+	"icon": "list-view",
+	"category": "rank-math-blocks",
+	"description": "Show AI-powered related posts.",
+	"keywords": [ "related", "posts", "ai", "rank math" ],
+	"textdomain": "rank-math",
+	"editorScript": "file:../js/index.js",
+	"style": "file:../css/styles.css",
+	"editorStyle": "file:../css/editor.css",
+	"supports": {
+		"align": [ "wide", "full" ],
+		"color": {
+			"text": true,
+			"background": true,
+			"link": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true
+			}
+		}
+	},
+	"styles": [
+		{ "name": "grid-vertical", "label": "Grid · Vertical", "isDefault": true },
+		{ "name": "grid-horizontal", "label": "Grid · Horizontal" },
+		{ "name": "list-vertical", "label": "List · Vertical" },
+		{ "name": "list-horizontal", "label": "List · Horizontal" }
+	],
+	"attributes": {
+		"number": { "type": "number", "default": 3 },
+		"showImage": { "type": "boolean", "default": true },
+		"imageSize": { "type": "string", "default": "thumbnail" },
+		"showExcerpt": { "type": "boolean", "default": true },
+		"showDate": { "type": "boolean", "default": false },
+		"showTerms": { "type": "boolean", "default": false },
+		"buttonText": { "type": "string", "default": "" },
+		"buttonUrl": { "type": "string", "default": "" },
+		"title": { "type": "string", "default": "Related Posts" },
+		"initialized": { "type": "boolean", "default": false }
+	},
+    "usesContext": [ "postId", "postType" ]
+}

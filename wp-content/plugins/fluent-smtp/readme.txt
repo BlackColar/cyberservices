@@ -1,0 +1,536 @@
+=== FluentSMTP – WP SMTP Plugin with Amazon SES, SendGrid, Mailgun, Postmark, Cloudflare, toSend, Gmail and Any SMTP ===
+Contributors: techjewel, wpmanageninja, heera, adreastrian
+Tags: smtp, wordpress mail smtp, amazon ses, sendgrid, mailgun
+Requires at least: 5.5
+Tested up to: 7.0
+Stable tag: 2.3.1
+Requires PHP: 7.4
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Free WP Mail SMTP plugin - fix WordPress email deliverability with Gmail, Amazon SES, SendGrid, Mailgun, Cloudflare, Postmark, Brevo and any SMTP.
+
+== Description ==
+
+###  WordPress Mail SMTP Plugin For Any Email Service Provider
+Are your WordPress emails not sending, landing in spam, or failing silently? FluentSMTP is the ultimate **WP Mail SMTP plugin** that fixes email deliverability by routing `wp_mail()` through your chosen email service — **Gmail, Amazon SES, SendGrid, Mailgun, Cloudflare Email, toSend, Postmark, Brevo (Sendinblue), SparkPost, Outlook / Office 365, Zoho**, or any SMTP host.
+
+FluentSMTP connects natively to each provider's API (not just SMTP), so your transactional and marketing emails ship **fast, secure, and reach the inbox**. Reconfigure your sender, enable logging, add real-time failure alerts, and route different senders to different providers — all from a single clean UI.
+
+Connect as many email service providers as you want, and FluentSMTP will route your transactional and marketing emails automatically based on the From Address. This is one of the unique features that FluentSMTP has to offer.
+
+[youtube https://www.youtube.com/watch?v=qnrTdQMNcuA]
+
+== 💚 100% Free Forever — No Pro Version, No Upsells, No Paywalls 💚 ==
+**FluentSMTP is 100% free and open source — and it always will be.** There is no "pro" version, no premium add-ons, no locked features, no email capture wall, no nagging upgrade prompts, no feature limits, and no paid tier. Every integration listed above — Amazon SES, Gmail, Outlook, SendGrid, Mailgun, Cloudflare, toSend, Postmark, Brevo, SparkPost, and the rest — is fully available at no cost.
+
+You will never have to pay a cent to use any feature of FluentSMTP. We have pledged this as part of our "Five for the Future" participation, an initiative started by the WordPress Foundation.
+
+Our parent company <a title="WP Manage Ninja" href="https://wpmanageninja.com">WPManageNinja LLC</a> builds commercial products for WordPress businesses and runs a stable, profitable business on those — which means FluentSMTP is our way of giving back to the WordPress community, not a funnel. 👉 <a href="https://fluentsmtp.com/articles/why-we-built-fluentsmtp-plugin/">Read why it's 100% free (always)</a> 👈
+
+== 🎉 Available Email Service Connections ==
+* Amazon SES
+* Gmail OAuth
+* Google Workspace OAuth
+* Outlook / Office 365 OAuth
+* SendGrid
+* Mailgun
+* Cloudflare Email (new)
+* toSend
+* Brevo (Sendinblue)
+* Netcore (Pepipost)
+* Postmark
+* SparkPost
+* SMTP2GO
+* Elastic Email
+* Zoho via SMTP
+* Any SMTP email provider
+* More native integrations coming soon
+
+== 🎉 Fluent SMTP features ==
+Fluent SMTP is the fastest and most advanced WordPress Mail SMTP plugin on the market. We crafted this plugin for speed, reliability and scalability.
+
+* Real-Time Email Delivery
+* Email Routing to multiple email connections
+* Connect with Any Email Service Providers
+* Fallback Email Connection
+* Email Logging
+* Resend Emails to any recipient
+* Detailed Reporting
+* Daily Connection Health Monitoring
+* WP-CLI Support
+* Super fast UI powered by VueJS
+
+Most importantly, this plugin is free and will always be free.
+👉 <a href="https://fluentsmtp.com/articles/why-we-built-fluentsmtp-plugin/">Read why it's 100% free (always)</a> 👈
+
+[youtube https://www.youtube.com/watch?v=GwmkX6zImWw]
+
+== How does Fluent SMTP work? ==
+Fluent SMTP improves your WordPress mail by intercepting <code>wp_mail</code> calls, and then connecting with your email service providers to ensure deliverability. It uses a direct email service API to send emails faster and securely. It means emails are sent using the provider's direct API. For your native SMTP connections, it uses the proper host, port, and credentials to send your WP mails.
+
+== Email Logging and Debugging ==
+Fluent SMTP optionally logs your emails, so at any time you can check to see your site health. You can also resend your failed emails, or resend any previous emails from email logs.
+
+== 🎉 Amazon SES (Native API Connection) ==
+With Fluent SMTP SES Connection, you get the powerful, low-cost, high deliverability managed infrastructure from Amazon. With the support of Fluent SMTP, it's super easy to set up and configure Amazon SES API and send all your WordPress emails. The integration is with amazon's latest SES API so your emails will be delivered faster and the right way.
+
+Fluent SMTP optimizes the API connection so it creates CURL-Tunneling to send your emails even faster. With Amazon SES connection, You can send emails faster than any other plugins.
+
+== 🎉 Gmail or Google Workspace (Native API Connection) ==
+Fluent SMTP - WP Mail Plugin provides you options to connect with your Gmail or Google Workspace emails and send emails over their API. It's fast and secure.
+[youtube https://www.youtube.com/watch?v=_d78bscNaX8]
+
+== 🎉 SendGrid API Connection ==
+SendGrid is the leading email sending service provider. You can rely on their globally distributed, cloud-based architecture for sending your WordPress Emails.
+
+With Fluent SMTP, You can set up your SendGrid email service connection API in less than a minute. With this direct API connection, send your WordPress Mails fast and secure way.
+
+Read about <a href="https://fluentsmtp.com/docs/set-up-the-sendgrid-driver-in-fluent-smtp/">SendGrid connection documentation here</a>
+
+== 🎉 Mailgun Email API Connection ==
+Mailgun is another leading email sending service provider and trusted by 225,000+ businesses. You can rely on their globally distributed, cloud-based architecture for sending your WordPress Emails.
+
+Get your message to the right person at the right time with global infrastructure and industry expertise you can rely on.
+
+With Fluent SMTP connection, You can set up your Mailgun email service connection in less than a minute. This is also a direct API connection so it's faster than their SMTP connection.
+
+Read about <a href="https://fluentsmtp.com/docs/configure-mailgun-in-fluent-smtp-to-send-emails/">Mailgun connection documentation here</a>
+
+== 🎉 Brevo (formerly Sendinblue) API Connection ==
+Brevo is a platform for growing businesses and it has a great transactional email service. They serve more than 80,000 companies around the world and send millions of emails every day.
+
+If you use Brevo then with the help of Fluent SMTP, You can easily connect with its API and send Your WordPress emails via an API connection.
+
+Read about <a href="https://fluentsmtp.com/docs/setting-up-sendinblue-mailer-in-fluent-smtp/">Brevo connection documentation here</a>
+
+== 🎉 Netcore (formerly Pepipost) Email API Connection ==
+Netcore is a complete sending partner with a user-friendly dashboard and many extensive functions such as statistics and real-time information.
+
+With Fluent SMTP connection, You can set up your Netcore email service connection in less than a minute. With a direct API connection so it's faster than their SMTP connection.
+
+Read about <a href="https://fluentsmtp.com/docs/set-up-the-pepipost-mailer-in-fluent-smtp/">Netcore API connection documentation here</a>
+
+== 🎉 SparkPost Email API Connection ==
+SparkPost is a great email sending service with lots of analytics features.
+With Fluent SMTP, You can set up your SparkPost email service connection with your WordPress in less than a minute.
+
+Read about <a href="https://fluentsmtp.com/docs/configure-sparkpost-in-fluent-smtp-to-send-emails/">SparkPost connection documentation here</a>
+
+== 🎉 Postmark API Connection ==
+Postmark is a highly reliable transactional email service, known for fast delivery and top-tier inbox placement. FluentSMTP connects to Postmark's Server API directly — paste your Server Token, pick a Message Stream, and your WordPress transactional emails ship through Postmark with full support for attachments, CC/BCC, Reply-To, and custom headers.
+
+Read about <a href="https://fluentsmtp.com/docs/configure-postmark-in-fluent-smtp-to-send-emails/">Postmark connection documentation here</a>
+
+== 🎉 Elastic Email API Connection ==
+Elastic Email is a great solution for sending transactional and marketing emails with a user-friendly dashboard and many extensive functions such as statistics and real-time information. Fluent SMTP plugin is fully compatible with their official API and you can use it to send your WordPress emails via Elastic Email
+
+== 🎉 Outlook or Office365 API Connection ==
+Fluent SMTP provides you options to connect with your Outlook or Office 365 emails and send emails over their API. It's fast and secure. Using oAuth2 authentication system for the connection, You can easily setup the connection and send your emails with Office 365 / Outlook emails.
+
+Read the documentation for <a href="https://fluentsmtp.com/docs/setup-outlook-with-fluentsmtp/">connecting Office 365 Email with WordPress</a>
+
+== 🎉 SMTP2GO Email API Connection ==
+SMTP2GO is a convenient solution for sending transactional and marketing emails with a user-friendly dashboard and many extensive functions such as statistics and real-time information. Fluent SMTP plugin is fully compatible with their official API and you can use it to send your WordPress emails via SMTP2Go
+
+== 🎉 Cloudflare Email API Connection ==
+Send WordPress emails through **Cloudflare Email Sending** using their native REST API. If your domain is already on Cloudflare, you can send transactional email directly from Cloudflare's edge network — fast, reliable, and with built-in SPF/DKIM/DMARC. FluentSMTP handles the full request shape, including attachments, CC/BCC, Reply-To, and custom headers. The plugin also live-verifies your API token on save and on the connection info screen, so misconfigurations surface immediately.
+
+== 🎉 toSend Email Sending Provider ==
+**toSend** is a modern transactional email service with a simple API, per-domain analytics, and fast delivery. FluentSMTP ships a native toSend integration — paste your API key, set a verified From address, and you're sending in under a minute. Failed sends are logged with full payloads so you can resend or debug without leaving WordPress.
+Read about <a href="https://tosend.com/docs/guide/wordpress/">toSend WordPress setup guide here</a>
+
+
+== 🎉 Other SMTP ==
+Fluent SMTP plugin works with all major email services that offer SMTP connections such as Gmail, Yahoo, Microsoft Live, Zoho Mail, YandexMail, and any other email sending services.
+
+You can set the following options:
+
+* Specify an SMTP Host.
+* Specify an SMTP Port.
+* Choose the Encryption option.
+* Choose to use SMTP authentication or not.
+* Specify the SMTP username and password.
+* That's it 💯
+
+Read about <a href="https://fluentsmtp.com/docs/set-up-fluent-smtp-with-any-host-or-mailer/">SMTP connection documentation here</a>
+
+== 🚀 MODERN. POWERFUL. SUPER FAST 🚀 ==
+
+* Built with VueJS as a Single-page Application.
+* Super fast and lean interface so anyone can use it without a learning curve.
+* Super awesome Dashboard with charts, graphs, and stats to show how your emails are doing.
+
+== 🚀 Automatic Email Routing 🚀 ==
+With Fluent SMTP's unique multiple connection driver features, You can add as many email connections as you want. Based on your <b>From Email Address</b>, Fluent SMTP will route your emails to the appropriate email driver and send them securely. This is one of the unique and useful features that Fluent SMTP offers.
+
+Now, you can route your transactional emails with one connection and marketing emails with another connection.
+
+== 🚀 Email Logs and Reporting 🚀 ==
+Do you want to know how many and which emails your site is sending? Fluent SMTP got you covered. With powerful and super-fast email reporting and logs, you can easily view your WordPress emails. You can also view charts and graphs about your daily email stats. Also, you can resend any emails anytime you want. This is super helpful for storing emails for your records, auditing outgoing emails, and debugging during site development.
+
+Optionally, You can turn off this feature, and then only failed emails will be logged so you can take a look. Fluent SMTP uses a custom database table so your WordPress tables will not be bloated (we care).
+
+== 🚀 Connection Health Monitoring 🚀 ==
+An expired OAuth token or a removed API key stays invisible until the first email that needed it fails. Fluent SMTP checks every connection once a day, shows failures on the dashboard, and notifies you over your configured notification channels the moment a connection starts failing. Only newly broken connections notify, so a known issue will not nag you every day.
+
+== 🚀 WP-CLI Support 🚀 ==
+Manage Fluent SMTP from the terminal, which matters most when the emails you need are the ones getting you into the admin:
+
+* <code>wp fluent-smtp test</code> - send a test email through any connection
+* <code>wp fluent-smtp health</code> - check every connection
+* <code>wp fluent-smtp stats</code> - sent and failed counts
+* <code>wp fluent-smtp prune-logs</code> - clean up old email logs
+
+== 🚀 Real-time Notifications on Email Failures via Telegram, Slack, Discord and Pushover 🚀 ==
+Fluent SMTP has a unique feature that will notify you in real-time if any email fails to send. You can set up your Telegram, Slack, Discord or Pushover channel - as many as you want at once - and Fluent SMTP will send you a notification if any email fails to send. This is super helpful for debugging and monitoring your site's email health.
+
+== 🚀 Security 🚀 ==
+Fluent SMTP is built by professionals and security and scalability in mind. Fluent SMTP provides several options for you to keep your email sending secure and safe.
+
+* Ability to store your SMTP / API credentials in wp-config.php.
+* Ability to auto-delete old email logs.
+* Fluent SMTP connects your email service providers directly via an API.
+
+= 🚀Plain-Text Support with HTML Email on the fly 🚀=
+FluentSMTP will automatically convert your HTML email to Plain-Text email on the fly. Then it will send your emails with multi-part mime type. This is super helpful for email deliverability and spam score. Please make sure, you activate that from the settings.
+
+== 👉 Credits 👈 ==
+Fluent SMTP is built by <a href="https://wpmanageninja.com">WPManageNinja LLC</a>. And yes, It's built by the creator of popular plugins like <a href="https://wordpress.org/plugins/fluentform">FluentForms</a>, <a href="https://wordpress.org/plugins/fluent-crm">FluentCRM</a>, <a href="https://wordpress.org/plugins/ninja-tables/">Ninja Tables</a>.
+
+Fluent SMTP is a 100% free and open source plugin and we will never release a pro version. This does not mean that it lacks features. Our aim is to provide the ultimate SMTP/Email Service connection plugin for your WordPress Mails. We wrote <a href="https://fluentsmtp.com/articles/why-we-built-fluentsmtp-plugin/">an article about why we made this plugin</a> and our plans for Fluent SMTP.
+
+The full source code is hosted on GitHub and you are welcome to contribute to the development of this awesome WP Mail Plugin.
+👉 <a href="https://github.com/WPManageNinja/fluent-smtp">View on GitHub</a> 👈
+
+= Compatible With.. =
+* [Fluent Forms - The Fastest Form Builder Plugin](https://wordpress.org/plugins/fluentform/)
+* [FluentCRM - Email Marketing Automation, Email Newsletter and CRM Plugin for WordPress](https://wordpress.org/plugins/fluent-crm/)
+* [WooCommerce](https://wordpress.org/plugins/woocommerce/)
+* [Elementor Forms](https://elementor.com/features/form-widget/)
+* [Contact Form 7](https://wordpress.org/plugins/contact-form-7/)
+* [Gravity Forms](http://www.gravityforms.com)
+* [Contact Form by WPForms](https://wordpress.org/plugins/wpforms-lite/)
+* [Forminator – Contact Form](https://wordpress.org/plugins/forminator/)
+* [Ninja Forms Contact Form](https://wordpress.org/plugins/ninja-forms/)
+* [Form Maker by 10Web](https://wordpress.org/plugins/form-maker/)
+* [Formidable Form Builder](https://wordpress.org/plugins/formidable/)
+* [GiveWP – Donation Plugin](https://wordpress.org/plugins/give/)
+* [Fast Secure Contact Form](https://wordpress.org/plugins/si-contact-form/)
+* [Visual Forms Builder](https://wordpress.org/plugins/visual-form-builder/)
+* [Contact Form Builder](https://wordpress.org/plugins/contact-form-builder/)
+* [PlanSo Forms](https://wordpress.org/plugins/planso-forms/)
+* [FluentCRM](https://wordpress.org/plugins/fluent-crm)
+* [SendPress Newsletters](https://wordpress.org/plugins/sendpress/)
+* [WP HTML Mail](https://wordpress.org/plugins/wp-html-mail/)
+* [WPForms Lite](https://wordpress.org/plugins/wpforms-lite/)
+* [WP Forms Pro](https://wordpress.org/plugins/wpforms-lite/)
+* [Email Templates](https://wordpress.org/plugins/email-templates/)
+* .. and every other plugin that uses the WordPress API [wp_mail](https://codex.wordpress.org/Function_Reference/wp_mail) to send mail!
+
+== Easy Migration from WP Mail SMTP by WPForms ==
+If you are currently using <b>WP Mail SMTP by WPForms</b> plugin and want to migrate to FluentSMTP then that is super easy. Within few seconds you are migrated.
+
+* Just install FluentSMTP plugin to your site.
+* Go to Settings -> FluentSMTP.
+* It will automatically show previous configuration from "WP Mail SMTP by WPForms".
+* Click "Import From WP Mail SMTP" button and that's it.
+* Disable "WP Mail SMTP by WPForms" and enjoy FluentSMTP.
+
+== One Click Migration from Easy WP SMTP ==
+If you are currently using <b>Easy WP SMTP</b> plugin and want to migrate to FluentSMTP then that is super easy. Within a few seconds you are migrated from "Easy WP SMTP".
+
+* Just install FluentSMTP plugin to your site.
+* Go to Settings -> FluentSMTP.
+* It will automatically show previous configuration from "Easy WP SMTP".
+* Click "Import From Easy WP SMTP" button and that's it.
+* Disable "Easy WP SMTP" and enjoy FluentSMTP.
+
+== What's Next ==
+If you like this plugin, then consider checking out our other plugins:
+
+<ul>
+    <li><a href="https://wordpress.org/plugins/fluent-crm/" target="_blank">FluentCRM – Email Marketing Automation and CRM Plugin for WordPress</a></li>
+	<li><a href="https://wordpress.org/plugins/fluentform/" target="_blank">Fluent Forms – Fastest WordPress Form Builder Plugin</a></li>
+	<li><a href="https://wordpress.org/plugins/fluent-support/" target="_blank">WordPress Helpdesk and Customer Support Ticket Plugin</a></li>
+	<li><a href="https://wordpress.org/plugins/ninja-tables/" target="_blank">Ninja Tables – Best WP DataTables Plugin for WordPress</a></li>
+	<li><a href="https://wordpress.org/plugins/ninja-charts/" target="_blank">Ninja Charts – Best WP Charts Plugin for WordPress</a></li>
+	<li><a href="https://wordpress.org/plugins/wp-payment-form/" target="_blank">Paymattic - Simple Payment Donations & Subscriptions Plugin</a></li>
+</ul>
+
+
+== Installation ==
+
+1. Install Fluent SMTP either via the WordPress.org plugin repository or by uploading the files to your server.
+2. Activate WP Fluent SMTP.
+3. Navigate to the Settings area of Fluent SMTP in the WordPress admin.
+4. Choose your SMTP option (Mailgun SMTP, SendGrid SMTP, Amazon SES, or Other SMTP) and follow the instructions to set it up.
+5. Need more help? Get support with <a href="https://wpmanageninja.com/support-tickets/" title="WPManageNinja">WPManageNinja Support</a>.
+
+== Frequently Asked Questions ==
+= Can I send email via SMTP from my WordPress site using this plugin? =
+
+Yes, FluentSMTP plugin's aim is to let you deliver your WordPress emails securely and as fast as possible.
+
+ = Can I connect Amazon SES API with FluentSMTP? =
+
+Yes, FluentSMTP let you connect with native via Amazon SES API Key and Secret key and on the top of it, We optimize the api connection to send faster.
+
+ = Can I store my Email Service Credentials to wp-config.php file? =
+
+Yes, when you create your connection you can choose how you want to store your connection credential. You can store at database or store at wp-config.php (recommended) file.
+
+ = Can I send WordPress mails with SendGrid? =
+
+ Yes, FluentSMTP let you connect your SendGrid via API. It's faster and reliable than SendGrid SMTP. But if you prefer SendGrid SMTP connection, You can also connect with that too.
+
+ = Can I send WordPress mails with Mailgun? =
+
+ Yes, FluentSMTP let you connect your Mailgun via API Key. It's faster and reliable than Mailgun SMTP. But if you prefer Mailgun SMTP connection, You can also connect with that too.
+
+ = Can I send WordPress mails with Sendinblue? =
+
+ Yes, FluentSMTP let you connect your Sendinblue email sending service via API Key. It's faster and reliable. But if you prefer Sendinblue SMTP connection, You can also connect with that too.
+
+ = Can I send WordPress mails with SparkPost? =
+
+ Yes, FluentSMTP let you connect your SparkPost email sending service via API Key.
+
+= Can I send WordPress mails with Pepipost? =
+
+Yes, FluentSMTP let you connect your Pepipost email sending service via secure API Key.
+
+= Can I send WordPress mails with Cloudflare Email? =
+
+Yes. FluentSMTP ships a native Cloudflare Email Sending integration. Add your Cloudflare Account ID and an API token with Email Sending permissions, and the plugin will send through Cloudflare's REST API (including attachments, CC/BCC, Reply-To, and custom headers). The sending domain must be on Cloudflare with Email Sending enabled (SPF/DKIM/DMARC published).
+
+= Can I send WordPress mails with toSend? =
+
+Yes. FluentSMTP has a native toSend integration. Create an API key in the toSend dashboard, add your verified sending domain, paste the key into FluentSMTP, and your WordPress emails will be delivered through toSend.
+
+= How do I know if one of my connections has stopped working? =
+
+FluentSMTP checks every connection once a day. If one starts failing - an expired OAuth token, a revoked API key - it is flagged on the dashboard and sent to your configured notification channels (Telegram, Slack, Discord or Pushover). You can also run <code>wp fluent-smtp health</code> from the command line at any time.
+
+= Can I use FluentSMTP from WP-CLI? =
+
+Yes. <code>wp fluent-smtp test</code> sends a test email, <code>wp fluent-smtp health</code> checks your connections, <code>wp fluent-smtp stats</code> shows sent and failed counts, and <code>wp fluent-smtp prune-logs</code> deletes old logs.
+
+= I am a developer, Where I can contribute to this project? =
+
+Thank you so much. We really appreciate it. Please check <a href="https://github.com/WPManageNinja/fluent-smtp">our github repository</a> for more details.
+
+= I found a bug, where I can report? =
+
+Please <a href="https://wpmanageninja.com/support-tickets/">submit an issue in our support portal</a>. If you are a developer please <a href="https://github.com/WPManageNinja/fluent-smtp">create a github issue</a>.
+
+= I found a security issue, where can I report it? =
+We use Patchstack to manage our security report. <a href="https://patchstack.com/database/vdp/fluent-smtp">Please report in the patchstack page</a>.
+
+== Screenshots ==
+1. FluentSMTP Dashboard
+2. Setting up a connection
+3. Settings Overview
+4. Sending a test email
+5. Email Logs
+6. View Email from Log
+
+
+== Changelog ==
+
+= 2.3.1 (Date: Aug 13, 2026) =
+- Added an optional Directory (tenant) ID for Outlook / Office 365, for single-tenant Entra app registrations that cannot accept personal Microsoft accounts
+- Fixed "Could not instantiate mail function." on the PHP mail() connection when a host or plugin selects its own transport from the <code>phpmailer_init</code> hook
+- Fixed mail routed outside FluentSMTP being sent through the site's own SMTP relay when a bulk sending session held a connection open
+
+= 2.3.0 (Date: Aug 05, 2026) =
+- Added Cloudflare Email Sending Provider
+- Added Recipient Picker and Resend History for Email Logs (props @faisalahammad)
+- Added Daily Connection Health Check with dashboard alerts and failure notifications
+- Added WP-CLI commands for test email, connection health, stats and log pruning
+- Added Amazon SES EU Sovereign Cloud region (Germany, Brandenburg)
+- Added send time tracking on every email log
+- Added <code>fluent_mail/manage_capability</code> filter to change the required admin capability
+- Added inline image embedding for SMTP connections via the <code>wp_mail_embed_args</code> filter
+- Added inline setup guides for Cloudflare and toSend
+- Improved sending speed with connection reuse for Amazon SES, toSend and FluentCRM bulk sending
+- Improved Email Log performance with a new database index and batched pruning
+- Updated the <code>wp_mail()</code> replacement to match WordPress 7.0 core
+- Fix: List-Unsubscribe one-click headers were encoded and ignored by mailbox providers on Amazon SES, Gmail and Outlook (props @rogerjudd)
+- Fix: Ampersands in the site title showing as HTML entities in the From Name, subject and email logs (props @ikamal7)
+- Fix: Outlook failures reporting a generic "Unauthorized" instead of the reason Microsoft gave (props @reikjarloekl)
+- Fix: From Name losing its last character when written without a space before the angle bracket
+- Fix: Weekly and monthly reports merging data across different years
+- Fix: toSend Reply-To formatting and sender validation messages
+- Fix: Nested array sanitization in email logs
+- Security hardening across the plugin, plus UI and translation improvements
+
+= 2.2.95 (Date: Dec 28, 2025) =
+- Added Multiple Notification Channels for Email Failure Notification
+- Added Pushover Notification Support
+- Added toSend Email Sending Provider
+- Added Option to disable API Keys Encryption
+- Fixed PHP 8.4 Compatibility Issues
+
+= 2.2.92 (Date: Aug 27, 2025) =
+- Fixed attachment handling issue with Elastic Email.
+- Resolved import statement issue for SMTP2GO.
+- Added PHP 8.4 support for FluentMail\App\Services\Mailer\Manager.
+- Added new Amazon SES region: ap-northeast-3 (Asia Pacific – Osaka).
+- Improved error handling in BaseHandler.
+- Updated fallback email handling to return true on success.
+- General bug fixes and performance improvements.
+- Fix: Logger Resend Email respects Content-Type for HTML emails
+- Styling Improvements
+- Fix: Prevent redundant navigation error in Logs screen when refreshing
+- Fix: Ensure Content-Type header is always logged for accurate email resends
+
+= 2.2.90 (Date: Feb 07, 2025) =
+- Added SMTP2GO Provider
+- Improved Translations
+- Added name attribute to attachment files
+- Security: Updated Google SDK Library to the latest version & updated JS DomPurify Library
+- Fixed: Email Failed Notification Issue with Slack
+- Styling Improvements
+
+= 2.2.83 (Date: Nov 22, 2024) =
+- Fix unserialize parameter issue
+
+= 2.2.82 (Date: Nov 22, 2024) =
+- Security: Data Un-serialization issue fixed
+- Sparkpost Recipient Issue fixed
+
+= 2.2.81 (Date: Oct 20, 2024) =
+* Security: Nonce Verification fixed for slack REQUEST (props to patchstack)
+* Fixed WooCommerce Emailing Issue fixed when enabled text mode
+* Fixed Translation issues
+* Custom Header support for Postmark
+
+= 2.2.80 (Date: July 02, 2024) =
+* Added Plain Text Support: Convert HTML Emails to Plain Text and send as multi-part email
+* Improved Translations
+* Improved Internal Code Base
+
+= 2.2.73 (Date: Apr 25, 2024) =
+* Compatibility with PHP 8.X
+* Added Day of the time sending chart
+
+= 2.2.72 (Date: Mar 16, 2024) =
+* Compatibility with PHP 8.4
+* Fix Slack Notification Issue
+
+= 2.2.71 (Date: Jan 01, 2024 =
+* Hot Fix: Fixing the issue with Input Fields
+
+= 2.2.7 (Date: Jan 01, 2024) =
+* Added RealTime Email Failure Notification via Telegram / Slack / Discord
+* Added Option to add additional email addresses for Amazon SES
+* UI Improvements
+
+= 2.2.6 (Date: Oct 01, 2023) =
+* Enable Encryption for All SMTP Connections Keys
+* Migrate SendInBlue API to Brevo API
+* Improved Plugin Conflict Detection and auto fix
+* Fixed UI conflict with Other Plugins
+
+= 2.2.5 (Date: Jul 06, 2023) =
+* (Security Fix) Email subject is now sanitized and escaped when preview
+* Showing Server Response by default on log
+* Fix http_build_query issue for latest version of PHP
+* Improved UI & UX for email preview
+
+= 2.2.4 (Date: Feb 04, 2023) =
+* Email preview is now sanitized
+* you can now define `FLUENTMAIL_SIMULATE_EMAILS` to simulate emails programtically
+* Fixed outlook API connection issues
+* Fixed inline documentation links
+* UX improvements
+
+= 2.2.2 (Date: Nov 11, 2022) =
+* Fix vendor Conflict for Google/Gmail Connection
+* UI Improvement on Connection Wizard
+
+= 2.2.1 (Date: Nov 08, 2022) =
+* Refactored Google API integration
+* Fix encoding issues for Outlook API connection
+* ElasticEmail Attachment issues fixed
+* Fixed digest email esc_* issues
+* Added contributors to the plugin's about page.
+* UI&UX Improvements
+
+= 2.2.0 (Date: Aug 21, 2022) =
+* Added Elastic Mail API
+* PHP 8.0 & 8.1 compatibility
+* UI Improvements
+
+= 2.1.2 (Date: July 05, 2022) =
+* Google/Gmail API Upgrade
+* UI Improvements
+
+= 2.1.1 (Date: March 12, 2022) =
+* Improved Email Logging Screen
+* Improved UI and Settings
+* Fixed auto-delete old email logs
+
+= 2.1.0 (Date: October 24, 2021) =
+* Fix Cron Issues
+* PHP 8.0 Compatibility issue fixed
+* Multiple Connection UX improvement
+* Ability to remove from email and name hook via filter
+
+= 2.0.2 (Date: September 21, 2021) =
+* Fixed Scheduled Database Cleanup
+* Improvement on wp_mail loading and sending emails
+* Pepipost Driver Improvement
+* SendGrid Driver Improvement
+* SendinBlue Drive Improvement
+
+= 2.0.1 (Date: July 28, 2021) =
+* Added Postmark API Connection
+* Fix Dashboard Stat Number
+* Fix Sanitization Issue
+
+= 2.0.0 (Date: July 27, 2021) =
+* Added Outlook / Office 365 API Connection
+* Improvements of Amazon SES Connection
+* Ability to disable force From Email for supported connections
+* Added Fallback Connection feature
+* Added One-Click migration from WP Mail SMTP Plugin
+* Added One-Click migration from WP Easy SMTP Plugin
+* UI Improvements
+* Added nonce and sanitization for connection inputs
+
+= 1.2.0 (Date: May 26, 2021) =
+* Added Gmail and Google Workspace API Connection
+* Added Built-in Docs
+* UI Improvements
+* PHP 8 compatibility issue fixed
+* Bulk Send Emails from logs
+* Added Email Simulator
+* Amazon API Fix
+
+= 1.1.1 (Date: April 26, 2021) =
+* Database Warning Issue Fixed
+
+= 1.1.0 (Date: April 25, 2021) =
+* Fix Error Handling Issues
+* DataBase Query Optimizations
+* Amazon SES Connection Optimization
+* UI Improvement
+* VueJS loading improvements
+
+= 1.0.1 (Date: January 24, 2021) =
+* Fix UTF-8 issues
+* Sendinblue wp-config constant issue fixed
+* Fallback from name issue fixed
+* Search for Email Logs has been fixed
+
+= 1.0.0 (Date: January 18, 2021) =
+* Initial Launch
+* 349 git commits so far
+* 698 cup of coffee (Just kidding, We lost count)
+* Work of 3 Months
+* Let's Make Email Sending Easier!
+
+== Upgrade Notice ==
+The latest Version is compatible with previous version, So nothing to worry

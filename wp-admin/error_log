@@ -1,0 +1,203 @@
+[04-Sep-2026 11:50:33 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_job_items' doesn't exist for query DELETE FROM wp_wpbackitup_job_items
+		     WHERE
+				job_id=17885378402455
+			LIMIT 9999999
+		     made by do_action('wp_ajax_nopriv_wpbackitup_cleanup_process'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Background_Process->maybe_handle, WPBackItUp_Background_Process->handle, WPBackItUp_Cleanup_Processor->task, do_action('wpbackitup_cleanup_purge_job_control'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Cleanup->purge_job_control, WPBackItUp_Job::purge_jobs, WPBackItUp_Job::delete_job_records, WPBackItUp_DataAccess->delete_job_items, WPBackItUp_DataAccess->query
+[04-Sep-2026 11:50:33 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_job_items' doesn't exist for query DELETE FROM wp_wpbackitup_job_items
+		     WHERE
+				job_id=17861363523541
+			LIMIT 9999999
+		     made by do_action('wp_ajax_nopriv_wpbackitup_cleanup_process'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Background_Process->maybe_handle, WPBackItUp_Background_Process->handle, WPBackItUp_Cleanup_Processor->task, do_action('wpbackitup_cleanup_purge_job_control'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Cleanup->purge_job_control, WPBackItUp_Job::purge_jobs, WPBackItUp_Job::delete_job_records, WPBackItUp_DataAccess->delete_job_items, WPBackItUp_DataAccess->query
+[04-Sep-2026 12:47:57 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = '510762770e9a257b170eef5319386adc'
+				 AND timestamp > '2026-09-04 19:42:57' made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_content_change, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 12:47:57 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_content_change, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 12:47:57 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(656): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(355): WPBackItUp_Event_Logger->log_content_change()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(523): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-includes/post.php(5286): do_action()
+#5 /home/iklaejryhosting/public_html/wp-includes/post.php(5392): wp_insert_post()
+#6 /home/iklaejryhosting/public_html/wp-admin/includes/post.php(449): wp_update_post()
+#7 /home/iklaejryhosting/public_html/wp-admin/post.php(239): edit_post()
+#8 {main}
+[04-Sep-2026 13:48:23 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = 'c52a4153afe0e0ccf3ff6728dd8d8086'
+				 AND timestamp > '2026-09-04 20:43:23' made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_content_change, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 13:48:23 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_content_change, WPBackItUp_Event_Logger->log_event
+[04-Sep-2026 13:48:23 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(656): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(355): WPBackItUp_Event_Logger->log_content_change()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(523): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-includes/post.php(5286): do_action()
+#5 /home/iklaejryhosting/public_html/wp-includes/post.php(5392): wp_insert_post()
+#6 /home/iklaejryhosting/public_html/wp-admin/includes/post.php(449): wp_update_post()
+#7 /home/iklaejryhosting/public_html/wp-admin/post.php(239): edit_post()
+#8 {main}
+[04-Sep-2026 15:05:22 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_job_items' doesn't exist for query DELETE FROM wp_wpbackitup_job_items
+		     WHERE
+				job_id=1788547832
+			LIMIT 9999999
+		     made by do_action('wp_ajax_nopriv_wpbackitup_cleanup_process'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Background_Process->maybe_handle, WPBackItUp_Background_Process->handle, WPBackItUp_Cleanup_Processor->task, do_action('wpbackitup_cleanup_purge_job_control'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Cleanup->purge_job_control, WPBackItUp_Job::purge_jobs, WPBackItUp_Job::delete_job_records, WPBackItUp_DataAccess->delete_job_items, WPBackItUp_DataAccess->query
+[04-Sep-2026 16:05:24 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_job_items' doesn't exist for query DELETE FROM wp_wpbackitup_job_items
+		     WHERE
+				job_id=1788551716
+			LIMIT 9999999
+		     made by do_action('wp_ajax_nopriv_wpbackitup_cleanup_process'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Background_Process->maybe_handle, WPBackItUp_Background_Process->handle, WPBackItUp_Cleanup_Processor->task, do_action('wpbackitup_cleanup_purge_job_control'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Cleanup->purge_job_control, WPBackItUp_Job::purge_jobs, WPBackItUp_Job::delete_job_records, WPBackItUp_DataAccess->delete_job_items, WPBackItUp_DataAccess->query
+[04-Sep-2026 17:10:24 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_job_items' doesn't exist for query DELETE FROM wp_wpbackitup_job_items
+		     WHERE
+				job_id=1788555628
+			LIMIT 9999999
+		     made by do_action('wp_ajax_nopriv_wpbackitup_cleanup_process'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Background_Process->maybe_handle, WPBackItUp_Background_Process->handle, WPBackItUp_Cleanup_Processor->task, do_action('wpbackitup_cleanup_purge_job_control'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Cleanup->purge_job_control, WPBackItUp_Job::purge_jobs, WPBackItUp_Job::delete_job_records, WPBackItUp_DataAccess->delete_job_items, WPBackItUp_DataAccess->query
+[04-Sep-2026 18:15:23 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_job_items' doesn't exist for query DELETE FROM wp_wpbackitup_job_items
+		     WHERE
+				job_id=1788559521
+			LIMIT 9999999
+		     made by do_action('wp_ajax_nopriv_wpbackitup_cleanup_process'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Background_Process->maybe_handle, WPBackItUp_Background_Process->handle, WPBackItUp_Cleanup_Processor->task, do_action('wpbackitup_cleanup_purge_job_control'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Cleanup->purge_job_control, WPBackItUp_Job::purge_jobs, WPBackItUp_Job::delete_job_records, WPBackItUp_DataAccess->delete_job_items, WPBackItUp_DataAccess->query
+[04-Sep-2026 19:20:21 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_job_items' doesn't exist for query DELETE FROM wp_wpbackitup_job_items
+		     WHERE
+				job_id=1788563123
+			LIMIT 9999999
+		     made by do_action('wp_ajax_nopriv_wpbackitup_cleanup_process'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Background_Process->maybe_handle, WPBackItUp_Background_Process->handle, WPBackItUp_Cleanup_Processor->task, do_action('wpbackitup_cleanup_purge_job_control'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Cleanup->purge_job_control, WPBackItUp_Job::purge_jobs, WPBackItUp_Job::delete_job_records, WPBackItUp_DataAccess->delete_job_items, WPBackItUp_DataAccess->query
+[04-Sep-2026 20:20:23 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_job_items' doesn't exist for query DELETE FROM wp_wpbackitup_job_items
+		     WHERE
+				job_id=1788567024
+			LIMIT 9999999
+		     made by do_action('wp_ajax_nopriv_wpbackitup_cleanup_process'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Background_Process->maybe_handle, WPBackItUp_Background_Process->handle, WPBackItUp_Cleanup_Processor->task, do_action('wpbackitup_cleanup_purge_job_control'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Cleanup->purge_job_control, WPBackItUp_Job::purge_jobs, WPBackItUp_Job::delete_job_records, WPBackItUp_DataAccess->delete_job_items, WPBackItUp_DataAccess->query
+[04-Sep-2026 21:20:23 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_job_items' doesn't exist for query DELETE FROM wp_wpbackitup_job_items
+		     WHERE
+				job_id=1788570922
+			LIMIT 9999999
+		     made by do_action('wp_ajax_nopriv_wpbackitup_cleanup_process'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Background_Process->maybe_handle, WPBackItUp_Background_Process->handle, WPBackItUp_Cleanup_Processor->task, do_action('wpbackitup_cleanup_purge_job_control'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Cleanup->purge_job_control, WPBackItUp_Job::purge_jobs, WPBackItUp_Job::delete_job_records, WPBackItUp_DataAccess->delete_job_items, WPBackItUp_DataAccess->query
+[04-Sep-2026 22:25:23 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_job_items' doesn't exist for query DELETE FROM wp_wpbackitup_job_items
+		     WHERE
+				job_id=1788574820
+			LIMIT 9999999
+		     made by do_action('wp_ajax_nopriv_wpbackitup_cleanup_process'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Background_Process->maybe_handle, WPBackItUp_Background_Process->handle, WPBackItUp_Cleanup_Processor->task, do_action('wpbackitup_cleanup_purge_job_control'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Cleanup->purge_job_control, WPBackItUp_Job::purge_jobs, WPBackItUp_Job::delete_job_records, WPBackItUp_DataAccess->delete_job_items, WPBackItUp_DataAccess->query
+[04-Sep-2026 23:30:25 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_job_items' doesn't exist for query DELETE FROM wp_wpbackitup_job_items
+		     WHERE
+				job_id=1788578423
+			LIMIT 9999999
+		     made by do_action('wp_ajax_nopriv_wpbackitup_cleanup_process'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Background_Process->maybe_handle, WPBackItUp_Background_Process->handle, WPBackItUp_Cleanup_Processor->task, do_action('wpbackitup_cleanup_purge_job_control'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Cleanup->purge_job_control, WPBackItUp_Job::purge_jobs, WPBackItUp_Job::delete_job_records, WPBackItUp_DataAccess->delete_job_items, WPBackItUp_DataAccess->query
+[05-Sep-2026 00:14:30 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = '68428730c40631feb32678ab122819fc'
+				 AND timestamp > '2026-09-05 07:09:30' made by deactivate_plugins, update_option, do_action('updated_option'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_settings_change, WPBackItUp_Event_Logger->log_event
+[05-Sep-2026 00:14:30 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by deactivate_plugins, update_option, do_action('updated_option'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_settings_change, WPBackItUp_Event_Logger->log_event
+[05-Sep-2026 00:14:30 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(940): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->log_settings_change()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(523): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-includes/option.php(1030): do_action()
+#5 /home/iklaejryhosting/public_html/wp-admin/includes/plugin.php(845): update_option()
+#6 /home/iklaejryhosting/public_html/wp-admin/plugins.php(211): deactivate_plugins()
+#7 {main}
+[05-Sep-2026 00:14:48 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = 'e741b22c1162865c60a08862f2c320de'
+				 AND timestamp > '2026-09-05 07:09:48' made by do_action('wp_ajax_update-plugin'), WP_Hook->do_action, WP_Hook->apply_filters, wp_ajax_update_plugin, Plugin_Upgrader->bulk_upgrade, do_action('upgrader_process_complete'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_plugin_update, WPBackItUp_Event_Logger->handle_plugin_update, WPBackItUp_Event_Logger->log_event
+[05-Sep-2026 00:14:48 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by do_action('wp_ajax_update-plugin'), WP_Hook->do_action, WP_Hook->apply_filters, wp_ajax_update_plugin, Plugin_Upgrader->bulk_upgrade, do_action('upgrader_process_complete'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_plugin_update, WPBackItUp_Event_Logger->handle_plugin_update, WPBackItUp_Event_Logger->log_event
+[05-Sep-2026 00:14:48 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(259): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(199): WPBackItUp_Event_Logger->handle_plugin_update()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->log_plugin_update()
+#3 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#4 /home/iklaejryhosting/public_html/wp-includes/plugin.php(523): WP_Hook->do_action()
+#5 /home/iklaejryhosting/public_html/wp-admin/includes/class-plugin-upgrader.php(412): do_action()
+#6 /home/iklaejryhosting/public_html/wp-admin/includes/ajax-actions.php(4687): Plugin_Upgrader->bulk_upgrade()
+#7 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): wp_ajax_update_plugin()
+#8 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#9 /home/iklaejryhosting/public_html/wp-includes/plugin.php(523): WP_Hook->do_action()
+#10 /home/iklaejryhosting/public_html/wp-admin/admin-ajax.php(192): do_action()
+#11 {main}
+[05-Sep-2026 00:15:26 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = '7a152af321b1c30c088d25be5b3d17c3'
+				 AND timestamp > '2026-09-05 07:10:26' made by activate_plugin, update_option, do_action('updated_option'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_settings_change, WPBackItUp_Event_Logger->log_event
+[05-Sep-2026 00:15:26 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by activate_plugin, update_option, do_action('updated_option'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_settings_change, WPBackItUp_Event_Logger->log_event
+[05-Sep-2026 00:15:26 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(940): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->log_settings_change()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(523): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-includes/option.php(1030): do_action()
+#5 /home/iklaejryhosting/public_html/wp-admin/includes/plugin.php(714): update_option()
+#6 /home/iklaejryhosting/public_html/wp-admin/plugins.php(60): activate_plugin()
+#7 {main}
+[05-Sep-2026 00:16:04 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = '7de44c3a3f93448bff7811d427418826'
+				 AND timestamp > '2026-09-05 07:11:04' made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, sv_rm_activate_plugin, activate_plugin, update_option, do_action('updated_option'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_settings_change, WPBackItUp_Event_Logger->log_event
+[05-Sep-2026 00:16:04 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, sv_rm_activate_plugin, activate_plugin, update_option, do_action('updated_option'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_settings_change, WPBackItUp_Event_Logger->log_event
+[05-Sep-2026 00:16:04 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(940): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->log_settings_change()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(523): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-includes/option.php(1030): do_action()
+#5 /home/iklaejryhosting/public_html/wp-admin/includes/plugin.php(714): update_option()
+#6 /home/iklaejryhosting/public_html/wp-content/plugins/Sitevorx-Pro/includes/sv-rankmath.php(43): activate_plugin()
+#7 /home/iklaejryhosting/public_html/wp-content/plugins/Sitevorx-Pro/includes/sv-rankmath.php(325): sv_rm_activate_plugin()
+#8 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): {closure}()
+#9 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#10 /home/iklaejryhosting/public_html/wp-includes/plugin.php(523): WP_Hook->do_action()
+#11 /home/iklaejryhosting/public_html/wp-admin/admin.php(180): do_action()
+#12 {main}
+[05-Sep-2026 00:16:19 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wp_rank_math_internal_links WHERE post_id = '2584' made by do_action('wp_ajax_wp_regenerate_internal_links'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Background_Process->maybe_handle, RankMathPro\Link_Genius\Background\Regenerate_Links->handle, WP_Background_Process->handle, RankMathPro\Link_Genius\Background\Regenerate_Links->task, RankMathPro\Link_Genius\Services\Link_Processor::process, RankMath\Links\ContentProcessor->process, RankMath\Links\ContentProcessor->process_extracted_links, RankMath\Links\Storage->cleanup, RankMath\Admin\Database\Query_Builder->delete, RankMath\Admin\Database\Query_Builder->query, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:16:19 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wp_rank_math_internal_links WHERE post_id = '3136' made by do_action('wp_ajax_wp_regenerate_internal_links'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Background_Process->maybe_handle, RankMathPro\Link_Genius\Background\Regenerate_Links->handle, WP_Background_Process->handle, RankMathPro\Link_Genius\Background\Regenerate_Links->task, RankMathPro\Link_Genius\Services\Link_Processor::process, RankMath\Links\ContentProcessor->process, RankMath\Links\ContentProcessor->process_extracted_links, RankMath\Links\Storage->cleanup, RankMath\Admin\Database\Query_Builder->delete, RankMath\Admin\Database\Query_Builder->query, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:16:20 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wp_rank_math_internal_links WHERE post_id = '4911' made by do_action('wp_ajax_wp_regenerate_internal_links'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Background_Process->maybe_handle, RankMathPro\Link_Genius\Background\Regenerate_Links->handle, WP_Background_Process->handle, RankMathPro\Link_Genius\Background\Regenerate_Links->task, RankMathPro\Link_Genius\Services\Link_Processor::process, RankMath\Links\ContentProcessor->process, RankMath\Links\ContentProcessor->process_extracted_links, RankMath\Links\Storage->cleanup, RankMath\Admin\Database\Query_Builder->delete, RankMath\Admin\Database\Query_Builder->query, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:16:22 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wp_rank_math_internal_links WHERE post_id = '4370' made by do_action('wp_ajax_wp_regenerate_internal_links'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Background_Process->maybe_handle, RankMathPro\Link_Genius\Background\Regenerate_Links->handle, WP_Background_Process->handle, RankMathPro\Link_Genius\Background\Regenerate_Links->task, RankMathPro\Link_Genius\Services\Link_Processor::process, RankMath\Links\ContentProcessor->process, RankMath\Links\ContentProcessor->process_extracted_links, RankMath\Links\Storage->cleanup, RankMath\Admin\Database\Query_Builder->delete, RankMath\Admin\Database\Query_Builder->query, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:16:22 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wp_rank_math_internal_links WHERE post_id = '4449' made by do_action('wp_ajax_wp_regenerate_internal_links'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Background_Process->maybe_handle, RankMathPro\Link_Genius\Background\Regenerate_Links->handle, WP_Background_Process->handle, RankMathPro\Link_Genius\Background\Regenerate_Links->task, RankMathPro\Link_Genius\Services\Link_Processor::process, RankMath\Links\ContentProcessor->process, RankMath\Links\ContentProcessor->process_extracted_links, RankMath\Links\Storage->cleanup, RankMath\Admin\Database\Query_Builder->delete, RankMath\Admin\Database\Query_Builder->query, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:16:22 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wp_rank_math_internal_links WHERE post_id = '39' made by do_action('wp_ajax_wp_regenerate_internal_links'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Background_Process->maybe_handle, RankMathPro\Link_Genius\Background\Regenerate_Links->handle, WP_Background_Process->handle, RankMathPro\Link_Genius\Background\Regenerate_Links->task, RankMathPro\Link_Genius\Services\Link_Processor::process, RankMath\Links\ContentProcessor->process, RankMath\Links\ContentProcessor->process_extracted_links, RankMath\Links\Storage->cleanup, RankMath\Admin\Database\Query_Builder->delete, RankMath\Admin\Database\Query_Builder->query, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:16:28 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wp_rank_math_internal_links WHERE post_id = '2978' made by do_action('wp_ajax_wp_regenerate_internal_links'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Background_Process->maybe_handle, RankMathPro\Link_Genius\Background\Regenerate_Links->handle, WP_Background_Process->handle, RankMathPro\Link_Genius\Background\Regenerate_Links->task, RankMathPro\Link_Genius\Services\Link_Processor::process, RankMath\Links\ContentProcessor->process, RankMath\Links\ContentProcessor->process_extracted_links, RankMath\Links\Storage->cleanup, RankMath\Admin\Database\Query_Builder->delete, RankMath\Admin\Database\Query_Builder->query, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:16:28 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wp_rank_math_internal_links WHERE post_id = '3148' made by do_action('wp_ajax_wp_regenerate_internal_links'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Background_Process->maybe_handle, RankMathPro\Link_Genius\Background\Regenerate_Links->handle, WP_Background_Process->handle, RankMathPro\Link_Genius\Background\Regenerate_Links->task, RankMathPro\Link_Genius\Services\Link_Processor::process, RankMath\Links\ContentProcessor->process, RankMath\Links\ContentProcessor->process_extracted_links, RankMath\Links\Storage->cleanup, RankMath\Admin\Database\Query_Builder->delete, RankMath\Admin\Database\Query_Builder->query, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:16:31 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wp_rank_math_internal_links WHERE post_id = '4815' made by do_action('wp_ajax_wp_regenerate_internal_links'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Background_Process->maybe_handle, RankMathPro\Link_Genius\Background\Regenerate_Links->handle, WP_Background_Process->handle, RankMathPro\Link_Genius\Background\Regenerate_Links->task, RankMathPro\Link_Genius\Services\Link_Processor::process, RankMath\Links\ContentProcessor->process, RankMath\Links\ContentProcessor->process_extracted_links, RankMath\Links\Storage->cleanup, RankMath\Admin\Database\Query_Builder->delete, RankMath\Admin\Database\Query_Builder->query, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:16:31 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wp_rank_math_internal_links WHERE post_id = '895' made by do_action('wp_ajax_wp_regenerate_internal_links'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Background_Process->maybe_handle, RankMathPro\Link_Genius\Background\Regenerate_Links->handle, WP_Background_Process->handle, RankMathPro\Link_Genius\Background\Regenerate_Links->task, RankMathPro\Link_Genius\Services\Link_Processor::process, RankMath\Links\ContentProcessor->process, RankMath\Links\ContentProcessor->process_extracted_links, RankMath\Links\Storage->cleanup, RankMath\Admin\Database\Query_Builder->delete, RankMath\Admin\Database\Query_Builder->query, RankMath\Admin\Database\Query_Builder->run
+[05-Sep-2026 00:18:46 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = 'ee93f4199bf4db3c974dbb8edcbc89c4'
+				 AND timestamp > '2026-09-05 07:13:46' made by do_action('wp_ajax_sv_update_plugin'), WP_Hook->do_action, WP_Hook->apply_filters, sv_ajax_update_plugin, Plugin_Upgrader->upgrade, WP_Upgrader->run, WP_Upgrader->install_package, apply_filters('upgrader_pre_install'), WP_Hook->apply_filters, Plugin_Upgrader->deactivate_plugin_before_upgrade, deactivate_plugins, update_option, do_action('updated_option'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_settings_change, WPBackItUp_Event_Logger->log_event
+[05-Sep-2026 00:18:46 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by do_action('wp_ajax_sv_update_plugin'), WP_Hook->do_action, WP_Hook->apply_filters, sv_ajax_update_plugin, Plugin_Upgrader->upgrade, WP_Upgrader->run, WP_Upgrader->install_package, apply_filters('upgrader_pre_install'), WP_Hook->apply_filters, Plugin_Upgrader->deactivate_plugin_before_upgrade, deactivate_plugins, update_option, do_action('updated_option'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_settings_change, WPBackItUp_Event_Logger->log_event
+[05-Sep-2026 00:18:46 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(940): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->log_settings_change()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(523): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-includes/option.php(1030): do_action()
+#5 /home/iklaejryhosting/public_html/wp-admin/includes/plugin.php(845): update_option()
+#6 /home/iklaejryhosting/public_html/wp-admin/includes/class-plugin-upgrader.php(580): deactivate_plugins()
+#7 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): Plugin_Upgrader->deactivate_plugin_before_upgrade()
+#8 /home/iklaejryhosting/public_html/wp-includes/plugin.php(206): WP_Hook->apply_filters()
+#9 /home/iklaejryhosting/public_html/wp-admin/includes/class-wp-upgrader.php(556): apply_filters()
+#10 /home/iklaejryhosting/public_html/wp-admin/includes/class-wp-upgrader.php(898): WP_Upgrader->install_package()
+#11 /home/iklaejryhosting/public_html/wp-admin/includes/class-plugin-upgrader.php(224): WP_Upgrader->run()
+#12 /home/iklaejryhosting/public_html/wp-content/plugins/Sitevorx-Pro/includes/sv-maintenance-check.php(40): Plugin_Upgrader->upgrade()
+#13 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): sv_ajax_update_plugin()
+#14 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#15 /home/iklaejryhosting/public_html/wp-includes/plugin.php(523): WP_Hook->do_action()
+#16 /home/iklaejryhosting/public_html/wp-admin/admin-ajax.php(192): do_action()
+#17 {main}
+[05-Sep-2026 00:19:48 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SELECT COUNT(*) FROM wp_wpbackitup_events
+				 WHERE event_hash = '7255055fda6f92fe77c4af844a19f5a8'
+				 AND timestamp > '2026-09-05 07:14:48' made by activate_plugin, update_option, do_action('updated_option'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_settings_change, WPBackItUp_Event_Logger->log_event
+[05-Sep-2026 00:19:48 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wpbackitup_events` made by activate_plugin, update_option, do_action('updated_option'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Event_Logger->log_settings_change, WPBackItUp_Event_Logger->log_event
+[05-Sep-2026 00:19:48 UTC] Exception: Database insert failed: Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_events' doesn't exist in /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php:455
+Stack trace:
+#0 /home/iklaejryhosting/public_html/wp-content/plugins/wp-backitup/lib/includes/class-event-logger.php(940): WPBackItUp_Event_Logger->log_event()
+#1 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(353): WPBackItUp_Event_Logger->log_settings_change()
+#2 /home/iklaejryhosting/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#3 /home/iklaejryhosting/public_html/wp-includes/plugin.php(523): WP_Hook->do_action()
+#4 /home/iklaejryhosting/public_html/wp-includes/option.php(1030): do_action()
+#5 /home/iklaejryhosting/public_html/wp-admin/includes/plugin.php(714): update_option()
+#6 /home/iklaejryhosting/public_html/wp-admin/plugins.php(60): activate_plugin()
+#7 {main}
+[05-Sep-2026 00:30:28 UTC] WordPress database error Table 'iklaejryhosting_cyberservicesvn.wp_wpbackitup_job_items' doesn't exist for query DELETE FROM wp_wpbackitup_job_items
+		     WHERE
+				job_id=1788582023
+			LIMIT 9999999
+		     made by do_action('wp_ajax_nopriv_wpbackitup_cleanup_process'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Background_Process->maybe_handle, WPBackItUp_Background_Process->handle, WPBackItUp_Cleanup_Processor->task, do_action('wpbackitup_cleanup_purge_job_control'), WP_Hook->do_action, WP_Hook->apply_filters, WPBackItUp_Cleanup->purge_job_control, WPBackItUp_Job::purge_jobs, WPBackItUp_Job::delete_job_records, WPBackItUp_DataAccess->delete_job_items, WPBackItUp_DataAccess->query
