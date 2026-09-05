@@ -5,6 +5,11 @@ on:
       - main
 
 jobs:
+  # NOTE: state-name is deliberately left unset on both jobs. The action resolves
+  # it as "<local-dir><state-name>" and does not create missing parent folders, so
+  # a value like ".github-state/x.json" fails with ENOENT. Each job has its own
+  # local-dir and its own checkout, so the default flat state file
+  # (.ftp-deploy-sync-state.json) cannot collide between jobs.
   deploy-theme:
     name: Deploy theme
     runs-on: ubuntu-latest
@@ -20,7 +25,6 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./wp-content/themes/cyber-services/
         server-dir: ./wp-content/themes/cyber-services/
-        state-name: .github-state/cyber-services-theme.json
 
   deploy-kira-ai:
     name: Deploy Kira AI plugin
@@ -44,7 +48,6 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./wp-content/plugins/kira-ai 2/
         server-dir: ./wp-content/plugins/kira-ai 2/
-        state-name: .github-state/kira-ai-plugin.json
         exclude: |
           **/.git*
           **/.DS_Store
