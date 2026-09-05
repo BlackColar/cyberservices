@@ -7,6 +7,11 @@ get_header();
   $article_content = cyber_services_article_content(get_the_content());
   $author_id = (int) get_the_author_meta('ID');
   $author_link = $author_id > 0 ? (string) get_author_posts_url($author_id) : '';
+  $published_timestamp = (int) get_post_time('U', true);
+  $modified_timestamp = (int) get_post_modified_time('U', true);
+  // WordPress copies post_date into post_modified when a post is published, so
+  // compare the stored values to know whether the post was edited afterwards.
+  $has_been_updated = $published_timestamp > 0 && $modified_timestamp > $published_timestamp;
   ?>
   <article <?php post_class(); ?> itemscope itemtype="https://schema.org/BlogPosting">
     <meta itemprop="headline" content="<?php echo esc_attr(get_the_title()); ?>">
@@ -19,9 +24,10 @@ get_header();
           <?php else : ?>
             <span class="meta-author"><span class="meta-label"><?php esc_html_e('Tác giả:', 'cyber-services'); ?></span> <span itemprop="author" itemscope itemtype="https://schema.org/Person"><?php the_author_meta('display_name', $author_id); ?></span></span>
           <?php endif; ?>
-          <time class="meta-date" datetime="<?php echo esc_attr(get_the_date(DATE_W3C)); ?>" itemprop="datePublished"><?php echo esc_html(get_the_date('d.m.Y')); ?></time>
-          <?php if (get_the_modified_date('U') !== get_the_date('U')) : ?>
-            <time class="meta-updated" datetime="<?php echo esc_attr(get_the_modified_date(DATE_W3C)); ?>" itemprop="dateModified"><?php echo esc_html(sprintf(__('Cập nhật %s', 'cyber-services'), get_the_modified_date('d.m.Y'))); ?></time>
+          <?php if ($has_been_updated) : ?>
+            <time class="meta-updated" datetime="<?php echo esc_attr(get_the_modified_time(DATE_W3C)); ?>" itemprop="dateModified"><span class="meta-label"><?php esc_html_e('Cập nhật lần cuối:', 'cyber-services'); ?></span> <span class="meta-date-value"><?php echo esc_html(get_the_modified_time('H:i')); ?></span><span class="meta-sep" aria-hidden="true"> · </span><span class="meta-date-value"><?php echo esc_html(get_the_modified_date('d.m.Y')); ?></span></time>
+          <?php else : ?>
+            <time class="meta-published" datetime="<?php echo esc_attr(get_the_date(DATE_W3C)); ?>" itemprop="datePublished"><span class="meta-label"><?php esc_html_e('Đăng ngày:', 'cyber-services'); ?></span> <span class="meta-date-value"><?php echo esc_html(get_the_date('d.m.Y')); ?></span></time>
           <?php endif; ?>
         </div>
         <h1 itemprop="name"><?php the_title(); ?></h1>

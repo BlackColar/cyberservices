@@ -169,8 +169,11 @@ p,li,dt,dd,a,strong,span { overflow-wrap:anywhere; }
 .article-meta .meta-author { display:inline-flex; flex-wrap:wrap; gap:6px; align-items:center; }
 .article-meta .meta-label { color:#8b9086; font-weight:700; letter-spacing:.1em; }
 .article-meta .meta-author a { border-bottom:1px solid #c9cec2; color:var(--ink); font-weight:850; transition:border-color .2s ease,color .2s ease; }
-.article-meta .meta-date,.article-meta .meta-updated { color:#6f756b; }
+.article-meta .meta-date,.article-meta .meta-published,.article-meta .meta-updated { color:#6f756b; }
 .article-meta .meta-updated { color:#8b9086; font-weight:700; letter-spacing:.06em; text-transform:none; }
+.article-meta .meta-updated .meta-label { color:inherit; }
+.article-meta .meta-date-value { color:#6f756b; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+.article-meta .meta-sep { color:#a7ada2; }
 .author-box { display:grid; grid-template-columns:80px minmax(0,1fr); gap:26px; margin-top:56px; border:1px solid var(--line); border-radius:24px; padding:30px; background:var(--card); }
 .author-box-avatar { width:80px; height:80px; overflow:hidden; border:1px solid var(--line-strong); border-radius:50%; background:var(--paper); }
 .author-box-avatar img { width:100%; height:100%; display:block; object-fit:cover; }
