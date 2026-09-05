@@ -2389,6 +2389,86 @@ function cyber_services_front_page_metadata(): void
 }
 add_action('wp_head', 'cyber_services_front_page_metadata', 2);
 
+/**
+ * Fallback SEO metadata for non-front-page views.
+ *
+ * The theme hard-codes canonical/OG/Twitter tags only on the front page, so every
+ * other URL relies entirely on Rank Math. This emits a minimal set of tags when no
+ * SEO plugin is handling the document head, so posts and pages never ship a bare
+ * <head>.
+ *
+ * The check is resolved once at `init` and cached: plugins load after the theme, so
+ * evaluating it during theme setup would always report "absent", and `init` is still
+ * guaranteed to run before `wp_head`.
+ */
+function cyber_services_seo_plugin_present(): bool
+{
+    static $resolved = null;
+    if ($resolved === null) {
+        $resolved = class_exists('RankMath') || function_exists('rank_math');
+    }
+    return $resolved;
+}
+
+function cyber_services_resolve_seo_plugin_present(): void
+{
+    cyber_services_seo_plugin_present();
+}
+add_action('init', 'cyber_services_resolve_seo_plugin_present', 999);
+
+function cyber_services_fallback_head_metadata(): void
+{
+    if (is_front_page() || is_admin() || is_feed()) {
+        return;
+    }
+
+    // Rank Math present means it owns canonical/OG/schema; do not duplicate it.
+    if (cyber_services_seo_plugin_present()) {
+        return;
+    }
+
+    $url = is_singular() ? (string) get_permalink() : home_url((string) wp_parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH));
+    if ($url === '') {
+        return;
+    }
+
+    $title = wp_get_document_title();
+    $description = get_the_excerpt();
+    if (!is_singular() || $description === '') {
+        $description = (string) get_bloginfo('description');
+    }
+    $description = wp_strip_all_tags((string) $description);
+    if (mb_strlen($description) > 160) {
+        $description = mb_substr($description, 0, 157) . '…';
+    }
+
+    $image = '';
+    if (is_singular() && has_post_thumbnail()) {
+        $image = (string) (wp_get_attachment_image_url(get_post_thumbnail_id(), 'large') ?: '');
+    }
+    if ($image === '') {
+        $image = cyber_services_asset('images/logo.png');
+    }
+
+    $og_type = is_singular('post') ? 'article' : 'website';
+    ?>
+    <meta name="description" content="<?php echo esc_attr($description); ?>">
+    <link rel="canonical" href="<?php echo esc_url($url); ?>">
+    <meta property="og:type" content="<?php echo esc_attr($og_type); ?>">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:site_name" content="<?php echo esc_attr(get_bloginfo('name')); ?>">
+    <meta property="og:url" content="<?php echo esc_url($url); ?>">
+    <meta property="og:title" content="<?php echo esc_attr($title); ?>">
+    <meta property="og:description" content="<?php echo esc_attr($description); ?>">
+    <meta property="og:image" content="<?php echo esc_url($image); ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo esc_attr($title); ?>">
+    <meta name="twitter:description" content="<?php echo esc_attr($description); ?>">
+    <meta name="twitter:image" content="<?php echo esc_url($image); ?>">
+    <?php
+}
+add_action('wp_head', 'cyber_services_fallback_head_metadata', 3);
+
 function cyber_services_contact_nonce(): void
 {
     nocache_headers();

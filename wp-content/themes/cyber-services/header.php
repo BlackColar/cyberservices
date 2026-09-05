@@ -3,7 +3,9 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <?php if (is_front_page()) : // base.css (front page only) is the sole @font-face consumer. ?>
     <link rel="preload" href="<?php echo esc_url(get_theme_file_uri('assets/fonts/be-vietnam-pro.woff2')); ?>" as="font" type="font/woff2" crossorigin>
+    <?php endif; ?>
     <?php if (!has_site_icon()) : ?><link rel="icon" type="image/png" href="<?php echo esc_url(get_theme_file_uri('assets/images/logo.png')); ?>"><?php endif; ?>
     <?php wp_head(); ?>
 </head>
