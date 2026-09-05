@@ -48,9 +48,13 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./wp-content/plugins/kira-ai 2/
         server-dir: ./wp-content/plugins/kira-ai 2/
+        # Paths are relative to local-dir, so root-level entries need a bare
+        # pattern; "**/x/**" alone does not match "tests/..." at the top level.
         exclude: |
           **/.git*
+          **/.git*/**
+          **/node_modules/**
           **/.DS_Store
-          **/tests/**
-          **/phpunit.xml.dist
-          **/composer.json
+          tests/**
+          phpunit.xml.dist
+          composer.json
