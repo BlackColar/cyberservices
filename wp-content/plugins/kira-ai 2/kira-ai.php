@@ -74,8 +74,10 @@ class Kira_AI
         // AJAX endpoint to manually trigger Facebook re-post for a post
         add_action('wp_ajax_kira_ai_repost_facebook', array($this, 'ajax_repost_facebook'));
 
-        // JSON-LD Schema output on frontend
-        add_action('wp_head', array($this, 'output_jsonld_schema'), 1);
+        // NOTE: JSON-LD structured data is intentionally NOT output here.
+        // Rank Math owns all schema markup (Article/BlogPosting, Person, FAQPage).
+        // Emitting a second Article block caused duplicate/conflicting entities
+        // with a stale headline that ignored the Rank Math SEO title.
 
         // Evergreen Refresh cron
         add_filter('cron_schedules', array($this, 'add_cron_schedule'));
@@ -189,7 +191,8 @@ class Kira_AI
 
             // SEO & Automation settings
             update_option('kira_ai_url_blacklist', isset($_POST['kira_ai_url_blacklist']) ? sanitize_textarea_field($_POST['kira_ai_url_blacklist']) : '');
-            update_option('kira_ai_jsonld_enabled', isset($_POST['kira_ai_jsonld_enabled']) ? 1 : 0);
+            // JSON-LD output was removed from this plugin; force the legacy flag off.
+            update_option('kira_ai_jsonld_enabled', 0);
             update_option('kira_ai_evergreen_enabled', isset($_POST['kira_ai_evergreen_enabled']) ? 1 : 0);
             update_option('kira_ai_evergreen_age', isset($_POST['kira_ai_evergreen_age']) ? sanitize_text_field($_POST['kira_ai_evergreen_age']) : '6');
 
@@ -223,7 +226,6 @@ class Kira_AI
         $telegram_bot_token = get_option('kira_ai_telegram_bot_token', '');
         $telegram_chat_id = get_option('kira_ai_telegram_chat_id', '');
 
-        $jsonld_enabled = get_option('kira_ai_jsonld_enabled', 1);
         $evergreen_enabled = get_option('kira_ai_evergreen_enabled', 0);
         $evergreen_age = get_option('kira_ai_evergreen_age', '6');
         $models = $this->get_kira_models();
@@ -454,13 +456,9 @@ class Kira_AI
                             </th>
                         </tr>
                         <tr>
-                            <th scope="row"><label for="kira_ai_jsonld_enabled">JSON-LD Schema</label></th>
+                            <th scope="row">JSON-LD Schema</th>
                             <td>
-                                <label>
-                                    <input type="checkbox" name="kira_ai_jsonld_enabled" value="1" <?php checked($jsonld_enabled, 1); ?> />
-                                    Tự động chèn JSON-LD Structured Data (Article, FAQ, Breadcrumb) vào bài viết
-                                </label>
-                                <p class="description">Giúp Google hiểu nội dung tốt hơn và hiển thị Rich Snippets.</p>
+                                <p class="description">Đã tắt vĩnh viễn trong plugin. Rank Math là nguồn duy nhất xuất structured data (Article/BlogPosting, Person, FAQPage) để tránh trùng lặp thực thể trên Google.</p>
                             </td>
                         </tr>
                         <tr>
@@ -3361,124 +3359,6 @@ class Kira_AI
 
             update_post_meta($post->ID, '_kira_ai_evergreen_refreshed', current_time('Y-m-d'));
         }
-    }
-
-    /**
-     * Output JSON-LD structured data on frontend.
-     */
-    public function output_jsonld_schema()
-    {
-        $jsonld_enabled = get_option('kira_ai_jsonld_enabled', 1);
-        if (!$jsonld_enabled) {
-            return;
-        }
-
-        if (!is_singular()) {
-            return;
-        }
-
-        $post = get_queried_object();
-        if (!$post || empty($post->post_title)) {
-            return;
-        }
-
-        $schema = array(
-            '@context'       => 'https://schema.org',
-            '@type'          => 'Article',
-            'headline'       => wp_strip_all_tags($post->post_title),
-            'datePublished'  => get_the_date('c', $post),
-            'dateModified'   => get_the_modified_date('c', $post),
-            'mainEntityOfPage' => array(
-                '@type' => 'WebPage',
-                '@id'   => get_permalink($post),
-            ),
-            'author'         => array(
-                '@type' => 'Person',
-                'name'  => get_the_author_meta('display_name', $post->post_author),
-            ),
-            'publisher'      => array(
-                '@type' => 'Organization',
-                'name'  => get_bloginfo('name'),
-                'logo'  => array(
-                    '@type' => 'ImageObject',
-                    'url'   => self::LOGO_URL,
-                ),
-            ),
-        );
-
-        if (has_post_thumbnail($post)) {
-            $thumb_id   = get_post_thumbnail_id($post);
-            $thumb_url  = wp_get_attachment_image_url($thumb_id, 'full');
-            $thumb_data = wp_get_attachment_metadata($thumb_id);
-            $schema['image'] = array(
-                '@type'  => 'ImageObject',
-                'url'    => $thumb_url,
-                'width'  => $thumb_data['width'] ?? 1200,
-                'height' => $thumb_data['height'] ?? 630,
-            );
-        }
-
-        // Extract FAQ from content h3 tags
-        $faq_items = $this->extract_faq_from_content($post->post_content);
-        if (!empty($faq_items)) {
-            $main_entity = array(
-                '@type' => 'FAQPage',
-                'mainEntity' => $faq_items,
-            );
-            $schema['mainEntity'] = $main_entity;
-        }
-
-        echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
-    }
-
-    /**
-     * Extract FAQ items from h3 tags matching "Câu hỏi" / "FAQ".
-     *
-     * @param string $content HTML content.
-     * @return array
-     */
-    private function extract_faq_from_content($content)
-    {
-        $faq_items = array();
-
-        // Match h2/h3 containing FAQ keywords
-        if (preg_match_all('/<h[23][^>]*>(.*?)<\/h[23]>\s*(<p[^>]*>(.*?)<\/p>)/is', $content, $matches, PREG_SET_ORDER)) {
-            foreach ($matches as $match) {
-                $question = trim(strip_tags($match[1]));
-                $answer   = trim(strip_tags($match[3]));
-
-                $question_lower = mb_strtolower($question, 'UTF-8');
-                if (empty($question) || empty($answer)) {
-                    continue;
-                }
-
-                // Only include if question looks like FAQ
-                $is_faq = (strpos($question_lower, 'câu hỏi') !== false ||
-                           strpos($question_lower, 'faq') !== false ||
-                           strpos($question_lower, '?') !== false ||
-                           strpos($question_lower, 'là gì') !== false ||
-                           strpos($question_lower, 'như thế nào') !== false ||
-                           strpos($question_lower, 'bao nhiêu') !== false ||
-                           strpos($question_lower, 'khi nào') !== false);
-
-                if ($is_faq) {
-                    $faq_items[] = array(
-                        '@type'          => 'Question',
-                        'name'           => $question,
-                        'acceptedAnswer' => array(
-                            '@type' => 'Answer',
-                            'text'  => mb_substr($answer, 0, 300, 'UTF-8'),
-                        ),
-                    );
-                }
-
-                if (count($faq_items) >= 10) {
-                    break;
-                }
-            }
-        }
-
-        return $faq_items;
     }
 
     /**

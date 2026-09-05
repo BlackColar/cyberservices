@@ -1,18 +1,18 @@
-name: Deploy Theme to cPanel
+name: Deploy to cPanel
 on:
   push:
     branches:
       - main
 
 jobs:
-  web-deploy:
-    name: Deploy
+  deploy-theme:
+    name: Deploy theme
     runs-on: ubuntu-latest
     steps:
     - name: Get latest code
       uses: actions/checkout@v4
 
-    - name: Sync Theme Files via FTP
+    - name: Sync theme files via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
@@ -20,3 +20,34 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./wp-content/themes/cyber-services/
         server-dir: ./wp-content/themes/cyber-services/
+        state-name: .github-state/cyber-services-theme.json
+
+  deploy-kira-ai:
+    name: Deploy Kira AI plugin
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v4
+
+    # Only the in-house Kira AI plugin is synced here. No other plugin directory
+    # is referenced, so nothing else under wp-content/plugins is touched.
+    # server-dir intentionally keeps the "kira-ai 2" folder name because that is
+    # the directory WordPress has activated on the host; deploying to a different
+    # name would create a second copy of the plugin.
+    # Dev-only files (tests, phpunit, composer, .DS_Store) are excluded so they
+    # never land on the production server.
+    - name: Sync Kira AI plugin files via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./wp-content/plugins/kira-ai 2/
+        server-dir: ./wp-content/plugins/kira-ai 2/
+        state-name: .github-state/kira-ai-plugin.json
+        exclude: |
+          **/.git*
+          **/.DS_Store
+          **/tests/**
+          **/phpunit.xml.dist
+          **/composer.json
