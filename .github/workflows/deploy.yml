@@ -3,6 +3,12 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      run_kira_ai_cleanup:
+        description: "Run the one-shot Kira AI dev-file cleanup job"
+        type: boolean
+        default: false
 
 jobs:
   # NOTE: state-name is deliberately left unset on both jobs. The action resolves
@@ -58,3 +64,41 @@ jobs:
           tests/**
           phpunit.xml.dist
           composer.json
+
+  # One-shot, manual-only job. FTP-Deploy-Action applies `exclude` to both sides
+  # of its diff, so files that were uploaded before the excludes existed are
+  # never deleted by a later deploy. This job removes exactly those leftovers
+  # (tests/, phpunit.xml.dist, composer.json, .DS_Store) from the plugin folder.
+  # It is confined to wp-content/plugins/kira-ai 2 and never touches kira-ai.php.
+  # Trigger it from Actions -> Run workflow -> tick the cleanup checkbox.
+  cleanup-kira-ai-dev-files:
+    name: Cleanup Kira AI dev files (one-shot)
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.run_kira_ai_cleanup }}
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v4
+
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: "20"
+
+    - name: Install basic-ftp
+      run: npm install --no-save --silent basic-ftp@6
+
+    - name: Verify plan (dry run)
+      env:
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        DRY_RUN: "1"
+      run: node scripts/cleanup-kira-ai-dev-files.js
+
+    - name: Remove leftover dev files
+      env:
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+      run: node scripts/cleanup-kira-ai-dev-files.js
+
