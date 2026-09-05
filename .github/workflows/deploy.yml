@@ -1,4 +1,4 @@
-name: Deploy Full Website to cPanel
+name: Deploy Theme to cPanel
 on:
   push:
     branches:
@@ -12,22 +12,11 @@ jobs:
     - name: Get latest code
       uses: actions/checkout@v4
 
-    - name: Sync All Files via FTP
+    - name: Sync Theme Files via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./
-        server-dir: ./
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/.github/**
-          **/wp-config.php
-          **/wp-content/uploads/**
-          coowy.com.vn/**
-          cybercubevn.com/**
-          cyberservices.com.vn/**
-          pcidsscert.com/**
-          vietnamcompliance.com/**
+        local-dir: ./wp-content/themes/cyber-services/
+        server-dir: ./wp-content/themes/cyber-services/
