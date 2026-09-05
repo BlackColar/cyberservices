@@ -14,7 +14,10 @@ $case_studies = new WP_Query([
 // keep page 1 renderable when the category is genuinely empty (show the empty state).
 $total_pages = (int) $case_studies->max_num_pages;
 if ($total_pages > 0 && $current_page > $total_pages) {
-    set_404();
+    global $wp_query;
+    $wp_query->set_404();
+    status_header(404);
+    nocache_headers();
     get_header();
     ?>
     <main id="noi-dung" class="container section page-content">
@@ -22,7 +25,7 @@ if ($total_pages > 0 && $current_page > $total_pages) {
         <h1><?php esc_html_e('Không tìm thấy trang', 'cyber-services'); ?></h1>
         <p><?php esc_html_e('Trang bạn yêu cầu không tồn tại hoặc đã vượt quá số trang hiện có.', 'cyber-services'); ?></p>
       </header>
-      <p><a class="read-link" href="<?php echo esc_url(get_permalink()); ?>"><?php esc_html_e('Về danh sách Case Study →', 'cyber-services'); ?></a></p>
+      <p><a class="read-link" href="<?php echo esc_url(home_url('/case-study/')); ?>"><?php esc_html_e('Về danh sách Case Study →', 'cyber-services'); ?></a></p>
     </main>
     <?php
     get_footer();
