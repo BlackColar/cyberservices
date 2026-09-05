@@ -9,7 +9,16 @@ get_header();
   $article_content = $page_content !== '' ? cyber_services_article_content($page_content) : '';
   ?>
   <article>
-    <header class="section-heading"><h1><?php the_title(); ?></h1><?php if (has_excerpt()) : ?><p><?php echo esc_html(cyber_services_excerpt()); ?></p><?php endif; ?></header>
+    <header class="section-heading">
+      <h1><?php the_title(); ?></h1>
+      <?php if (has_excerpt()) : ?>
+        <p><?php echo esc_html(cyber_services_excerpt()); ?></p>
+      <?php endif; ?>
+      <?php if (has_post_thumbnail()) : ?>
+        <?php the_post_thumbnail('full', ['class' => 'article-image']); ?>
+      <?php endif; ?>
+    </header>
+
     <?php if ($page_children) : ?>
       <section aria-labelledby="page-children-title">
         <h2 class="screen-reader-text" id="page-children-title"><?php echo esc_html(sprintf(__('Các trang thuộc %s', 'cyber-services'), get_the_title())); ?></h2>
@@ -30,7 +39,10 @@ get_header();
         </div>
       </section>
     <?php endif; ?>
-    <?php if ($page_content !== '') : ?><?php get_template_part('template-parts/article-content', null, ['content' => $article_content, 'body_class' => 'page-detail' . ($page_children ? ' page-detail-after-children' : '')]); ?><?php endif; ?>
+
+    <?php if ($page_content !== '') : ?>
+      <?php get_template_part('template-parts/article-content', null, ['content' => $article_content, 'body_class' => 'page-detail' . ($page_children ? ' page-detail-after-children' : '')]); ?>
+    <?php endif; ?>
   </article>
 <?php endwhile; ?>
 </main>

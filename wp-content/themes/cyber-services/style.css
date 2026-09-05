@@ -76,7 +76,8 @@ p,li,dt,dd,a,strong,span { overflow-wrap:anywhere; }
 .article-layout { width:min(100% - 64px,900px); }
 .article-back { display:inline-block; width:max-content; margin-bottom:42px; color:var(--muted); font-size:12px; font-weight:750; }
 .article-body>*:first-child { margin-top:0; }
-.article-body h2,.article-body h3 { margin-top:55px; font-size:clamp(30px,3.5vw,44px); line-height:1.15; letter-spacing:-.04em; }
+.article-body h2 { margin-top:48px; font-size:clamp(22px,2.4vw,28px); line-height:1.3; font-weight:700; letter-spacing:-.025em; }
+.article-body h3 { margin-top:36px; font-size:clamp(18px,1.8vw,22px); line-height:1.35; font-weight:650; letter-spacing:-.015em; }
 .article-body :is(h2,h3)[id] { scroll-margin-top:120px; }
 .article-body p { margin-top:19px; color:#4f554d; font-size:16px; line-height:1.9; text-align:justify; }
 .article-body .has-text-align-justify { text-align:justify; }
@@ -191,11 +192,15 @@ p,li,dt,dd,a,strong,span { overflow-wrap:anywhere; }
 @media (hover:hover) and (pointer:fine) { .author-box-name a:hover,.article-meta .meta-author a:hover { color:var(--green); } .article-meta .meta-author a:hover { border-color:var(--green); } .author-box-cta:hover { transform:translateY(-2px); } }
 @media (max-width:620px) { .author-box { grid-template-columns:minmax(0,1fr); gap:18px; margin-top:44px; padding:24px 22px; border-radius:20px; } .author-box-avatar { width:64px; height:64px; } .author-box-name { font-size:20px; } .author-box-bio { font-size:14px; line-height:1.75; } }
 @media (max-width:400px) { .author-box { padding:20px 18px; } .author-box-cta { width:100%; justify-content:center; padding:12px 14px; } }
+
+/* ================= PAGE DETAILS & SERVICE PAGES ================= */
 .page-content { max-width:1220px; }
 .page-content h1 { overflow-wrap:anywhere; }
-.page-content>article>.section-heading { max-width:850px; margin-inline:auto; }
-.page-content>article>.article-body { max-width:1100px; margin-inline:auto; }
-.page-content .article-body { margin-top:42px; }
+.page-content>article>.section-heading { max-width:900px; margin-inline:auto; margin-bottom:32px; }
+.page-content>article>.section-heading h1 { font-size:clamp(32px,3.8vw,52px); font-weight:600; line-height:1.18; letter-spacing:-.02em; }
+.page-content>article>.section-heading>p { font-size:17px; line-height:1.75; color:#60655e; margin-top:20px; }
+.page-content>article>.article-body { max-width:900px; margin-inline:auto; }
+.page-content .article-body { margin-top:32px; }
 .page-content .article-body p,.page-content .article-body li { font-size:17px; }
 .page-child-grid { margin-top:42px; }
 .page-child-card h2 { overflow-wrap:anywhere; }
