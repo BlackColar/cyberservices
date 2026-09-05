@@ -1,19 +1,37 @@
 <?php
 $current_page = max(1, (int) get_query_var('paged'), (int) get_query_var('page'));
+
+// Resolve the category's true size with an unpaginated query. WP_Query sets
+// max_num_pages to 0 (not 1) when `paged` is past the end, so the paginated
+// query below cannot tell "no posts at all" apart from "page out of range" —
+// both come back as 0 pages / 0 posts.
+$case_study_count = (int) (new WP_Query([
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'category_name' => 'case-study',
+    'posts_per_page' => 1,
+    'fields' => 'ids',
+    'ignore_sticky_posts' => true,
+    'no_found_rows' => false,
+]))->found_posts;
+
+$per_page = max(1, (int) get_option('posts_per_page'));
+$total_pages = (int) ceil($case_study_count / $per_page);
+
 $case_studies = new WP_Query([
     'post_type' => 'post',
     'post_status' => 'publish',
     'category_name' => 'case-study',
-    'posts_per_page' => max(1, (int) get_option('posts_per_page')),
+    'posts_per_page' => $per_page,
     'paged' => $current_page,
     'ignore_sticky_posts' => true,
 ]);
 
 // A custom WP_Query cannot 404 out-of-range pages on its own, so /case-study/page/99/
-// would otherwise render an empty 200 page. Mirror core's main-query behaviour, but
-// keep page 1 renderable when the category is genuinely empty (show the empty state).
-$total_pages = (int) $case_studies->max_num_pages;
-if ($total_pages > 0 && $current_page > $total_pages) {
+// would otherwise render an empty 200 page. Mirror core's main-query behaviour.
+// When the category is genuinely empty, page 1 still renders so the "Chưa có Case
+// Study." state shows; only pages beyond the real page count are rejected.
+if ($current_page > 1 && $current_page > $total_pages) {
     global $wp_query;
     $wp_query->set_404();
     status_header(404);
