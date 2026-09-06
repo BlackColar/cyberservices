@@ -70,6 +70,7 @@ p,li,dt,dd,a,strong,span { overflow-wrap:anywhere; }
 .pagination .page-numbers { min-width:40px; height:40px; display:grid; place-items:center; border:1px solid var(--line); border-radius:999px; }
 .pagination .current { color:var(--ink); background:var(--lime); border-color:var(--lime); }
 .article-header { padding-block:90px 65px; border-bottom:1px solid #d5d9d0; }
+.article-header>.container { width:min(100% - 64px,900px); }
 .article-header h1 { max-width:900px; margin-top:27px; font-size:clamp(34px,4.2vw,58px); font-weight:550; line-height:1.12; letter-spacing:-.02em; text-wrap:balance; }
 .article-header .excerpt { max-width:780px; margin-top:28px; color:#60655e; font-size:17px; line-height:1.75; }
 .article-image { width:100%; max-width:900px; max-height:620px; margin-top:44px; border-radius:25px; object-fit:cover; }
