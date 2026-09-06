@@ -21,6 +21,7 @@ get_header();
   <article <?php post_class(); ?>>
     <header class="article-header">
       <div class="container">
+        <a class="article-back" href="<?php echo esc_url(get_post_type_archive_link('post') ?: home_url('/blog/')); ?>">← Quay lại Blog</a>
         <div class="meta article-meta">
           <?php if ($author_link !== '') : ?>
             <span class="meta-author"><span class="meta-label"><?php esc_html_e('Tác giả:', 'cyber-services'); ?></span> <a href="<?php echo esc_url($author_link); ?>" rel="author"><?php the_author_meta('display_name', $author_id); ?></a></span>
@@ -40,7 +41,6 @@ get_header();
       </div>
     </header>
     <div class="container section article-layout">
-      <a class="article-back" href="<?php echo esc_url(get_post_type_archive_link('post') ?: home_url('/blog/')); ?>">← Quay lại Blog</a>
       <?php get_template_part('template-parts/article-content', null, ['content' => $article_content]); ?>
       <?php get_template_part('template-parts/author-box'); ?>
     </div>
