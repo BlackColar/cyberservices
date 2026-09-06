@@ -682,8 +682,10 @@
   position: relative;
   color: #9aa0a6;
   background:
-    radial-gradient(120% 80% at 50% -25%, #161b21 0%, transparent 60%),
-    linear-gradient(180deg, #0c0e11 0%, #08090b 100%);
+    radial-gradient(60% 85% at 8% -12%, rgba(201,164,84,0.20) 0%, transparent 55%),
+    radial-gradient(55% 75% at 100% 0%, rgba(122,140,108,0.14) 0%, transparent 55%),
+    radial-gradient(120% 85% at 50% 118%, #181e25 0%, transparent 60%),
+    linear-gradient(180deg, #0e1115 0%, #070809 100%);
   font-size: 13px;
   border-top: 1px solid #ffffff14;
   overflow: hidden;
@@ -700,7 +702,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, #ffffff12 1px, transparent 1px);
+  background-image: radial-gradient(circle, #ffffff15 1px, transparent 1px);
   background-size: 22px 22px;
   -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 72%);
           mask-image: linear-gradient(180deg, #000 0%, transparent 72%);
