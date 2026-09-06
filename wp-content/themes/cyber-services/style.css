@@ -148,9 +148,9 @@ p,li,dt,dd,a,strong,span { overflow-wrap:anywhere; }
 .not-found h1 { font-size:clamp(42px,6vw,76px); }
 .not-found p { margin-top:18px; color:var(--muted); }
 .not-found .button { margin:28px auto 0; color:var(--ink); background:var(--lime); }
-.footer { position:relative; color:#9aa0a6; background:radial-gradient(60% 85% at 8% -12%,rgba(201,164,84,0.20) 0%,transparent 55%),radial-gradient(55% 75% at 100% 0%,rgba(122,140,108,0.14) 0%,transparent 55%),radial-gradient(120% 85% at 50% 118%,#181e25 0%,transparent 60%),linear-gradient(180deg,#0e1115 0%,#070809 100%); font-size:13px; border-top:1px solid #ffffff14; overflow:hidden; }
+.footer { position:relative; color:#aab1b9; background:radial-gradient(58% 90% at 6% -14%,rgba(201,164,84,0.32) 0%,transparent 56%),radial-gradient(60% 80% at 100% 2%,rgba(96,165,188,0.24) 0%,transparent 58%),radial-gradient(140% 95% at 50% 122%,rgba(36,45,56,0.95) 0%,transparent 62%),linear-gradient(180deg,#141922 0%,#0c1016 100%); font-size:13px; border-top:1px solid #ffffff1f; overflow:hidden; }
 .footer::before { content:""; position:absolute; inset:0 0 auto 0; height:2px; background:linear-gradient(90deg,transparent 0%,var(--brand) 35%,#e8d488 65%,transparent 100%); opacity:.8; }
-.footer::after { content:""; position:absolute; inset:0; background-image:radial-gradient(circle,#ffffff15 1px,transparent 1px); background-size:22px 22px; -webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 72%); mask-image:linear-gradient(180deg,#000 0%,transparent 72%); pointer-events:none; }
+.footer::after { content:""; position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.05) 1px,transparent 1px),radial-gradient(circle,#ffffff24 1px,transparent 1px); background-size:46px 46px,46px 46px,22px 22px; -webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 74%); mask-image:linear-gradient(180deg,#000 0%,transparent 74%); pointer-events:none; }
 .footerInner { position:relative; display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.4fr); gap:clamp(28px,3vw,56px); padding-block:76px 30px; align-items:start; }
 .footer h3 { position:relative; margin:0 0 22px; padding-bottom:13px; color:#f2f4ee; font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
 .footer h3::after { content:""; position:absolute; left:0; bottom:0; width:30px; height:2px; border-radius:2px; background:linear-gradient(90deg,var(--brand),transparent); }
@@ -163,16 +163,16 @@ p,li,dt,dd,a,strong,span { overflow-wrap:anywhere; }
 .footerSocial a svg { width:18px; height:18px; fill:currentColor; }
 .footerSocial a:hover { color:#0b0c0e; background:var(--brand); border-color:var(--brand); transform:translateY(-3px); box-shadow:0 10px 24px #ffffcc33; }
 .footerInner>nav { display:grid; align-content:start; gap:12px; }
-.footerInner>nav a { display:block; min-width:0; width:auto; max-width:100%; color:#b3b8be; overflow-wrap:anywhere; transition:color .2s ease,padding-left .2s ease; }
+.footerInner>nav a { display:block; min-width:0; width:auto; max-width:100%; color:#c0c6cd; overflow-wrap:anywhere; transition:color .2s ease,padding-left .2s ease; }
 .footerInner>nav a:hover { color:var(--brand); padding-left:6px; }
-.footer a { color:#b3b8be; }
+.footer a { color:#c0c6cd; }
 .footerContactHeading { position:relative; margin:0 0 20px; padding-bottom:13px; color:#f2f4ee; font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
 .footerContactHeading::after { content:""; position:absolute; left:0; bottom:0; width:30px; height:2px; border-radius:2px; background:linear-gradient(90deg,var(--brand),transparent); }
 .footerCompanyName { margin-bottom:16px; color:#f2f4ee; font-weight:700; line-height:1.65; }
 .footerContact p { margin-bottom:11px; line-height:1.65; color:#8e949b; }
 .footerContact strong { color:#f2f4ee; font-weight:600; }
 .footerBottom { grid-column:1/-1; min-width:0; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px 24px; margin-top:44px; border-top:1px solid #ffffff14; padding-top:28px; font-size:11px; }
-.footerBottom>span { min-width:0; color:#7e848b; }
+.footerBottom>span { min-width:0; color:#8a9098; }
 .footerBottom nav { min-width:0; display:flex; flex-wrap:wrap; gap:16px 22px; }
 .footerPolicyLinks { gap:8px 20px; color:#8e949b; }
 .footerPolicyLinks a { color:#8e949b; font-size:11px; transition:color .2s ease; }
