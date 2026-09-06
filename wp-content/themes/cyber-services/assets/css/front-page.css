@@ -718,7 +718,7 @@
 .footerSocial a svg { width: 18px; height: 18px; fill: currentColor; }
 .footerSocial a:hover { color: #0b0c0e; background: var(--brand); border-color: var(--brand); transform: translateY(-3px); box-shadow: 0 10px 24px #ffffcc33; }
 .footerInner > nav { display: grid; align-content: start; gap: 12px; }
-.footerInner > nav a { color: #b3b8be; width: max-content; max-width: 100%; transition: color .2s ease, padding-left .2s ease; }
+.footerInner > nav a { display: block; min-width: 0; width: auto; max-width: 100%; color: #b3b8be; overflow-wrap: anywhere; transition: color .2s ease, padding-left .2s ease; }
 .footerInner > nav a:hover { color: var(--brand); padding-left: 6px; }
 .footer a { color: #b3b8be; }
 .footerContactHeading { position: relative; margin: 0 0 20px; padding-bottom: 13px; color: #f2f4ee; font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }

@@ -161,7 +161,7 @@ p,li,dt,dd,a,strong,span { overflow-wrap:anywhere; }
 .footer-inner strong { color:#f2f4ee; }
 .footer-inner div p { max-width:430px; margin-top:18px; line-height:1.7; color:#8e949b; }
 .footer-inner nav { max-width:720px; display:flex; flex-wrap:wrap; justify-content:flex-end; gap:14px 22px; align-content:start; }
-.footer-inner nav a { white-space:normal; color:#b3b8be; transition:color .2s ease,padding-left .2s ease; }
+.footer-inner nav a { display:block; min-width:0; width:auto; max-width:100%; white-space:normal; overflow-wrap:anywhere; color:#b3b8be; transition:color .2s ease,padding-left .2s ease; }
 .footer-inner nav a:hover { color:var(--lime); padding-left:6px; }
 .footer-inner>p { grid-column:1/-1; border-top:1px solid #ffffff14; padding-top:24px; font-size:11px; color:#7e848b; }
 .footerSocial { display:flex; gap:10px; margin-top:18px; }
