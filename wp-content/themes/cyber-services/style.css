@@ -80,7 +80,7 @@ p,li,dt,dd,a,strong,span { overflow-wrap:anywhere; }
 .article-body h3 { margin-top:36px; font-size:clamp(18px,1.8vw,22px); line-height:1.35; font-weight:650; letter-spacing:-.015em; }
 .article-body :is(h2,h3)[id] { scroll-margin-top:120px; }
 .article-body p { margin-top:19px; color:#4f554d; font-size:16px; line-height:1.9; text-align:justify; }
-.article-body a { color:inherit; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:2px; text-decoration-color:rgba(80,85,77,.32); transition:color .15s ease,text-decoration-color .15s ease; }
+.article-body a { color:#7c3aed; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:2px; text-decoration-color:rgba(124,58,237,.4); transition:color .15s ease,text-decoration-color .15s ease; }
 .article-body .has-text-align-justify { text-align:justify; }
 .article-body ul,.article-body ol { display:grid; gap:11px; margin-top:22px; padding-left:22px; color:#41473f; line-height:1.7; }
 .single-post .article-body p,.single-post .article-body li { font-size:17px; }
